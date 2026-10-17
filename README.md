@@ -1,7 +1,7 @@
 # Resumen de noticias: sitio web
 
 Contenido publicado de un resumen diario automatizado de noticias de España, y el sitio
-generado a partir de él: https://fjgarciahurtado.github.io/ai-news-site/
+generado a partir de él: https://ai-news.fjgarciahurtado.com/
 
 | Carpeta | Contiene |
 |---|---|

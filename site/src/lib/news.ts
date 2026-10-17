@@ -76,7 +76,7 @@ export function warn(message: string) {
 
 const BASE = import.meta.env.BASE_URL.replace(/\/$/, '');
 
-/** Adds the site's base path to a root-relative route: `/diario/` -> `/ai-news-site/diario/`. */
+/** Adds the site's base path to a root-relative route (a no-op at a domain root, `/sub/diario/` under a subpath). */
 export function url(route: string): string {
   return BASE + route;
 }

@@ -45,7 +45,8 @@ The daily job does not need Node: the site is built by GitHub Actions.
 
 The ai-news repo is private, so the site is published through a public mirror,
 [ai-news-site](https://github.com/fjgarciahurtado/ai-news-site), on GitHub Pages:
-<https://fjgarciahurtado.github.io/ai-news-site/>.
+<https://ai-news.fjgarciahurtado.com/> (custom domain
+set in the ai-news-site Pages settings; DNS: CNAME `ai-news` → `fjgarciahurtado.github.io` in Route 53).
 
 1. After each push, `scripts/update.sh` runs `scripts/publish_site.sh`. It copies the committed
    `diario/`, `articulos/`, `semanal/`, `paginas/`, `assets/`, `site/` and four public config
