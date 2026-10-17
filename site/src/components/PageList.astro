@@ -1,0 +1,27 @@
+---
+import { areaTitle, formatDate, STATUS, url, type Page } from '../lib/news';
+
+interface Props {
+  pages: Page[];
+  show?: 'date' | 'description' | 'article';
+}
+
+const { pages, show = 'description' } = Astro.props;
+const sub = (page: Page) => {
+  if (show === 'date') return page.kind === 'daily' ? `${page.meta.stories ?? 0} noticias` : formatDate(page.date);
+  if (show === 'article') return [formatDate(page.date), areaTitle(page.meta.area)].join(' · ');
+  return page.description;
+};
+---
+
+<ul class="list">
+  {pages.map((page) => (
+    <li>
+      <a href={url(page.route)}>{page.kind === 'daily' && show === 'date' ? formatDate(page.date, true) : page.title}</a>
+      {page.kind === 'article' && STATUS[page.meta.status] && (
+        <span class="badge" title={STATUS[page.meta.status].label}>{STATUS[page.meta.status].emoji}</span>
+      )}
+      {sub(page) && <span class="sub">{sub(page)}</span>}
+    </li>
+  ))}
+</ul>

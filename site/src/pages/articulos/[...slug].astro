@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import { areaTitle, formatDate, getNews, url } from '../../lib/news';
+
+export function getStaticPaths() {
+  return getNews().articles.map((page) => ({
+    params: { slug: page.route.replace(/^\/articulos\//, '').replace(/\/$/, '') },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const news = getNews();
+const digest = news.daily.find((d) => d.date === page.date);
+const image = page.meta.image?.hotlink === false ? undefined : page.meta.image?.url;
+---
+
+<Base title={page.title} description={page.description} type="article" image={image}>
+  <article>
+    <p class="eyebrow">
+      <a href={url(`/areas/${page.meta.area}/`)}>{areaTitle(page.meta.area)}</a>
+      {page.meta.top && <> · Lo más importante</>}
+    </p>
+    <h1>{page.title}</h1>
+    <p class="meta">
+      {formatDate(page.date, true)}
+    </p>
+    <div class="prose article" set:html={page.html} />
+    {digest && (
+      <nav class="pager" aria-label="Volver al resumen">
+        <a class="prev" href={url(digest.route)}>← Resumen del {formatDate(digest.date)}</a>
+      </nav>
+    )}
+  </article>
+</Base>

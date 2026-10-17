@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+import { SITE_NAME, url } from '../lib/news';
+
+interface Props {
+  title: string;
+  description?: string;
+  type?: 'website' | 'article';
+  image?: string;
+}
+
+const { title, description = 'Las noticias más importantes de España cada mañana, contrastadas entre medios de todo el espectro y verificadas.', type = 'website', image } = Astro.props;
+const fullTitle = title === SITE_NAME ? title : `${title} · ${SITE_NAME}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+// Route without the base path, to match against the nav routes.
+const path = '/' + Astro.url.pathname.slice(url('/').length);
+const nav = [
+  { href: '/', label: 'Hoy' },
+  { href: '/diario/', label: 'Archivo' },
+  { href: '/areas/', label: 'Áreas' },
+  { href: '/paginas/metodologia/', label: 'Metodología' },
+];
+const current = (href: string) => (href === '/' ? path === '/' : path.startsWith(href));
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:site_name" content={SITE_NAME} />
+    <meta property="og:locale" content="es_ES" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
+    <link rel="sitemap" href={url('/sitemap-index.xml')} />
+    <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME}: resúmenes diarios`} href={url('/rss.xml')} />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="wrap">
+        <a class="brand" href={url('/')}>{SITE_NAME}</a>
+        <nav aria-label="Principal">
+          {nav.map((item) => (
+            <a href={url(item.href)} aria-current={current(item.href) ? 'page' : undefined}>{item.label}</a>
+          ))}
+        </nav>
+      </div>
+    </header>
+    <main class="wrap">
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <div class="wrap">
+        <p>
+          Resúmenes escritos por IA (Claude) a partir de medios españoles, con verificación automática y sin
+          revisión humana previa. <a href={url('/paginas/aviso-ia/')}>Aviso sobre IA</a> ·
+          <a href={url('/paginas/politica-de-fuentes/')}>Política de fuentes</a> ·
+          <a href={url('/paginas/correcciones/')}>Correcciones</a> · <a href={url('/rss.xml')}>RSS</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

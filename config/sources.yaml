@@ -1,0 +1,326 @@
+# Allowlist of outlets. Only items whose URL belongs to an enabled outlet below are used.
+#
+# STATUS: approved by the user on 2026-10-17. Feeds were probed on 2026-10-17.
+#
+# Fields:
+#   id        stable identifier, used in data/ and article frontmatter
+#   name      display name
+#   domains   URL domains attributed to this outlet (longest match wins)
+#   group     ownership group; outlets in the same group do not count as independent
+#   lean      used ONLY for the source-balance check:
+#             izquierda | centro-izquierda | centro | centro-derecha | derecha | publico | agencia
+#   kind      agencia | diario | radio | tv | economico
+#   scope     nacional | regional (regional outlets are disabled until the scope is decided)
+#   enabled   false keeps the entry documented without fetching it
+#   feeds     url, area (see categories.yaml; null for front pages), frontpage (true for home feeds)
+
+outlets:
+  - id: europapress
+    name: Europa Press
+    domains: [europapress.es]
+    group: europapress
+    lean: agencia
+    kind: agencia
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.europapress.es/rss/rss.aspx", area: null, frontpage: true}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00140", area: null, frontpage: true}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00066", area: politica}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00136", area: economia}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00069", area: internacional}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00073", area: sociedad}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00068", area: justicia}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00072", area: ciencia-tecnologia}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00071", area: cultura-deportes}
+      - {url: "https://www.europapress.es/rss/rss.aspx?ch=00067", area: cultura-deportes}
+
+  - id: efe
+    name: EFE
+    domains: [efe.com]
+    group: efe
+    lean: agencia
+    kind: agencia
+    scope: nacional
+    enabled: false   # efe.com returns 403 to automated clients; its stories arrive via other outlets
+    feeds:
+      - {url: "https://efe.com/feed/", area: null, frontpage: true}
+
+  - id: rtve
+    name: RTVE
+    domains: [rtve.es]
+    group: rtve
+    lean: publico
+    kind: tv
+    scope: nacional
+    enabled: false   # api2.rtve.es feeds stopped updating in 2022; no current feed found
+    feeds:
+      - {url: "https://api2.rtve.es/rss/temas_noticias.xml", area: null, frontpage: true}
+
+  - id: elpais
+    name: El País
+    domains: [elpais.com]
+    group: prisa
+    lean: centro-izquierda
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/portada", area: null, frontpage: true}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/espana/portada", area: politica}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/economia/portada", area: economia}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/internacional/portada", area: internacional}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/sociedad/portada", area: sociedad}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/ciencia/portada", area: ciencia-tecnologia}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/tecnologia/portada", area: ciencia-tecnologia}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/cultura/portada", area: cultura-deportes}
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/elpais.com/section/deportes/portada", area: cultura-deportes}
+
+  - id: cincodias
+    name: Cinco Días
+    domains: [cincodias.elpais.com]
+    group: prisa
+    lean: centro
+    kind: economico
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://feeds.elpais.com/mrss-s/pages/ep/site/cincodias.elpais.com/portada", area: economia}
+
+  - id: ser
+    name: Cadena SER
+    domains: [cadenaser.com]
+    group: prisa
+    lean: centro-izquierda
+    kind: radio
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://cadenaser.com/arc/outboundfeeds/rss/?outputType=xml", area: null, frontpage: true}
+
+  - id: elmundo
+    name: El Mundo
+    domains: [elmundo.es]
+    group: unidad-editorial
+    lean: centro-derecha
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://e00-elmundo.uecdn.es/elmundo/rss/portada.xml", area: null, frontpage: true}
+      - {url: "https://e00-elmundo.uecdn.es/elmundo/rss/espana.xml", area: politica}
+      - {url: "https://e00-elmundo.uecdn.es/elmundo/rss/economia.xml", area: economia}
+      - {url: "https://e00-elmundo.uecdn.es/elmundo/rss/internacional.xml", area: internacional}
+      - {url: "https://e00-elmundo.uecdn.es/elmundo/rss/ciencia.xml", area: ciencia-tecnologia}
+      - {url: "https://e00-elmundo.uecdn.es/elmundo/rss/cultura.xml", area: cultura-deportes}
+
+  - id: expansion
+    name: Expansión
+    domains: [expansion.com]
+    group: unidad-editorial
+    lean: centro-derecha
+    kind: economico
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://e00-expansion.uecdn.es/rss/economia.xml", area: economia}
+      - {url: "https://e00-expansion.uecdn.es/rss/empresas.xml", area: economia}
+
+  - id: abc
+    name: ABC
+    domains: [abc.es]
+    group: vocento
+    lean: derecha
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.abc.es/rss/2.0/portada/", area: null, frontpage: true}
+      - {url: "https://www.abc.es/rss/2.0/espana/", area: politica}
+      - {url: "https://www.abc.es/rss/2.0/economia/", area: economia}
+      - {url: "https://www.abc.es/rss/2.0/internacional/", area: internacional}
+      - {url: "https://www.abc.es/rss/2.0/sociedad/", area: sociedad}
+      - {url: "https://www.abc.es/rss/2.0/ciencia/", area: ciencia-tecnologia}
+      - {url: "https://www.abc.es/rss/2.0/cultura/", area: cultura-deportes}
+      - {url: "https://www.abc.es/rss/2.0/deportes/", area: cultura-deportes}
+
+  - id: lavanguardia
+    name: La Vanguardia
+    domains: [lavanguardia.com]
+    group: grupo-godo
+    lean: centro
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.lavanguardia.com/rss/home.xml", area: null, frontpage: true}
+      - {url: "https://www.lavanguardia.com/rss/politica.xml", area: politica}
+      - {url: "https://www.lavanguardia.com/rss/economia.xml", area: economia}
+      - {url: "https://www.lavanguardia.com/rss/internacional.xml", area: internacional}
+      - {url: "https://www.lavanguardia.com/rss/vida.xml", area: sociedad}
+      - {url: "https://www.lavanguardia.com/rss/cultura.xml", area: cultura-deportes}
+      - {url: "https://www.lavanguardia.com/rss/deportes.xml", area: cultura-deportes}
+
+  - id: elconfidencial
+    name: El Confidencial
+    domains: [elconfidencial.com]
+    group: titania
+    lean: centro
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://rss.elconfidencial.com/espana/", area: politica}
+      - {url: "https://rss.elconfidencial.com/economia/", area: economia}
+      - {url: "https://rss.elconfidencial.com/mundo/", area: internacional}
+      - {url: "https://rss.elconfidencial.com/sociedad/", area: sociedad}
+      - {url: "https://rss.elconfidencial.com/tecnologia/", area: ciencia-tecnologia}
+      - {url: "https://rss.elconfidencial.com/cultura/", area: cultura-deportes}
+      - {url: "https://rss.elconfidencial.com/deportes/", area: cultura-deportes}
+
+  - id: eldiario
+    name: elDiario.es
+    domains: [eldiario.es]
+    group: diario-de-prensa-digital
+    lean: izquierda
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.eldiario.es/rss/", area: null, frontpage: true}
+      - {url: "https://www.eldiario.es/rss/politica/", area: politica}
+      - {url: "https://www.eldiario.es/rss/economia/", area: economia}
+      - {url: "https://www.eldiario.es/rss/internacional/", area: internacional}
+      - {url: "https://www.eldiario.es/rss/sociedad/", area: sociedad}
+      - {url: "https://www.eldiario.es/rss/cultura/", area: cultura-deportes}
+
+  - id: elperiodico
+    name: El Periódico
+    domains: [elperiodico.com]
+    group: prensa-iberica
+    lean: centro-izquierda
+    kind: diario
+    scope: nacional
+    enabled: false   # feeds return 406 to automated clients (worked only with a browser user agent)
+    feeds:
+      - {url: "https://www.elperiodico.com/es/rss/politica/rss.xml", area: politica}
+      - {url: "https://www.elperiodico.com/es/rss/economia/rss.xml", area: economia}
+      - {url: "https://www.elperiodico.com/es/rss/internacional/rss.xml", area: internacional}
+      - {url: "https://www.elperiodico.com/es/rss/sociedad/rss.xml", area: sociedad}
+
+  - id: 20minutos
+    name: 20minutos
+    domains: [20minutos.es]
+    group: henneo
+    lean: centro
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.20minutos.es/rss/", area: null, frontpage: true}
+      - {url: "https://www.20minutos.es/rss/nacional/", area: politica}
+      - {url: "https://www.20minutos.es/rss/economia/", area: economia}
+      - {url: "https://www.20minutos.es/rss/internacional/", area: internacional}
+
+  - id: cope
+    name: COPE
+    domains: [cope.es]
+    group: cope
+    lean: derecha
+    kind: radio
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.cope.es/api/es/news/rss.xml", area: null, frontpage: true}
+
+  - id: elespanol
+    name: El Español
+    domains: [elespanol.com]
+    group: el-espanol
+    lean: centro-derecha
+    kind: diario
+    scope: nacional
+    enabled: true
+    feeds:
+      - {url: "https://www.elespanol.com/rss/", area: null, frontpage: true}
+
+  - id: publico
+    name: Público
+    domains: [publico.es]
+    group: publico
+    lean: izquierda
+    kind: diario
+    scope: nacional
+    enabled: false   # no working RSS feed found (404)
+    feeds: []
+
+  - id: larazon
+    name: La Razón
+    domains: [larazon.es]
+    group: planeta
+    lean: derecha
+    kind: diario
+    scope: nacional
+    enabled: false   # RSS returns 403/503 to automated clients
+    feeds: []
+
+  # Regional outlets: disabled until the regional scope is decided (PLAN.md §14).
+  - id: ara
+    name: Ara
+    domains: [ara.cat]
+    group: ara
+    lean: centro-izquierda
+    kind: diario
+    scope: regional
+    region: cataluna
+    enabled: false
+    feeds:
+      - {url: "https://es.ara.cat/rss/", area: null, frontpage: true}
+
+  - id: elcorreo
+    name: El Correo
+    domains: [elcorreo.com]
+    group: vocento
+    lean: centro-derecha
+    kind: diario
+    scope: regional
+    region: pais-vasco
+    enabled: false
+    feeds:
+      - {url: "https://www.elcorreo.com/rss/2.0/portada", area: null, frontpage: true}
+
+  - id: diariovasco
+    name: El Diario Vasco
+    domains: [diariovasco.com]
+    group: vocento
+    lean: centro-derecha
+    kind: diario
+    scope: regional
+    region: pais-vasco
+    enabled: false
+    feeds:
+      - {url: "https://www.diariovasco.com/rss/2.0/portada", area: null, frontpage: true}
+
+  - id: elnortedecastilla
+    name: El Norte de Castilla
+    domains: [elnortedecastilla.es]
+    group: vocento
+    lean: centro-derecha
+    kind: diario
+    scope: regional
+    region: castilla-y-leon
+    enabled: false
+    feeds:
+      - {url: "https://www.elnortedecastilla.es/rss/2.0/portada", area: null, frontpage: true}
+
+  - id: canarias7
+    name: Canarias7
+    domains: [canarias7.es]
+    group: vocento
+    lean: centro-derecha
+    kind: diario
+    scope: regional
+    region: canarias
+    enabled: false
+    feeds:
+      - {url: "https://www.canarias7.es/rss/2.0/portada", area: null, frontpage: true}

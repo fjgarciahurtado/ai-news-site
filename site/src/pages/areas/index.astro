@@ -1,0 +1,18 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageList from '../../components/PageList.astro';
+import { getNews, url } from '../../lib/news';
+
+const news = getNews();
+const latest = (area: string) => news.articles.filter((a) => a.meta.area === area);
+---
+
+<Base title="Áreas" description="Noticias por área: política, economía, internacional, sociedad, justicia, ciencia, cultura y deportes.">
+  <h1>Áreas</h1>
+  {news.areas.map((area) => (
+    <>
+      <h2><a href={url(`/areas/${area.id}/`)}>{area.title}</a></h2>
+      {latest(area.id).length ? <PageList pages={latest(area.id).slice(0, 5)} show="article" /> : <p class="meta">Sin noticias todavía.</p>}
+    </>
+  ))}
+</Base>

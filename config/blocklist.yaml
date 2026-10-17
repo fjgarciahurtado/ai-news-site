@@ -1,0 +1,32 @@
+# Domains that are never used as a source, cited, or linked, even if they appear in a feed
+# or a search result. The allowlist (sources.yaml) is the main gate; this list documents
+# known problem domains so they are rejected explicitly everywhere (collector and validator).
+#
+# STATUS: approved by the user on 2026-10-17. Each entry still needs a real
+# evidence_url (e.g. a fact-checker article or an index rating); fill them in as found.
+#
+# Criteria (PLAN.md §6): repeated debunks by IFCN fact-checkers; no identifiable ownership
+# or masthead; hate speech or incitement; low ratings in external indexes.
+
+blocked:
+  - domain: mediterraneodigital.com
+    reason: repeated debunks by IFCN fact-checkers
+    evidence_url: null
+  - domain: alertadigital.com
+    reason: hate speech or incitement; repeated debunks by IFCN fact-checkers
+    evidence_url: null
+  - domain: elcorreodeespana.com
+    reason: repeated debunks by IFCN fact-checkers
+    evidence_url: null
+  - domain: casoaislado.com
+    reason: repeated debunks by IFCN fact-checkers
+    evidence_url: null
+  - domain: ramblalibre.com
+    reason: repeated debunks by IFCN fact-checkers
+    evidence_url: null
+  - domain: periodistadigital.com
+    reason: repeated debunks by IFCN fact-checkers
+    evidence_url: null
+  - domain: okdiario.com
+    reason: repeated debunks by IFCN fact-checkers   # high-audience outlet; user decision
+    evidence_url: null

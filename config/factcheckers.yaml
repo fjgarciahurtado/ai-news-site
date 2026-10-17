@@ -1,0 +1,35 @@
+# IFCN-signatory fact-checkers used for verification and the Bulos section.
+# Feeds probed on 2026-10-17. The Google Fact Check Tools API is used too when
+# GOOGLE_FACTCHECK_API_KEY is set (see ~/.config/ai-news/config.env).
+
+factcheckers:
+  - id: maldita
+    name: Maldita.es
+    domains: [maldita.es]
+    enabled: true
+    feeds:
+      - "https://maldita.es/malditobulo/feed/"
+      - "https://maldita.es/feed/"
+  - id: newtral
+    name: Newtral
+    domains: [newtral.es]
+    enabled: true
+    feeds:
+      - "https://www.newtral.es/feed/"
+  - id: efeverifica
+    name: EFE Verifica
+    domains: [verifica.efe.com]
+    enabled: true
+    feeds:
+      - "https://verifica.efe.com/feed/"
+  - id: verificat
+    name: Verificat
+    domains: [verificat.cat]
+    enabled: true
+    feeds:
+      - "https://www.verificat.cat/es/feed/"
+  - id: afpfactual
+    name: AFP Factual
+    domains: [factual.afp.com]
+    enabled: false   # returns 403 to automated clients; reachable through the Google API
+    feeds: []

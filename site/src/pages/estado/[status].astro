@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageList from '../../components/PageList.astro';
+import { getNews, STATUS, url } from '../../lib/news';
+
+export function getStaticPaths() {
+  const news = getNews();
+  return Object.entries(STATUS).map(([id, status]) => ({
+    params: { status: id },
+    props: { status, pages: news.articles.filter((a) => a.meta.status === id) },
+  }));
+}
+
+const { status, pages } = Astro.props;
+---
+
+<Base title={`${status.plural}`} description={`Noticias con estado «${status.label}».`}>
+  <p class="eyebrow">Estado de verificación</p>
+  <h1>{status.emoji} {status.plural}</h1>
+  <p class="lede">Qué significa cada estado: <a href={url('/paginas/metodologia/#estados-de-verificación')}>Metodología</a>.</p>
+  {pages.length ? <PageList pages={pages} show="article" /> : <p>Ninguna noticia con este estado.</p>}
+</Base>

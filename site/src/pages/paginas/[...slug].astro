@@ -1,0 +1,60 @@
+---
+// Static pages from ../paginas/*.md. The source-policy page also lists the live config.
+import Base from '../../layouts/Base.astro';
+import { getNews } from '../../lib/news';
+
+export function getStaticPaths() {
+  return getNews().pages.map((page) => ({
+    params: { slug: page.route.replace(/^\/paginas\//, '').replace(/\/$/, '') },
+    props: { page },
+  }));
+}
+
+const { page } = Astro.props;
+const news = getNews();
+const isPolicy = page.route === '/paginas/politica-de-fuentes/';
+const LEAN: Record<string, string> = {
+  izquierda: 'Izquierda', 'centro-izquierda': 'Centro izquierda', centro: 'Centro',
+  'centro-derecha': 'Centro derecha', derecha: 'Derecha', publico: 'Público', agencia: 'Agencia',
+};
+const national = news.outlets.filter((o) => o.scope === 'nacional');
+const regional = news.outlets.filter((o) => o.scope !== 'nacional');
+---
+
+<Base title={page.title} description={page.description}>
+  <article>
+    <h1>{page.title}</h1>
+    <div class="prose" set:html={page.html} />
+    {isPolicy && (
+      <div class="prose">
+        <h2 id="medios">Medios de la lista</h2>
+        <p>Generado a partir de <code>config/sources.yaml</code>. «Inactivo» significa que el medio está aceptado pero su RSS no se puede leer de forma automatizada.</p>
+        <table>
+          <thead><tr><th>Medio</th><th>Grupo</th><th>Línea</th><th>Estado</th></tr></thead>
+          <tbody>
+            {national.map((o) => (
+              <tr><td>{o.name}</td><td>{o.group}</td><td>{LEAN[o.lean] ?? o.lean}</td><td>{o.enabled ? 'Activo' : 'Inactivo'}</td></tr>
+            ))}
+          </tbody>
+        </table>
+        {regional.length > 0 && (
+          <p>Medios regionales en reserva (pendientes de decidir el alcance regional): {regional.map((o) => o.name).join(', ')}.</p>
+        )}
+        <h2 id="verificadores">Verificadores</h2>
+        <ul>
+          {news.factcheckers.map((f) => <li>{f.name} ({f.domains.join(', ')}){f.enabled ? '' : ': solo a través de Google Fact Check'}</li>)}
+        </ul>
+        <h2 id="bloqueados">Dominios bloqueados</h2>
+        <p>Nunca se usan como fuente ni se enlazan, aunque aparezcan en un buscador.</p>
+        <table>
+          <thead><tr><th>Dominio</th><th>Motivo</th><th>Prueba</th></tr></thead>
+          <tbody>
+            {news.blocked.map((b) => (
+              <tr><td>{b.domain}</td><td>{b.reason}</td><td>{b.evidence_url ? <a href={b.evidence_url} rel="noopener">enlace</a> : 'pendiente'}</td></tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    )}
+  </article>
+</Base>

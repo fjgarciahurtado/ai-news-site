@@ -1,0 +1,60 @@
+# Areas of the digest, in display order. Keywords are matched against accent-folded,
+# lowercased tokens and only used when no section feed gives the area.
+#
+#   weight          multiplies the ranking score
+#   needs_contrast  the area can trigger the newspaper-archive contrast (PLAN.md §8)
+
+areas:
+  politica:
+    title: Política
+    weight: 1.0
+    needs_contrast: true
+    keywords: [gobierno, congreso, senado, psoe, pp, vox, sumar, podemos, junts, erc, pnv, bildu,
+               ministro, ministra, presidente, presidenta, elecciones, parlamento, moncloa,
+               diputado, diputada, partido, investidura, coalicion, autonomico, generalitat, xunta]
+  economia:
+    title: Economía
+    weight: 0.9
+    needs_contrast: true
+    keywords: [economia, ibex, bolsa, inflacion, ipc, paro, empleo, pib, impuesto, hacienda,
+               presupuesto, banco, empresa, salario, pension, vivienda, alquiler, euribor, deuda]
+  internacional:
+    title: Internacional
+    weight: 0.9
+    needs_contrast: false
+    keywords: [eeuu, trump, ucrania, rusia, israel, gaza, china, onu, otan, union, europea,
+               bruselas, francia, alemania, marruecos, venezuela, argentina, mexico]
+  sociedad:
+    title: Sociedad
+    weight: 0.8
+    needs_contrast: false
+    keywords: [sanidad, educacion, universidad, hospital, accidente, incendio, dana, temporal,
+               violencia, machista, inmigracion, migrantes, consumo, trafico]
+  justicia:
+    title: Justicia
+    weight: 0.9
+    needs_contrast: true
+    keywords: [juez, jueza, tribunal, supremo, constitucional, fiscal, fiscalia, audiencia,
+               juicio, sentencia, condena, imputado, investigado, querella, cgpj, amnistia]
+  ciencia-tecnologia:
+    title: Ciencia y Tecnología
+    weight: 0.7
+    needs_contrast: false
+    keywords: [ciencia, investigacion, cientifico, estudio, espacio, nasa, inteligencia,
+               artificial, tecnologia, clima, salud, vacuna]
+  cultura-deportes:
+    title: Cultura y Deportes
+    weight: 0.6
+    needs_contrast: false
+    keywords: [futbol, liga, madrid, barca, barcelona, champions, tenis, baloncesto, cine,
+               pelicula, musica, libro, premio, festival, teatro, museo, exposicion]
+
+# A story in an area with needs_contrast: true is flagged for archive contrast only when its
+# text contains a statement cue or a political actor. Claude may override the flag in the run.
+contrast:
+  cues: [afirma, asegura, defiende, rechaza, promete, anuncia, critica, acusa, niega, reconoce,
+         advierte, exige, plantea, propone, rectifica, cambia, dijo, declaro, sostiene, insiste,
+         llama, responde, replica, denuncia, pide, reclama, avisa, admite, justifica]
+  actors: [gobierno, psoe, pp, vox, sumar, podemos, junts, erc, pnv, bildu, ministro, ministra,
+           presidente, presidenta, sanchez, feijoo, abascal, diaz, puigdemont, ayuso, illa,
+           portavoz, lider, alcalde, alcaldesa, consejero, consejera]

@@ -1,0 +1,21 @@
+---
+import Base from '../../layouts/Base.astro';
+import PageList from '../../components/PageList.astro';
+import { getNews } from '../../lib/news';
+
+export function getStaticPaths() {
+  const news = getNews();
+  return news.areas.map((area) => ({
+    params: { area: area.id },
+    props: { area, pages: news.articles.filter((a) => a.meta.area === area.id) },
+  }));
+}
+
+const { area, pages } = Astro.props;
+---
+
+<Base title={area.title} description={`Noticias de ${area.title.toLowerCase()}, de la más reciente a la más antigua.`}>
+  <p class="eyebrow">Área</p>
+  <h1>{area.title}</h1>
+  {pages.length ? <PageList pages={pages} show="article" /> : <p>Sin noticias todavía.</p>}
+</Base>

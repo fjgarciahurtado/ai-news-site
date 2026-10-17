@@ -1,0 +1,30 @@
+---
+import Base from '../layouts/Base.astro';
+import Digest from '../components/Digest.astro';
+import PageList from '../components/PageList.astro';
+import { getNews, SITE_NAME, url } from '../lib/news';
+
+const news = getNews();
+const [latest, ...older] = news.daily;
+---
+
+<Base title={SITE_NAME} description={latest?.description}>
+  {latest ? <Digest page={latest} /> : <p>Todavía no hay resúmenes.</p>}
+  {(older.length > 0 || news.weekly.length > 0) && (
+    <section class="related">
+      {older.length > 0 && (
+        <>
+          <h2>Resúmenes anteriores</h2>
+          <PageList pages={older.slice(0, 14)} show="date" />
+        </>
+      )}
+      {news.weekly.length > 0 && (
+        <>
+          <h2>Resúmenes semanales</h2>
+          <PageList pages={news.weekly.slice(0, 4)} show="date" />
+        </>
+      )}
+      <p><a href={url('/diario/')}>Archivo completo →</a></p>
+    </section>
+  )}
+</Base>
