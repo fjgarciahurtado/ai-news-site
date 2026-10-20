@@ -34,6 +34,9 @@ jobs:
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}/
           ASTRO_TELEMETRY_DISABLED: "1"
+          # PostHog project key and host, set in the public repo's Settings → Variables.
+          PUBLIC_POSTHOG_KEY: ${{ vars.POSTHOG_KEY }}
+          PUBLIC_POSTHOG_HOST: ${{ vars.POSTHOG_HOST }}
         run: |
           npm ci --no-audit --no-fund
           npm run build

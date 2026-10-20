@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import Analytics from '../components/Analytics.astro';
 import { SITE_NAME, url } from '../lib/news';
 
 interface Props {
@@ -43,6 +44,7 @@ const current = (href: string) => (href === '/' ? path === '/' : path.startsWith
     <link rel="icon" href={url('/favicon.svg')} type="image/svg+xml" />
     <link rel="sitemap" href={url('/sitemap-index.xml')} />
     <link rel="alternate" type="application/rss+xml" title={`${SITE_NAME}: resúmenes diarios`} href={url('/rss.xml')} />
+    <Analytics />
   </head>
   <body>
     <header class="site-header">

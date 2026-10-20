@@ -1,0 +1,16 @@
+---
+// PostHog page analytics. Off unless PUBLIC_POSTHOG_KEY is set at build time, so local
+// builds send nothing. The deploy workflow sets it from the public repo's Actions variables.
+---
+
+<script>
+  const key = import.meta.env.PUBLIC_POSTHOG_KEY;
+  if (key) {
+    import('posthog-js').then(({ default: posthog }) => {
+      posthog.init(key, {
+        api_host: import.meta.env.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com',
+        person_profiles: 'identified_only',
+      });
+    });
+  }
+</script>
