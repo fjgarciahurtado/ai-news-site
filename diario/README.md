@@ -2,6 +2,7 @@
 
 # Resúmenes diarios
 
+- [25 de octubre de 2026](2026/10/2026-10-25.md): 16 noticias
 - [24 de octubre de 2026](2026/10/2026-10-24.md): 16 noticias
 - [23 de octubre de 2026](2026/10/2026-10-23.md): 16 noticias
 - [22 de octubre de 2026](2026/10/2026-10-22.md): 16 noticias
