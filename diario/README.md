@@ -2,6 +2,7 @@
 
 # Resúmenes diarios
 
+- [31 de octubre de 2026](2026/10/2026-10-31.md): 16 noticias
 - [30 de octubre de 2026](2026/10/2026-10-30.md): 16 noticias
 - [29 de octubre de 2026](2026/10/2026-10-29.md): 16 noticias
 - [28 de octubre de 2026](2026/10/2026-10-28.md): 16 noticias
