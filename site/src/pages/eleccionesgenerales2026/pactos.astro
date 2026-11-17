@@ -1,0 +1,75 @@
+---
+import Base from '../../layouts/Base.astro';
+import Fuentes from '../../components/Fuentes.astro';
+import { formatDate, url } from '../../lib/news';
+import { BASE_ROUTE, getElection } from '../../lib/elecciones';
+
+const e = getElection();
+const p = e.pactos;
+---
+
+<Base title="Pactos · Elecciones generales 2026" description="Cómo se forma Gobierno, las investiduras de 2023, los acuerdos que las hicieron posibles y lo que se aprobó después, con fuentes oficiales.">
+  <p class="eyebrow"><a href={url(`${BASE_ROUTE}/`)}>Elecciones generales 2026</a></p>
+  <h1>Pactos</h1>
+  <p class="lede">
+    Cómo se forma Gobierno, quién apoyó a quién en 2023, qué se firmó a cambio y qué se aprobó después. Solo hechos ya
+    ocurridos, cada uno con su documento: no hay encuestas ni cálculos de mayorías futuras.
+  </p>
+
+  {p && (
+    <>
+      <h2>Cómo se elige al presidente</h2>
+      <p>{p.regla.texto} <Fuentes fuentes={p.regla.fuentes} /></p>
+
+      {p.secciones.map((s) => (
+        <section id={s.id}>
+          <h2>{s.titulo}</h2>
+          {s.intro && <p>{s.intro.texto} <Fuentes fuentes={s.intro.fuentes} /></p>}
+          <ul class="pactos">
+            {s.hechos.map((h) => (
+              <li>
+                <p class="meta">
+                  <time datetime={h.fecha}>{formatDate(h.fecha)}</time>
+                  {h.partes.length > 0 && <> · {h.partes.join(', ')}</>}
+                </p>
+                <p>{h.texto} <Fuentes fuentes={h.fuentes} /></p>
+                {h.despues.length > 0 && (
+                  <div class="despues">
+                    <p class="sub">Después:</p>
+                    <ul>
+                      {h.despues.map((d) => <li>{d.texto} <Fuentes fuentes={d.fuentes} /></li>)}
+                    </ul>
+                  </div>
+                )}
+              </li>
+            ))}
+          </ul>
+          {s.nota && <p class="meta">{s.nota.texto} <Fuentes fuentes={s.nota.fuentes} /></p>}
+        </section>
+      ))}
+
+      <h2>Otros partidos con diputados en 2023</h2>
+      <p>{p.otros.nota.texto} <Fuentes fuentes={p.otros.nota.fuentes} /></p>
+      <div class="table-wrap">
+        <table class="compact">
+          <thead>
+            <tr><th>Partido</th><th class="num">Escaños 2023</th><th>Candidatura al Congreso en 2026</th></tr>
+          </thead>
+          <tbody>
+            {p.otros.partidos.map((o) => (
+              <tr>
+                <td>{o.web ? <a href={o.web} rel="noopener">{o.nombre}</a> : o.nombre} ({o.siglas})</td>
+                <td class="num">{o.escanos2023}</td>
+                <td>{o.circunscripciones.length ? o.circunscripciones.join(', ') : '—'}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </>
+  )}
+
+  <p class="meta">
+    <a href={url(`${BASE_ROUTE}/metodologia/`)}>Cómo se ha hecho</a> · No se publican encuestas.
+  </p>
+</Base>

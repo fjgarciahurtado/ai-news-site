@@ -1,0 +1,252 @@
+# Ficha de partido. Schema and rules: CLAUDE.md, section "Elecciones generales 2026".
+# Every statement has `fuentes` (ids from eleccion.yaml `documentos`, ids from this file's
+# `documentos`, or inline {titulo, url, fecha}). Proposals stay empty until the party's own 2026
+# programme has been read.
+
+id: vox
+siglas: "Vox"
+nombre: "VOX"
+web: https://www.voxespana.es/
+
+# Entities (as written in articulos/ frontmatter) whose daily articles are listed on the page.
+entidades: ["Vox", "VOX", "Santiago Abascal"]
+
+candidato:
+  texto: "Santiago Abascal Conde encabeza la lista de Vox al Congreso por Madrid."
+  fuentes: [boe-2026-23103]
+
+# Official candidacy names in BOE-A-2026-23103 that belong to this party (regex, case-insensitive);
+# the site counts and lists the matching constituencies.
+candidaturas_2026:
+  patron: "\\bVOX\\b"
+  fuentes: [boe-2026-23103]
+
+inclusion:
+  texto: "12,38 % de los votos válidos en las generales de 2023 (3.057.000 votos) y 9,63 % en las europeas de 2024 (1.688.255 votos)."
+  fuentes: [boe-2023-18907, boe-2024-13092]
+
+documentos:
+  programa-2026:
+    titulo: "Es sentido común. Programa electoral, 29 de noviembre de 2026 (copia publicada por Última Hora)"
+    url: https://men.gsstatic.es/sfAttachPlugin/4847171.pdf
+    fecha: 2026-11-05  # PDF creation date; read on 2026-11-16. voxespana.es blocks automated access.
+
+programa:
+  documento: programa-2026
+
+# A selection of the programme's 115 numbered measures: the most concrete per topic.
+# Read from the PDF on 2026-11-16; `referencia` is the measure number in the document.
+propuestas:
+  - id: regularizaciones-y-arraigo
+    tema: inmigracion
+    referencia: Medidas 9 y 11
+    texto: "Prohibir las regularizaciones masivas, que quien entre de forma ilegal no pueda regularizar nunca su situación y suprimir el arraigo como vía de residencia. El programa lo resume en el lema «Ni uno más»."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La Ley de Extranjería es la Ley Orgánica 4/2000: reformarla exige mayoría absoluta del Congreso."
+      fuentes: [lo-4-2000]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2024-04-09
+        texto: "El Congreso admitió a trámite la iniciativa legislativa popular para una regularización extraordinaria de personas extranjeras por 310 votos a favor y 33 en contra; Vox tenía entonces 33 diputados."
+        fuentes: [ds-15-pl-36, boe-2023-18907]
+
+  - id: repatriacion-y-remigracion
+    tema: inmigracion
+    referencia: Medidas 12 a 14
+    texto: "Repatriar a quienes estén en situación irregular; un plan de «remigración» para facilitar el retorno a sus países de los extranjeros que, según el programa, no contribuyan o vivan de subsidios; y deportar a quienes cometan delitos graves o reiterados o «traten de imponer costumbres» que el programa considera incompatibles con su modo de vida o con la dignidad de las mujeres."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica, gobierno]
+    viabilidad:
+      texto: "La expulsión y la devolución de extranjeros están reguladas en la Ley Orgánica 4/2000, de Extranjería."
+      fuentes: [lo-4-2000]
+
+  - id: nacionalidad
+    tema: inmigracion
+    referencia: Medidas 10 y 11
+    texto: "Endurecer los requisitos para obtener la nacionalidad, revisar las concesiones que el programa califica de fraudulentas, revocar las vías rápidas y ampliar los casos en que la pierden, por delitos graves o reiterados, quienes no son españoles de origen."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La Constitución deja a la ley la adquisición y pérdida de la nacionalidad (hoy reguladas en el Código Civil, ley ordinaria) y prohíbe privar de ella a los españoles de origen; por eso la propuesta se limita a quienes no lo son."
+      fuentes: [ce-11, codigo-civil]
+
+  - id: prioridad-nacional
+    tema: inmigracion
+    referencia: Medidas 18, 22, 27 y 74
+    texto: "Que los españoles tengan acceso preferente a la vivienda pública y protegida, las ayudas al alquiler, las plazas de guardería, las becas de comedor y transporte, las ayudas y los servicios sociales, y que el Ingreso Mínimo Vital atienda solo a españoles; el programa propone modificar o derogar las normas que lo impidan."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "La Constitución dice que los extranjeros gozan en España de las libertades del título I «en los términos que establezcan los tratados y la ley», y que los españoles son iguales ante la ley sin discriminación por nacimiento o cualquier otra circunstancia. Muchas de estas prestaciones (vivienda protegida, servicios sociales) las gestionan las comunidades autónomas."
+      fuentes: [ce-13, ce-14, ce-148]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2026-04-22
+        texto: "Los acuerdos de gobierno de PP y Vox en Extremadura y Aragón incluyen la «prioridad nacional», definida como la asignación prioritaria de recursos públicos a quienes tengan «arraigo real, duradero y verificable con el territorio», con 10 años de empadronamiento para comprar vivienda pública."
+        fuentes: [maldita-prioridad-nacional]
+      - tipo: en-contra
+        fecha: 2026-05-07
+        texto: "Según recoge Maldita.es, el Tribunal de Justicia de la UE consideró discriminación indirecta exigir 10 años de residencia para una prestación social italiana a beneficiarios de protección internacional; juristas citados en el mismo artículo ven difícil encajar en la Constitución una preferencia basada solo en la nacionalidad."
+        fuentes: [maldita-prioridad-nacional]
+
+  - id: derogar-ley-vivienda
+    tema: vivienda
+    referencia: Medida 30
+    texto: "Derogar la Ley de Vivienda, con incentivos fiscales al alquiler de larga duración, deducciones para inquilinos españoles y más inspección de los pisos turísticos ilegales."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La Ley 12/2023, por el derecho a la vivienda, es una ley ordinaria: derogarla requiere otra ley ordinaria."
+      fuentes: [ley-12-2023]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2023-04-27
+        texto: "En el debate final de la Ley de vivienda en el Congreso, el portavoz de Vox, Espinosa de los Monteros, anunció que su partido la derogaría si gobernaba («derogaremos»). El texto se aprobó por 176 votos a favor, 167 en contra y 1 abstención."
+        fuentes: [ds-14-pl-265]
+
+  - id: desalojo-24-horas
+    tema: vivienda
+    referencia: Medidas 31 y 32
+    texto: "Desalojar una vivienda ocupada en menos de 24 horas, endurecer el Código Penal y tipificar la «inquiocupación» como delito de estafa; exigir la residencia legal para firmar un contrato de alquiler."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, ley-organica]
+    viabilidad:
+      texto: "Los procedimientos civiles de desahucio están en la Ley de Enjuiciamiento Civil (ley ordinaria), los contratos de alquiler en la Ley de Arrendamientos Urbanos, y los delitos en el Código Penal, que es una ley orgánica."
+      fuentes: [ley-1-2000, ley-29-1994, lo-10-1995]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2023-04-27
+        texto: "En el debate de la Ley de vivienda, el portavoz de Vox, Espinosa de los Monteros, defendió «garantizar la desokupación en menos de cuarenta y ocho horas», que, según dijo, había aprobado Castilla y León a iniciativa de Vox."
+        fuentes: [ds-14-pl-265]
+
+  - id: primera-vivienda-sin-impuestos
+    tema: vivienda
+    referencia: Medida 34
+    texto: "IVA del 0 % en la compra de la primera vivienda habitual de nueva construcción, bonificación del 100 % del Impuesto de Transmisiones Patrimoniales en la de segunda mano y recuperar la deducción por inversión en vivienda habitual en el IRPF."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "Los tipos del IVA están en la Ley 37/1992 y las deducciones del IRPF en la Ley 35/2006, ambas leyes ordinarias."
+      fuentes: [ley-37-1992, ley-35-2006]
+
+  - id: rebaja-impuestos
+    tema: fiscalidad
+    referencia: Medida 2
+    texto: "Bajar y simplificar el IRPF, con un tipo menor según el número de hijos; bajar el IVA reducido y el general, empezando por los productos de primera necesidad; bajar el Impuesto de Sociedades, y una cuota de autónomos de cero euros para quien no llegue al salario mínimo. El programa dice que lo compensaría recortando el gasto que considera superfluo (medida 43)."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "El IRPF (Ley 35/2006), el IVA (Ley 37/1992) y el Impuesto sobre Sociedades (Ley 27/2014) están regulados por leyes ordinarias."
+      fuentes: [ley-35-2006, ley-37-1992, ley-27-2014]
+
+  - id: nucleares
+    tema: energia
+    referencia: Medida 8
+    texto: "Derogar el calendario de cierre de las centrales nucleares, estudiar con urgencia nuevas centrales junto a las actuales, bajar los impuestos de la electricidad y revertir las normas inspiradas en el Pacto Verde Europeo, como la prohibición de los motores de combustión y los impuestos a las emisiones de CO2."
+    fuentes: [programa-2026]
+    requisitos: [gobierno, ley-ordinaria, competencia-ue]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2025-02-12
+        texto: "El Congreso aprobó una proposición no de ley del PP sobre el cierre programado de la generación nuclear por 171 votos a favor, 164 en contra y 14 abstenciones; no es vinculante para el Gobierno."
+        fuentes: [ds-15-pl-95]
+
+  - id: derogar-reforma-laboral
+    tema: empleo
+    referencia: Medida 8
+    texto: "Derogar «la legislación laboral de Sánchez», que según el programa ha agravado la precariedad y desincentivado la contratación."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La reforma laboral de 2021 se aprobó por el Real Decreto-ley 32/2021, convalidado por el Congreso; sus cambios están en el Estatuto de los Trabajadores, que se modifica por ley ordinaria."
+      fuentes: [rdl-32-2021, rdleg-2-2015]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2022-02-03
+        texto: "Vox votó en contra de convalidar la reforma laboral («nos hemos opuesto desde el primer momento», dijo su diputado Aizcorbe Torra). El Congreso la convalidó por 175 votos a favor y 174 en contra."
+        fuentes: [ds-14-pl-156]
+
+  - id: derogar-tres-normas-por-cada-una
+    tema: instituciones
+    referencia: Medidas 40 y 41
+    texto: "Que cada ley nueva identifique tres normas vigentes que deroga, y hacer del silencio administrativo positivo y la declaración responsable la regla general, salvo en nacionalidad, residencia y permisos de trabajo de extranjeros."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+
+  - id: educacion-lomloe
+    tema: educacion
+    referencia: Medidas 66, 69 y 70
+    texto: "Derogar la LOMLOE; unificar el currículo, las evaluaciones nacionales y la inspección, con reválidas y una EVAU única; garantizar la educación en español en todo el territorio, y fijar un máximo por aula de alumnos «procedentes de otras culturas» o con poco dominio del español, con aulas de nivelación."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica, competencia-autonomica]
+    viabilidad:
+      texto: "La LOMLOE es la Ley Orgánica 3/2020, que modificó la Ley Orgánica 2/2006 de Educación; derogarla exige mayoría absoluta del Congreso. El castellano es la lengua oficial del Estado y las demás lenguas son oficiales en sus comunidades según sus Estatutos."
+      fuentes: [lo-3-2020, lo-2-2006, ce-3]
+
+  - id: menores-y-prision-permanente
+    tema: seguridad
+    referencia: Medidas 80 y 81
+    texto: "Rebajar la edad de responsabilidad penal de los menores, plantear eliminar la inimputabilidad de los menores en ciertos delitos violentos, como homicidios y agresiones sexuales, y ampliar la prisión permanente revisable."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La responsabilidad penal de los menores está regulada en la Ley Orgánica 5/2000 y las penas en el Código Penal, también ley orgánica: ambas exigen mayoría absoluta del Congreso."
+      fuentes: [lo-5-2000, lo-10-1995]
+
+  - id: jueces-eligen-cgpj
+    tema: instituciones
+    referencia: Medida 100
+    texto: "Reformar la Ley Orgánica del Poder Judicial para que los doce vocales judiciales del Consejo General del Poder Judicial los elijan los jueces y magistrados por voto personal, directo y secreto."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La Constitución fija que doce de los veinte vocales son jueces y magistrados «en los términos que establezca la ley orgánica»: el sistema de elección está en la Ley Orgánica del Poder Judicial."
+      fuentes: [ce-122, lo-6-1985]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2024-08-05
+        texto: "La Ley Orgánica 3/2024 encargó al Consejo General del Poder Judicial un informe sobre los sistemas europeos y una propuesta de reforma del sistema de elección de los vocales judiciales, aprobada por tres quintos de sus vocales, para que el Gobierno o las Cámaras la presenten como proyecto o proposición de ley."
+        fuentes: [lo-3-2024]
+      - tipo: a-favor
+        fecha: 2022-07-14
+        texto: "En el Pleno del Congreso, el diputado de Vox Ortega Smith-Molina defendió que los doce vocales judiciales del CGPJ sean elegidos por los jueces y magistrados."
+        fuentes: [ds-14-pl-202]
+
+  - id: sedicion-e-ilegalizacion
+    tema: territorial
+    referencia: Medida 103
+    texto: "Recuperar el delito de sedición, agravar la malversación, prohibir los indultos por corrupción o por delitos contra la forma política del Estado o la integridad territorial, e ilegalizar los partidos y organizaciones que atenten contra la unidad de España."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La Ley Orgánica 14/2022 suprimió del Código Penal el capítulo de la sedición (artículos 544 a 549); recuperarlo exige otra ley orgánica. La ilegalización de partidos está regulada en la Ley Orgánica 6/2002, de Partidos Políticos."
+      fuentes: [lo-14-2022, lo-10-1995, lo-6-2002]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2022-12-01
+        texto: "Vox defendió una enmienda a la totalidad con texto alternativo a la proposición de ley orgánica que acabó suprimiendo el delito de sedición; el Pleno rechazó todas las enmiendas a la totalidad."
+        fuentes: [ds-14-pl-230, lo-14-2022]
+
+  - id: leyes-genero-y-memoria
+    tema: igualdad
+    referencia: Medidas 46 y 47
+    texto: "Derogar las que el programa llama «leyes de género», que a su juicio no han protegido a las mujeres, y sustituirlas por normas que protejan a las víctimas de violencia; y superar la Ley de Memoria Democrática."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica, ley-ordinaria]
+    viabilidad:
+      texto: "La Ley de Medidas de Protección Integral contra la Violencia de Género es la Ley Orgánica 1/2004; la Ley de Memoria Democrática, la Ley 20/2022, es ordinaria."
+      fuentes: [lo-1-2004, ley-20-2022]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2022-07-14
+        texto: "En el Pleno que aprobó el dictamen de la Ley de memoria democrática (173 votos a favor, 159 en contra y 14 abstenciones), el diputado de Vox Contreras Peláez anunció que «es una ley que VOX derogará si llega al Gobierno», y Espinosa de los Monteros pidió «la derogación de las leyes de género»."
+        fuentes: [ds-14-pl-202]
+
+  - id: ceuta-y-melilla
+    tema: exterior
+    referencia: Medida 1
+    texto: "Militarizar la frontera de Ceuta y Melilla, expulsar de inmediato a quienes el programa llama «invasores», promover ante la justicia el procesamiento del presidente y su Gobierno por su actuación en Ceuta y suspender acuerdos internacionales y aplicar sanciones a Marruecos hasta que respete las fronteras y la soberanía de España."
+    fuentes: [programa-2026]
+    requisitos: [gobierno]

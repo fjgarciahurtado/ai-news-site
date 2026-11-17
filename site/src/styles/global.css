@@ -409,3 +409,268 @@ img {
 .eyebrow a:hover {
   text-decoration: underline;
 }
+
+/* Elecciones generales 2026 */
+
+.section-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.25rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  margin: 0 0 1.5rem;
+}
+
+.party-cards {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.party-cards li {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 0;
+}
+
+.party-cards h3 {
+  margin: 0 0 0.3rem;
+}
+
+.party-cards p {
+  margin: 0 0 0.3rem;
+}
+
+.party-cards .sub,
+.req {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1.5rem;
+}
+
+.facts dt {
+  font-family: var(--sans);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.facts dd {
+  margin: 0;
+}
+
+.facts details {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+.src {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+}
+
+.src a {
+  color: var(--muted);
+  margin-left: 0.25rem;
+  white-space: nowrap;
+}
+
+.src a::before {
+  content: '[';
+}
+
+.src a::after {
+  content: ']';
+}
+
+.pending {
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+  padding-left: 1rem;
+}
+
+.propuesta {
+  border-top: 1px solid var(--border);
+  padding-top: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.ref {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.antecedentes {
+  list-style: none;
+  padding: 0;
+  font-size: 0.95rem;
+}
+
+.antecedentes .tag {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 0.45rem;
+}
+
+.antecedentes .en-contra .tag {
+  border-style: dashed;
+}
+
+.quiz fieldset {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+  padding: 0.8rem 0;
+}
+
+.quiz legend {
+  padding: 0;
+  margin-bottom: 0.4rem;
+}
+
+.quiz label {
+  display: inline-block;
+  margin: 0 1rem 0.2rem 0;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+}
+
+.quiz button {
+  font: inherit;
+  font-family: var(--sans);
+  margin: 1rem 0;
+  padding: 0.45rem 1rem;
+  background: var(--text);
+  color: var(--bg);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.afinidad-res {
+  list-style: none;
+  padding: 0;
+}
+
+.afinidad-res > li {
+  border-top: 1px solid var(--border);
+  padding: 0.5rem 0;
+}
+
+.afinidad-res .tag {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0 0.45rem;
+}
+
+.pactos {
+  list-style: none;
+  padding: 0;
+}
+
+.pactos > li {
+  border-top: 1px solid var(--border);
+  padding: 0.6rem 0;
+}
+
+.pactos .meta {
+  margin-bottom: 0.2rem;
+}
+
+.pactos .despues {
+  border-left: 2px solid var(--border);
+  padding-left: 0.8rem;
+  font-size: 0.95rem;
+}
+
+.pactos .despues ul {
+  padding-left: 1rem;
+  margin-top: 0.2rem;
+}
+
+.picker {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-family: var(--sans);
+  font-size: 0.95rem;
+  margin: 1rem 0 1.5rem;
+}
+
+.picker select {
+  font: inherit;
+  max-width: 22rem;
+  padding: 0.35rem 0.5rem;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.table-wrap {
+  overflow-x: auto;
+  margin: 0 0 1.1rem;
+}
+
+.table-wrap table {
+  border-collapse: collapse;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  min-width: 100%;
+}
+
+.table-wrap caption {
+  text-align: left;
+  color: var(--muted);
+  padding-bottom: 0.3rem;
+}
+
+.table-wrap th,
+.table-wrap td {
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.table-wrap th {
+  background: var(--surface);
+}
+
+.table-wrap .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.compact {
+  font-size: 0.9rem;
+  columns: 2 16rem;
+}
+
+.compact li {
+  margin: 0.1rem 0;
+  break-inside: avoid;
+}
+
+@media (max-width: 480px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}

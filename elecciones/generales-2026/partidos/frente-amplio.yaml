@@ -1,0 +1,284 @@
+# Ficha de partido. Schema and rules: CLAUDE.md, section "Elecciones generales 2026".
+# Every statement has `fuentes` (ids from eleccion.yaml `documentos`, ids from this file's
+# `documentos`, or inline {titulo, url, fecha}). Proposals stay empty until the party's own 2026
+# programme has been read.
+
+id: frente-amplio
+siglas: "Frente Amplio"
+nombre: "Frente Amplio"
+web: https://frenteamplio.info/
+
+# Entities (as written in articulos/ frontmatter) whose daily articles are listed on the page.
+entidades: ["Frente Amplio", "Ada Colau"]
+
+candidato:
+  texto: "Ada Colau Ballano encabeza la lista de Comuns-Front Ampli al Congreso por Barcelona."
+  fuentes: [boe-2026-23103]
+
+# Official candidacy names in BOE-A-2026-23103 that belong to this party (regex, case-insensitive);
+# the site counts and lists the matching constituencies.
+candidaturas_2026:
+  patron: "AMPLI|AMPLA|ZABALA|AMPLO|COMPROM|IU, SUMAR"
+  # Lists shared with other forces (counted apart on the page).
+  compartida: "COMPROM|IU, SUMAR|ARAM"
+  texto: "La coalición Frente Amplio se registró para el Congreso en todas las circunscripciones salvo Santa Cruz de Tenerife, Las Palmas, Illes Balears, Valencia, Castellón y Alicante, y concurre con distintos nombres territoriales, como Comuns-Front Ampli en Cataluña, Chunta Aragonesista-Frente Amplio Aragón o Frente Amplio Andaluz. En Illes Balears concurre ARAMÉS-Front Ampli (ARAMÉS-EU-MS), coalición registrada ante la Junta Electoral Provincial; en las tres circunscripciones valencianas, Compromís: Front Valencià (COMPROMIS-EUPV-PODEM-ERPV), y en Canarias, Unidad del Pueblo Canario (NC-BC, PODEMOS, IU, SUMAR)."
+  fuentes: [jec-coaliciones, jec-pacto-fa, jec-coaliciones-jep, boe-2026-23103]
+
+composicion:
+  texto: "Según el pacto de coalición presentado ante la Junta Electoral Central el 16 de octubre de 2026, Frente Amplio lo forman once organizaciones: Izquierda Unida, Movimiento Sumar, Catalunya en Comú, Más Madrid, Chunta Aragonesista, Izquierda Asturiana, Recortes Cero, Batzarre-Asamblea de Izquierdas, Verdes Equo, Iniciativa del Pueblo Andaluz y Somos Partido Progresista."
+  fuentes: [jec-pacto-fa]
+
+inclusion:
+  texto: "La candidatura Sumar obtuvo el 12,33 % de los votos válidos en las generales de 2023 (3.044.996 votos) y el 4,67 % en las europeas de 2024 (818.015 votos). Movimiento Sumar es uno de los partidos que forman Frente Amplio."
+  fuentes: [boe-2023-18907, boe-2024-13092, jec-pacto-fa]
+
+documentos:
+  jec-pacto-fa:
+    titulo: "Constitución de la coalición electoral Frente Amplio (pacto de coalición presentado ante la Junta Electoral Central)"
+    url: "https://app.juntaelectoralcentral.es/svtjec/descargarFichero?tipo=tipoCoalicion&codigoCoalicion=77002"
+    fecha: 2026-10-16
+  jec-coaliciones:
+    titulo: "Coaliciones electorales válidamente constituidas ante la Junta Electoral Central. Elecciones generales del 29 de noviembre de 2026"
+    url: https://www.juntaelectoralcentral.es/cs/jec/elecciones/coalicionesJECGenerales
+    fecha: 2026-11-16
+  jec-coaliciones-jep:
+    titulo: "Coaliciones electorales válidamente constituidas ante las Juntas Electorales Provinciales. Elecciones generales del 29 de noviembre de 2026"
+    url: https://www.juntaelectoralcentral.es/cs/jec/informacion/enlaces/GENERALES_2026Nov_CoalicionesJEP
+    fecha: 2026-11-16
+  programa-2026:
+    titulo: "Programa electoral Frente Amplio. Elecciones generales 2026"
+    url: https://frenteamplio.info/pdf/ProgramaFrenteAmplio.pdf
+    fecha: 2026-11-16  # PDF creation date; read on 2026-11-16
+
+programa:
+  documento: programa-2026
+
+# A selection of the programme's measures (18 chapters, not numbered one by one): the most concrete
+# per topic. Read from the PDF on 2026-11-16; `referencia` is the programme's section number.
+propuestas:
+  - id: parque-publico-vivienda
+    tema: vivienda
+    referencia: Apartado 1.1
+    texto: "Dedicar cada año el 1 % del PIB (unos 17.000 millones de euros, según el programa) a crear un parque público de vivienda, sobre todo en alquiler, hasta sumar 1,5 millones de viviendas públicas en 12 años mediante construcción, compra, movilización de vivienda vacía y expropiación. El alquiler público tendría un máximo de 600 euros al mes para un piso tipo de 80 m² y no superaría el 25 % de la renta."
+    fuentes: [programa-2026]
+    requisitos: [presupuestos, ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "La vivienda es una de las competencias que pueden asumir las comunidades autónomas; un gasto anual fijo tendría que figurar cada año en los Presupuestos Generales del Estado."
+      fuentes: [ce-148]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2025-12-11
+        texto: "El Real Decreto 1123/2025 transformó la Entidad Pública Empresarial de Suelo (SEPES) en CASA 47 Entidad Pública Empresarial, para reorientar su actividad hacia la vivienda asequible."
+        fuentes: [rd-1123-2025]
+
+  - id: tope-alquiler
+    tema: vivienda
+    referencia: Apartado 1.3
+    texto: "Limitar por ley el alquiler en las zonas tensionadas a la cifra menor entre el 25 % de la renta media por hogar de la sección censal y el índice estatal de precios (SERPAVI), con una rebaja adicional del 30 % en municipios de más de 200.000 habitantes o con fuerte presión turística. Las zonas tensionadas se declararían de forma automática y, si la comunidad autónoma no lo hiciera, el Ministerio de Vivienda podría declararlas."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "Las zonas de mercado residencial tensionado están reguladas en la Ley 12/2023, por el derecho a la vivienda, y los contratos de alquiler en la Ley de Arrendamientos Urbanos; ambas son leyes ordinarias."
+      fuentes: [ley-12-2023, ley-29-1994]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2023-05-25
+        texto: "La Ley 12/2023, por el derecho a la vivienda, que regula las zonas de mercado residencial tensionado, se aprobó en el Congreso por 176 votos a favor y 167 en contra."
+        fuentes: [ds-14-pl-265, ley-12-2023]
+
+  - id: pisos-turisticos
+    tema: vivienda
+    referencia: Apartado 1.2
+    texto: "Extinguir en un máximo de tres años las licencias de pisos turísticos en edificios residenciales de las zonas tensionadas, aplicarles el IVA general del 21 % y considerar turístico todo alquiler de 30 días o menos."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "Los tipos del IVA están en la Ley 37/1992 y los contratos de alquiler en la Ley 29/1994, de Arrendamientos Urbanos; las dos son leyes ordinarias."
+      fuentes: [ley-37-1992, ley-29-1994]
+
+  - id: vivienda-derecho-fundamental
+    tema: vivienda
+    referencia: Apartado 1.9
+    texto: "Reformar la Constitución para que el derecho a la vivienda pase de los principios rectores a los derechos fundamentales, con recurso de amparo ante el Tribunal Constitucional. Mientras tanto, reconocer por ley un derecho a la vivienda exigible ante los tribunales, empezando por las personas sin hogar, las familias con menores y las víctimas de violencia machista."
+    fuentes: [programa-2026]
+    requisitos: [reforma-constitucional-agravada, ley-ordinaria]
+    viabilidad:
+      texto: "Hoy el derecho a la vivienda es el artículo 47, en el capítulo de principios rectores, que solo pueden alegarse ante los tribunales según lo que dispongan las leyes que los desarrollen. El programa habla de una reforma «de urgencia», pero llevarlo a la sección 1.ª del capítulo II del título I sigue el procedimiento del artículo 168: dos tercios de cada Cámara, disolución de las Cortes, aprobación por las nuevas Cámaras con dos tercios y referéndum."
+      fuentes: [ce-47, ce-53, ce-168, programa-2026]
+
+  - id: sociedades-tipo-minimo
+    tema: fiscalidad
+    referencia: Apartado 3.1
+    texto: "Un tipo mínimo efectivo del 20 % en el Impuesto sobre Sociedades para las grandes empresas, sin subirlo a las pymes; suprimir la consolidación fiscal de los grupos, y recuperar de forma permanente el gravamen del 1,2 % sobre la facturación de las grandes energéticas para pagar, durante dos años, 1.000 euros a 1,4 millones de hogares vulnerables."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "El Impuesto sobre Sociedades está regulado por la Ley 27/2014, una ley ordinaria."
+      fuentes: [ley-27-2014]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2024-12-21
+        texto: "La Ley 7/2024 creó el Impuesto Complementario, que garantiza un tipo mínimo efectivo del 15 % a los grandes grupos multinacionales y nacionales; el programa propone subirlo al 20 %."
+        fuentes: [ley-7-2024]
+      - tipo: en-contra
+        fecha: 2024-12-21
+        texto: "El gravamen temporal del 1,2 % sobre la cifra de negocios de las grandes energéticas, creado por la Ley 38/2022 para 2023 y 2024, fue derogado por la Ley 7/2024; el programa propone recuperarlo."
+        fuentes: [ley-38-2022, ley-7-2024]
+
+  - id: grandes-patrimonios
+    tema: fiscalidad
+    referencia: Apartado 3.2
+    texto: "Que todo patrimonio de más de un millón de euros pague al menos el 2 %, reformando el Impuesto de Solidaridad de las Grandes Fortunas; un impuesto estatal del 3 % anual sobre los patrimonios de más de 50 millones (la «Tasa Zucman»), sin bonificaciones autonómicas, para financiar la Prestación Universal por Crianza; y un impuesto estatal sobre herencias de más de un millón por heredero, con un tipo del 100 % sobre lo que supere los 10 millones."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2022-12-28
+        texto: "La Ley 38/2022 creó el Impuesto Temporal de Solidaridad de las Grandes Fortunas, prorrogado hasta que se revise la tributación del patrimonio en la reforma de la financiación autonómica."
+        fuentes: [ley-38-2022]
+
+  - id: irpf-salarios-bajos-y-altas-rentas
+    tema: fiscalidad
+    referencia: Apartado 3.3
+    texto: "Que quien cobre el salario mínimo no pague IRPF, con una rebaja decreciente hasta los 27.000 euros de salario; más tramos a partir de 120.000 euros y un tipo marginal del 52 % desde los 300.000, y acercar la tributación de las rentas del capital a la de las rentas del trabajo."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "El IRPF está regulado por la Ley 35/2006, una ley ordinaria."
+      fuentes: [ley-35-2006]
+
+  - id: jornada-32-horas
+    tema: empleo
+    referencia: Apartado 4.1
+    texto: "Bajar la jornada máxima a 37,5 horas semanales de inmediato (35 en el sector público) y después, de forma progresiva, a 32 horas sin reducción de salario."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La jornada máxima ordinaria es hoy de cuarenta horas semanales de promedio anual, según el artículo 34 del Estatuto de los Trabajadores, un texto con rango de ley que se modifica por ley ordinaria."
+      fuentes: [rdleg-2-2015]
+    antecedentes:
+      - tipo: en-contra
+        fecha: 2025-09-10
+        texto: "El Congreso devolvió al Gobierno el proyecto de ley para reducir la duración máxima de la jornada ordinaria, defendido por la vicepresidenta segunda y ministra de Trabajo: las enmiendas a la totalidad de Junts, Vox y PP se aprobaron por 178 votos a favor y 170 en contra."
+        fuentes: [ds-15-pl-135]
+
+  - id: smi-60-por-ciento
+    tema: empleo
+    referencia: Apartado 4.1
+    texto: "Fijar por ley que el salario mínimo no baje nunca del 60 % del salario medio neto y prohibir que se absorba o compense con complementos o pluses."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "Hoy el Gobierno fija el salario mínimo cada año, tras consultar a sindicatos y organizaciones empresariales, según los criterios del artículo 27 del Estatuto de los Trabajadores; un suelo legal requiere reformar ese artículo por ley."
+      fuentes: [rdleg-2-2015]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2026-02-19
+        texto: "El salario mínimo que fija el Gobierno por real decreto pasó de 900 euros al mes en 2019 a 1.221 euros al mes en 2026, en catorce pagas."
+        fuentes: [rd-1462-2018, rd-126-2026]
+
+  - id: jubilacion-65
+    tema: pensiones
+    referencia: Apartado 4.3
+    texto: "Devolver la edad de jubilación a los 65 años, permitir jubilarse a los 60 en oficios de especial penosidad (construcción, limpieza, ayuda a domicilio, camareras de piso, pesca) y suprimir los coeficientes reductores de la jubilación anticipada involuntaria con más de 40 años cotizados."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "Según el artículo 205 de la Ley General de la Seguridad Social, la edad de jubilación es de 67 años, o 65 con 38 años y seis meses cotizados; cambiarla requiere una ley."
+      fuentes: [rdleg-8-2015]
+
+  - id: pensiones-en-la-constitucion
+    tema: pensiones
+    referencia: Apartado 4.3
+    texto: "Reformar la Constitución para recoger como derecho la pensión pública, su revalorización automática con el IPC, que ninguna sea inferior al salario mínimo y que su gestión no se privatice."
+    fuentes: [programa-2026]
+    requisitos: [reforma-constitucional]
+    viabilidad:
+      texto: "Hoy las pensiones están en el artículo 50, entre los principios rectores. El programa sitúa el cambio en la sección 2.ª del capítulo II del título I, que se reforma por el artículo 167: tres quintos de cada Cámara y referéndum si lo pide una décima parte de los miembros de una de ellas. La revalorización anual con el IPC ya está en la ley desde la Ley 21/2021."
+      fuentes: [ce-50, ce-167, ley-21-2021, programa-2026]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2021-12-29
+        texto: "La Ley 21/2021 fijó en la ley la revalorización anual de las pensiones con el IPC medio, que el programa propone llevar a la Constitución."
+        fuentes: [ley-21-2021]
+
+  - id: prestacion-crianza
+    tema: otros
+    referencia: Apartado 2.1
+    texto: "Una Prestación Universal por Crianza de 200 euros al mes por cada menor de 18 años, como derecho propio del menor e independiente de los ingresos de la familia, pagada cada mes por la Agencia Tributaria como deducción reembolsable del IRPF; se implantaría en tres fases (de 0 a 6 años el primer año, de 7 a 12 el segundo y de 13 a 18 al final de la legislatura)."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, presupuestos]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2021-12-21
+        texto: "La Ley 19/2021, del ingreso mínimo vital, creó el complemento de ayuda para la infancia: una cantidad mensual por cada menor de los hogares por debajo de ciertos umbrales de renta y patrimonio."
+        fuentes: [ley-19-2021]
+
+  - id: sanidad-gestion-publica
+    tema: sanidad
+    referencia: Apartado 2.4
+    texto: "Comprometer el 8 % del PIB para la sanidad pública, derogar la Ley 15/1997 para que la gestión pública directa sea la regla y la indirecta, una excepción justificada, revisar los servicios privatizados para internalizarlos y integrar en el Sistema Nacional de Salud las mutualidades de funcionarios (MUFACE, MUGEJU, ISFAS)."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, presupuestos, competencia-autonomica]
+    viabilidad:
+      texto: "La Ley 15/1997, que habilita nuevas formas de gestión del Sistema Nacional de Salud, es una ley ordinaria."
+      fuentes: [ley-15-1997]
+
+  - id: luz-gratis-y-nucleares
+    tema: energia
+    referencia: Apartado 5.1
+    texto: "Tres horas de luz gratis al día para todos los hogares en la franja de más producción solar, ofrecidas por una comercializadora pública y obligatorias por ley para las grandes comercializadoras; sustituir los bonos sociales por una tarifa social reconocida de oficio, y cumplir el calendario de cierre de las centrales nucleares, con Almaraz cerrando en 2027 y 2028."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, gobierno]
+    antecedentes:
+      - tipo: en-contra
+        fecha: 2025-02-12
+        texto: "El Congreso aprobó una proposición no de ley del PP para revisar el cierre programado de las centrales nucleares por 171 votos a favor, 164 en contra y 14 abstenciones; no es vinculante para el Gobierno."
+        fuentes: [ds-15-pl-95]
+
+  - id: regularizacion-estable
+    tema: inmigracion
+    referencia: Apartado 16.2
+    texto: "Reformar la Ley de Extranjería para crear un procedimiento estable y permanente de regularización, terminar de resolver la regularización extraordinaria de 2026, derogar el rechazo en frontera y cerrar los centros de internamiento de extranjeros (CIE)."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La Ley de Extranjería es la Ley Orgánica 4/2000, cuya disposición adicional décima regula el rechazo en la frontera de Ceuta y Melilla; reformarla exige mayoría absoluta del Congreso."
+      fuentes: [lo-4-2000]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2026-04-15
+        texto: "El Real Decreto 316/2026 creó una autorización de residencia por arraigo extraordinario para quienes estuvieran en España antes del 1 de enero de 2026 y cumplan ciertos requisitos (trabajo o intención de trabajar, familia a cargo o vulnerabilidad), que podía pedirse hasta el 30 de junio de 2026."
+        fuentes: [rd-316-2026]
+
+  - id: financiacion-autonomica
+    tema: territorial
+    referencia: Apartado 11.1
+    texto: "Reformar de inmediato la financiación autonómica a partir de la propuesta del actual Gobierno, añadiendo cada año al menos el 2,3 % del PIB (unos 38.000 millones, según el programa), con más capacidad tributaria para las comunidades y sin que ninguna salga perjudicada."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La financiación de las comunidades de régimen común está regulada por la Ley Orgánica 8/1980 (LOFCA)."
+      fuentes: [lo-8-1980]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2025-12-09
+        texto: "El Gobierno remitió a las Cortes el proyecto de ley para que el Estado asuma 83.252 millones de euros de deuda de las comunidades autónomas de régimen común."
+        fuentes: [hacienda-condonacion]
+
+  - id: gasto-militar
+    tema: exterior
+    referencia: Apartado 17.1
+    texto: "Rechazar el compromiso de destinar el 5 % del PIB a gasto militar en el marco de la OTAN, reducir las partidas militares en favor de protección civil, sanidad y educación, y firmar y ratificar el Tratado sobre la Prohibición de las Armas Nucleares."
+    fuentes: [programa-2026]
+    requisitos: [gobierno, presupuestos]
+
+  - id: republica-federal
+    tema: instituciones
+    referencia: Apartado 18.1
+    texto: "El programa fija como horizonte una República federal y plurinacional en la que se elija la Jefatura del Estado, con una regulación del referéndum y del «derecho a decidir» para la cuestión territorial."
+    fuentes: [programa-2026]
+    requisitos: [reforma-constitucional-agravada]
+    viabilidad:
+      texto: "La Corona es el título II de la Constitución; reformarlo, o revisar la Constitución entera, exige el procedimiento del artículo 168: dos tercios de cada Cámara, disolución de las Cortes, ratificación por las nuevas Cámaras y referéndum."
+      fuentes: [ce-168]

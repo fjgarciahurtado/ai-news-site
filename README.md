@@ -9,6 +9,7 @@ generado a partir de él: https://ai-news.fjgarciahurtado.com/
 | `articulos/` | Una página por noticia |
 | `paginas/` | Metodología, Política de fuentes, Correcciones, Aviso sobre IA |
 | `config/` | Lista de medios, dominios bloqueados, verificadores y áreas |
+| `elecciones/` | Sección de las elecciones generales de 2026: partidos, datos por provincia y metodología |
 | `site/` | Sitio Astro, publicado en GitHub Pages por `.github/workflows/pages.yml` |
 
 Este repositorio se genera automáticamente y se sobrescribe en cada publicación: los cambios

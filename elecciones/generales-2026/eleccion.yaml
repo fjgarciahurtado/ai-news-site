@@ -1,0 +1,347 @@
+# Elecciones generales del 29 de noviembre de 2026: datos de la sección /eleccionesgenerales2026/.
+#
+# Every statement carries `fuentes`: a list of document ids from `documentos` below (or from a
+# party file's own `documentos`), or inline {titulo, url, fecha} entries. `newsdigest check`
+# validates this file and partidos/*.yaml, and the site build fails on a statement without a
+# source. Rules: CLAUDE.md, section "Elecciones generales 2026". Edited only in interactive
+# sessions, never in scheduled runs.
+
+titulo: Elecciones generales 2026
+fecha: 2026-11-29
+# Days on which the section is not updated (jornada de reflexión and election day).
+congelado: [2026-11-28, 2026-11-29]
+
+documentos:
+  boe-2026-20742:
+    titulo: Real Decreto 806/2026, de 5 de octubre, de disolución del Congreso de los Diputados y del Senado y de convocatoria de elecciones
+    url: https://www.boe.es/boe/dias/2026/10/06/pdfs/BOE-A-2026-20742.pdf
+    fecha: 2026-10-06
+  boe-2026-23103:
+    titulo: Candidaturas proclamadas para las elecciones al Congreso de los Diputados y al Senado, convocadas por Real Decreto 806/2026
+    url: https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf
+    fecha: 2026-11-03
+  boe-2023-18907:
+    titulo: Resolución de 30 de agosto de 2023, de la Presidencia de la Junta Electoral Central, por la que se publica el resumen de los resultados de las elecciones al Congreso y al Senado de 23 de julio de 2023
+    url: https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf
+    fecha: 2023-09-01
+  boe-2024-13092:
+    titulo: Acuerdo de 27 de junio de 2024, de la Junta Electoral Central, por el que se publican los resultados de las elecciones al Parlamento Europeo de 9 de junio de 2024
+    url: https://www.boe.es/boe/dias/2024/06/28/pdfs/BOE-A-2024-13092.pdf
+    fecha: 2024-06-28
+  constitucion:
+    titulo: Constitución Española (texto consolidado)
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229
+    fecha: 1978-12-29
+  loreg:
+    titulo: Ley Orgánica 5/1985, de 19 de junio, del Régimen Electoral General (texto consolidado)
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672
+    fecha: 1985-06-20
+  # Constitution articles cited in feasibility notes.
+  ce-3:
+    titulo: Constitución Española, artículo 3
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a3
+    fecha: 1978-12-29
+  ce-11:
+    titulo: Constitución Española, artículo 11
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a11
+    fecha: 1978-12-29
+  ce-27:
+    titulo: Constitución Española, artículo 27
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a27
+    fecha: 1978-12-29
+  ce-122:
+    titulo: Constitución Española, artículo 122
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a122
+    fecha: 1978-12-29
+  ce-124:
+    titulo: Constitución Española, artículo 124
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a124
+    fecha: 1978-12-29
+  ce-148:
+    titulo: Constitución Española, artículo 148
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a148
+    fecha: 1978-12-29
+  # Laws named in the feasibility notes (texto consolidado; fecha = original publication).
+  lo-4-2000:
+    titulo: Ley Orgánica 4/2000, de 11 de enero, sobre derechos y libertades de los extranjeros en España y su integración social
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2000-544
+    fecha: 2000-01-12
+  ley-12-2023:
+    titulo: Ley 12/2023, de 24 de mayo, por el derecho a la vivienda
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2023-12203
+    fecha: 2023-05-25
+  lo-6-1985:
+    titulo: Ley Orgánica 6/1985, de 1 de julio, del Poder Judicial
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1985-12666
+    fecha: 1985-07-02
+  lo-8-1980:
+    titulo: Ley Orgánica 8/1980, de 22 de septiembre, de Financiación de las Comunidades Autónomas
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1980-21166
+    fecha: 1980-10-01
+  ley-50-1981:
+    titulo: Ley 50/1981, de 30 de diciembre, por la que se regula el Estatuto Orgánico del Ministerio Fiscal
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1982-837
+    fecha: 1982-01-13
+  ley-15-2012:
+    titulo: Ley 15/2012, de 27 de diciembre, de medidas fiscales para la sostenibilidad energética
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2012-15649
+    fecha: 2012-12-28
+  lo-2-2006:
+    titulo: Ley Orgánica 2/2006, de 3 de mayo, de Educación
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2006-7899
+    fecha: 2006-05-04
+  codigo-civil:
+    titulo: Real Decreto de 24 de julio de 1889 por el que se publica el Código Civil
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1889-4763
+    fecha: 1889-07-25
+  ley-1-2000:
+    titulo: Ley 1/2000, de 7 de enero, de Enjuiciamiento Civil
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2000-323
+    fecha: 2000-01-08
+  lo-10-1995:
+    titulo: Ley Orgánica 10/1995, de 23 de noviembre, del Código Penal
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1995-25444
+    fecha: 1995-11-24
+  ley-35-2006:
+    titulo: Ley 35/2006, de 28 de noviembre, del Impuesto sobre la Renta de las Personas Físicas
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2006-20764
+    fecha: 2006-11-29
+  ley-37-1992:
+    titulo: Ley 37/1992, de 28 de diciembre, del Impuesto sobre el Valor Añadido
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1992-28740
+    fecha: 1992-12-29
+  rdl-18-2026:
+    titulo: Real Decreto-ley 18/2026, de 29 de junio, por el que se adoptan determinadas medidas en el marco del Plan Integral de Respuesta a la Crisis en Oriente Medio
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2026-14112
+    fecha: 2026-06-30
+  boe-2026-16170:
+    titulo: Resolución de 23 de julio de 2026 por la que se ordena la publicación del Acuerdo de convalidación del Real Decreto-ley 18/2026
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2026-16170
+    fecha: 2026-07-25
+  ley-21-2021:
+    titulo: Ley 21/2021, de 28 de diciembre, de garantía del poder adquisitivo de las pensiones
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2021-21652
+    fecha: 2021-12-29
+  ce-47:
+    titulo: Constitución Española, artículo 47
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a47
+    fecha: 1978-12-29
+  ce-50:
+    titulo: Constitución Española, artículo 50
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a50
+    fecha: 1978-12-29
+  ce-53:
+    titulo: Constitución Española, artículo 53
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a53
+    fecha: 1978-12-29
+  ce-12:
+    titulo: Constitución Española, artículo 12
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a12
+    fecha: 1978-12-29
+  ce-71:
+    titulo: Constitución Española, artículo 71
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a71
+    fecha: 1978-12-29
+  ce-102:
+    titulo: Constitución Española, artículo 102
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a102
+    fecha: 1978-12-29
+  ce-13:
+    titulo: Constitución Española, artículo 13
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a13
+    fecha: 1978-12-29
+  ce-14:
+    titulo: Constitución Española, artículo 14
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a14
+    fecha: 1978-12-29
+  lo-5-2000:
+    titulo: Ley Orgánica 5/2000, de 12 de enero, reguladora de la responsabilidad penal de los menores
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2000-641
+    fecha: 2000-01-13
+  lo-6-2002:
+    titulo: Ley Orgánica 6/2002, de 27 de junio, de Partidos Políticos
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2002-12756
+    fecha: 2002-06-28
+  lo-1-2004:
+    titulo: Ley Orgánica 1/2004, de 28 de diciembre, de Medidas de Protección Integral contra la Violencia de Género
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2004-21760
+    fecha: 2004-12-29
+  lo-3-2020:
+    titulo: Ley Orgánica 3/2020, de 29 de diciembre, por la que se modifica la Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOMLOE)
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2020-17264
+    fecha: 2020-12-30
+  rdl-32-2021:
+    titulo: Real Decreto-ley 32/2021, de 28 de diciembre, de medidas urgentes para la reforma laboral
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2021-21788
+    fecha: 2021-12-30
+  ley-20-2022:
+    titulo: Ley 20/2022, de 19 de octubre, de Memoria Democrática
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2022-17099
+    fecha: 2022-10-20
+  lo-14-2022:
+    titulo: Ley Orgánica 14/2022, de 22 de diciembre, de transposición de directivas europeas y reforma de los delitos contra la integridad moral, desórdenes públicos y contrabando de armas de doble uso
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2022-21800
+    fecha: 2022-12-23
+  ds-14-pl-265:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 265 (debate y votación del Proyecto de Ley por el derecho a la vivienda)"
+    url: https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-265.PDF
+    fecha: 2023-04-27
+  ds-15-pl-36:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 36 (toma en consideración de la ILP para una regularización extraordinaria de personas extranjeras)"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-36.PDF
+    fecha: 2024-04-09
+  ds-15-pl-135:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 135 (enmiendas a la totalidad al Proyecto de Ley para la reducción de la duración máxima de la jornada ordinaria)"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-135.PDF
+    fecha: 2025-09-10
+  rd-1462-2018:
+    titulo: Real Decreto 1462/2018, de 21 de diciembre, por el que se fija el salario mínimo interprofesional para 2019
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2018-17773
+    fecha: 2018-12-27
+  rd-126-2026:
+    titulo: Real Decreto 126/2026, de 18 de febrero, por el que se fija el salario mínimo interprofesional para 2026
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2026-3815
+    fecha: 2026-02-19
+  lo-3-2024:
+    titulo: Ley Orgánica 3/2024, de 2 de agosto, de reforma de la Ley Orgánica del Poder Judicial y del Estatuto Orgánico del Ministerio Fiscal
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2024-16127
+    fecha: 2024-08-05
+  ce-99:
+    titulo: Constitución Española, artículo 99
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a99
+    fecha: 1978-12-29
+  ds-14-pl-227:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 227 (toma en consideración de la proposición de ley orgánica del PP contra la ocupación ilegal)"
+    url: https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-227.PDF
+    fecha: 2022-11-29
+  ds-14-pl-239:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 239 (convalidación del Real Decreto-ley 20/2022)"
+    url: https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-239.PDF
+    fecha: 2023-01-24
+  acta-15-pl-20260519:
+    titulo: "Acta taquigráfica de la sesión plenaria del Congreso del 19 de mayo de 2026 (toma en consideración de la proposición de ley orgánica del PP contra la ocupación ilegal de inmuebles)"
+    url: https://www.congreso.es/docu/tramit/LegXV/AT/ATCD_15_PL_20260519.pdf
+    fecha: 2026-05-19
+  ds-15-pl-95:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 95 (proposición no de ley del PP sobre el cierre programado de la generación nuclear)"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-95.PDF
+    fecha: 2025-02-12
+  bocg-15-b-206-3:
+    titulo: "BOCG, Congreso, serie B, núm. 206-3: toma en consideración de la Proposición de Ley para garantizar la aportación de la energía nuclear en la descarbonización del sistema energético"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/BOCG/B/BOCG-15-B-206-3.PDF
+    fecha: 2025-06-27
+  rdl-20-2022:
+    titulo: Real Decreto-ley 20/2022, de 27 de diciembre, de medidas de respuesta a las consecuencias económicas y sociales de la Guerra de Ucrania
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2022-22685
+    fecha: 2022-12-28
+  ley-4-2020:
+    titulo: Ley 4/2020, de 15 de octubre, del Impuesto sobre Determinados Servicios Digitales
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2020-12355
+    fecha: 2020-10-16
+  ley-5-2020:
+    titulo: Ley 5/2020, de 15 de octubre, del Impuesto sobre las Transacciones Financieras
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2020-12356
+    fecha: 2020-10-16
+  ley-19-2021:
+    titulo: Ley 19/2021, de 20 de diciembre, por la que se establece el ingreso mínimo vital
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2021-21007
+    fecha: 2021-12-21
+  ley-7-2024:
+    titulo: Ley 7/2024, de 20 de diciembre, por la que se establecen un Impuesto Complementario para grupos multinacionales y otros impuestos y se modifican otras normas tributarias
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2024-26694
+    fecha: 2024-12-21
+  rd-1123-2025:
+    titulo: Real Decreto 1123/2025, de 10 de diciembre, por el que se modifica el Estatuto de la Entidad Pública Empresarial de Suelo (SEPES)
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2025-25270
+    fecha: 2025-12-11
+  rd-316-2026:
+    titulo: Real Decreto 316/2026, de 14 de abril, por el que se modifica el Reglamento de la Ley Orgánica 4/2000, sobre derechos y libertades de los extranjeros en España
+    url: https://www.boe.es/buscar/doc.php?id=BOE-A-2026-8284
+    fecha: 2026-04-15
+  hacienda-condonacion:
+    titulo: "El Gobierno remite a las Cortes el proyecto de Ley para que el Estado asuma 83.252 millones de euros de deuda (Ministerio de Hacienda)"
+    url: https://www.hacienda.gob.es/es-ES/Prensa/Noticias/Paginas/2025/20251209-NP-CM-CONDONACION-DEUDA-CCAA.aspx
+    fecha: 2025-12-09
+  maldita-prioridad-nacional:
+    titulo: "Las interpretaciones de PP y Vox sobre el concepto «prioridad nacional» en sus últimos acuerdos: preguntas y respuestas (Maldita.es)"
+    url: https://maldita.es/prebunking/20260511/interpretaciones-prioridad-nacional-pp-vox/
+    fecha: 2026-05-11
+  ds-14-pl-156:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 156 (convalidación del Real Decreto-ley 32/2021, de reforma laboral)"
+    url: https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-156.PDF
+    fecha: 2022-02-03
+  ds-14-pl-202:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 202 (dictamen del Proyecto de ley de memoria democrática)"
+    url: https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-202.PDF
+    fecha: 2022-07-14
+  ds-14-pl-230:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 230 (debate de totalidad de la proposición de ley orgánica que reformó los delitos de desórdenes públicos)"
+    url: https://www.congreso.es/public_oficiales/L14/CONG/DS/PL/DSCD-14-PL-230.PDF
+    fecha: 2022-12-01
+  ley-38-2022:
+    titulo: Ley 38/2022, de 27 de diciembre, de gravámenes temporales energético y de entidades de crédito y del impuesto temporal de solidaridad de las grandes fortunas
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2022-22684
+    fecha: 2022-12-28
+  ce-167:
+    titulo: Constitución Española, artículo 167
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a167
+    fecha: 1978-12-29
+  ce-168:
+    titulo: Constitución Española, artículo 168
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a168
+    fecha: 1978-12-29
+  ley-29-1994:
+    titulo: Ley 29/1994, de 24 de noviembre, de Arrendamientos Urbanos
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1994-26003
+    fecha: 1994-11-25
+  ley-15-1997:
+    titulo: Ley 15/1997, de 25 de abril, sobre habilitación de nuevas formas de gestión del Sistema Nacional de Salud
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1997-9021
+    fecha: 1997-04-26
+  ley-27-2014:
+    titulo: Ley 27/2014, de 27 de noviembre, del Impuesto sobre Sociedades
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2014-12328
+    fecha: 2014-11-28
+  rdleg-2-2015:
+    titulo: Real Decreto Legislativo 2/2015, por el que se aprueba el texto refundido de la Ley del Estatuto de los Trabajadores
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11430
+    fecha: 2015-10-24
+  rdleg-8-2015:
+    titulo: Real Decreto Legislativo 8/2015, por el que se aprueba el texto refundido de la Ley General de la Seguridad Social
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2015-11724
+    fecha: 2015-10-31
+
+convocatoria:
+  texto: >-
+    El Real Decreto 806/2026, de 5 de octubre, disuelve el Congreso y el Senado elegidos el 23 de
+    julio de 2023 y convoca elecciones a ambas Cámaras para el domingo 29 de noviembre de 2026. La
+    campaña va del viernes 13 al viernes 27 de noviembre y las nuevas Cámaras se constituyen el 23
+    de diciembre.
+  fuentes: [boe-2026-20742]
+
+# Rule approved by the editor on 2026-11-16. Nationalist and regional parties appear only on the
+# pactos page.
+criterio:
+  texto: >-
+    Tienen ficha propia los partidos y coaliciones que presentan candidatura al Congreso en la
+    mayoría de las 52 circunscripciones y que obtuvieron al menos el 1 % de los votos válidos en
+    toda España en las elecciones generales de 2023 o en las europeas de 2024, solos o como
+    principal integrante de una coalición. Los partidos nacionalistas y regionalistas aparecen en la
+    página de pactos.
+  fuentes: [boe-2026-23103, boe-2023-18907, boe-2024-13092]
+
+# Valid votes nationwide, the base of every percentage on the site.
+validos:
+  generales_2023: {votos: 24688087, fuentes: [boe-2023-18907]}
+  europeas_2024: {votos: 17527438, fuentes: [boe-2024-13092]}
+
+# Parties below the 1 % line that present candidates in many constituencies: listed, no page.
+otros_nacionales:
+  - texto: Frente Obrero (FO). Candidatura al Congreso en 51 circunscripciones; 0,38 % en las europeas de 2024 (66.039 votos).
+    fuentes: [boe-2026-23103, boe-2024-13092]
+  - texto: Partido Comunista de los Trabajadores de España (PCTE). Candidatura al Congreso en 45 circunscripciones, con distintos nombres territoriales.
+    fuentes: [boe-2026-23103]
+  - texto: Partido Animalista con el Medio Ambiente (PACMA). Candidatura al Congreso en 37 circunscripciones; 0,77 % en las europeas de 2024 (135.691 votos).
+    fuentes: [boe-2026-23103, boe-2024-13092]
+  - texto: Por un Mundo Más Justo (MUNDO+JUSTO). Candidatura al Congreso en 28 circunscripciones.
+    fuentes: [boe-2026-23103]

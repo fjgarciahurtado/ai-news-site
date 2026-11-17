@@ -1,0 +1,18 @@
+# Topics used to group proposals (partidos/*.yaml `tema`) and the comparison on the index page.
+# Order is the display order.
+
+temas:
+  vivienda: Vivienda
+  fiscalidad: Impuestos y fiscalidad
+  empleo: Empleo y salarios
+  pensiones: Pensiones
+  sanidad: Sanidad
+  educacion: Educación
+  inmigracion: Inmigración
+  territorial: Modelo territorial y financiación autonómica
+  instituciones: Instituciones, justicia y regeneración
+  energia: Energía y medio ambiente
+  igualdad: Igualdad y derechos
+  seguridad: Seguridad y defensa
+  exterior: Unión Europea y política exterior
+  otros: Otros

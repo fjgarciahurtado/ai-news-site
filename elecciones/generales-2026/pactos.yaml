@@ -1,0 +1,156 @@
+# Página de pactos (/eleccionesgenerales2026/pactos/). Schema and rules: CLAUDE.md, section
+# "Elecciones generales 2026". Every statement has `fuentes` (ids from eleccion.yaml `documentos`,
+# ids from this file's `documentos`, or inline {titulo, url, fecha}). Past facts only: no polls,
+# no projections of who could add up to a majority.
+
+documentos:
+  ds-15-pl-5:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 5 (primera votación de investidura de Alberto Núñez Feijóo)"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-5.PDF
+    fecha: 2023-09-27
+  ds-15-pl-6:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 6 (segunda votación de investidura de Alberto Núñez Feijóo)"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-6.PDF
+    fecha: 2023-09-29
+  ds-15-pl-8:
+    titulo: "Diario de Sesiones del Congreso, Pleno núm. 8 (votación de investidura de Pedro Sánchez Pérez-Castejón)"
+    url: https://www.congreso.es/public_oficiales/L15/CONG/DS/PL/DSCD-15-PL-8.PDF
+    fecha: 2023-11-16
+  maldita-pactos-2023:
+    titulo: "Los pactos públicos del PSOE con los partidos para la investidura de Pedro Sánchez: qué recogen y qué no recogen los acuerdos (Maldita.es)"
+    url: https://maldita.es/malditateexplica/20231114/bulos-pactos-psoe-investidura-sanchez
+    fecha: 2023-11-14
+  lo-1-2024:
+    titulo: Ley Orgánica 1/2024, de 10 de junio, de amnistía para la normalización institucional, política y social en Cataluña
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-2024-11776
+    fecha: 2024-06-11
+  vox-programa:
+    titulo: "Es sentido común. Programa electoral de Vox, 29 de noviembre de 2026 (copia publicada por Última Hora), medida 18"
+    url: https://men.gsstatic.es/sfAttachPlugin/4847171.pdf
+    fecha: 2026-11-05
+
+regla:
+  texto: "Para ser investido presidente, el candidato necesita la mayoría absoluta del Congreso (176 de 350 diputados) en una primera votación o, 48 horas después, más votos a favor que en contra. Si en dos meses desde la primera votación ningún candidato lo consigue, el Rey disuelve las Cortes y se convocan nuevas elecciones."
+  fuentes: [ce-99]
+
+secciones:
+  - id: investiduras-2023
+    titulo: "Las investiduras de 2023"
+    hechos:
+      - fecha: 2023-09-29
+        texto: "Alberto Núñez Feijóo (PP) no fue investido: obtuvo 172 votos a favor y 178 en contra en la primera votación, el 27 de septiembre de 2023, y 172 a favor, 177 en contra y un voto nulo en la segunda, el 29 de septiembre. Votaron a favor los diputados de PP, Vox, UPN y Coalición Canaria; en contra, los de PSOE, Sumar, ERC, Junts, EH Bildu, PNV y BNG."
+        fuentes: [ds-15-pl-5, ds-15-pl-6, boe-2023-18907]
+      - fecha: 2023-11-16
+        texto: "Pedro Sánchez (PSOE) fue investido en primera votación, el 16 de noviembre de 2023, con 179 votos a favor y 171 en contra. Votaron a favor los diputados de PSOE (con el PSC y sus federaciones), Sumar, ERC, Junts, EH Bildu, PNV, BNG y Coalición Canaria; en contra, los de PP, Vox y UPN."
+        fuentes: [ds-15-pl-8, boe-2023-18907]
+    nota:
+      texto: "El voto de cada partido sale de cruzar la votación nominal publicada en el Diario de Sesiones con la relación de diputados proclamados electos que publicó el BOE. Cuatro diputados de la votación no figuran en esa relación, porque sustituyeron a otros o porque su nombre aparece escrito de otra forma, y no se han asignado a ningún partido."
+      fuentes: [ds-15-pl-8, boe-2023-18907]
+
+  - id: acuerdos-2023
+    titulo: "Los acuerdos para la investidura de Sánchez y lo que se aprobó después"
+    intro:
+      texto: "Para la investidura de 2023, el PSOE firmó acuerdos públicos con Sumar, ERC, Junts, PNV, BNG y Coalición Canaria. Estos son algunos de sus compromisos, según el análisis de Maldita.es de los textos firmados, y lo que consta después en el BOE o en documentos del Gobierno."
+      fuentes: [maldita-pactos-2023]
+    hechos:
+      - fecha: 2023-10-24
+        partes: [PSOE, Sumar]
+        texto: "Acuerdo de coalición de Gobierno, firmado por Pedro Sánchez y Yolanda Díaz. Entre sus medidas, reducir la jornada laboral a 37,5 horas semanales."
+        fuentes: [maldita-pactos-2023]
+        despues:
+          - texto: "En septiembre de 2025 el Congreso devolvió al Gobierno el proyecto de ley de reducción de la jornada, al aprobar por 178 votos contra 170 las enmiendas a la totalidad de Junts, Vox y PP."
+            fuentes: [ds-15-pl-135]
+      - fecha: 2023-11-02
+        partes: [PSOE, ERC]
+        texto: "Acuerdo firmado por Félix Bolaños y Oriol Junqueras: una ley de amnistía, la condonación del 20 % de la deuda de la Generalitat con el Estado y el traspaso de Rodalies a la Generalitat."
+        fuentes: [maldita-pactos-2023]
+        despues:
+          - texto: "La Ley Orgánica 1/2024, de amnistía, se publicó en el BOE el 11 de junio de 2024; cubre actos ligados a las consultas de 2014 y 2017 y al proceso independentista realizados entre el 1 de noviembre de 2011 y el 13 de noviembre de 2023."
+            fuentes: [lo-1-2024]
+          - texto: "El 9 de diciembre de 2025 el Gobierno remitió a las Cortes un proyecto de ley para que el Estado asuma 83.252 millones de euros de deuda de las comunidades autónomas de régimen común."
+            fuentes: [hacienda-condonacion]
+      - fecha: 2023-11-09
+        partes: [PSOE, Junts]
+        texto: "Acuerdo firmado por Santos Cerdán y Jordi Turull. Recoge las posiciones de cada parte: Junts propondría un «referéndum de autodeterminación» y el PSOE defendería el «amplio desarrollo» del Estatut de 2006; menciona además una reforma de la LOFCA con una excepción para Cataluña."
+        fuentes: [maldita-pactos-2023]
+        despues:
+          - texto: "La Ley Orgánica 1/2024, de amnistía, se publicó en el BOE el 11 de junio de 2024."
+            fuentes: [lo-1-2024]
+      - fecha: 2023-11-10
+        partes: [PSOE, PNV]
+        texto: "Acuerdo firmado por Pedro Sánchez y Andoni Ortuzar: completar en dos años las transferencias de competencias pendientes al País Vasco, reforzar las competencias de la Ertzaintza y 100 millones de euros en cuatro años para el euskera en el entorno digital."
+        fuentes: [maldita-pactos-2023]
+      - fecha: 2023-11-06
+        partes: [PSOE, BNG]
+        texto: "Acuerdo publicado el 6 de noviembre de 2023, sobre infraestructuras, autogobierno, la lengua gallega y compromisos con la capitalidad gallega."
+        fuentes: [maldita-pactos-2023]
+      - fecha: 2023-11-10
+        partes: [PSOE, Coalición Canaria]
+        texto: "Acuerdo firmado por María Jesús Montero y David Toledo sobre la Agenda Canaria (migración, empleo, descuento del 75 % en el transporte aéreo y marítimo de los residentes). El texto dice que «no vincula a CC» a apoyar una ley de amnistía."
+        fuentes: [maldita-pactos-2023]
+      - fecha: 2023-10-30
+        partes: [EH Bildu]
+        texto: "EH Bildu anunció el 30 de octubre de 2023 que sus seis diputados votarían a favor de la investidura; a 14 de noviembre no se había publicado ningún acuerdo firmado con el PSOE."
+        fuentes: [maldita-pactos-2023]
+
+  - id: pp-y-aliados
+    titulo: "Los acuerdos del PP"
+    hechos:
+      - fecha: 2023-09-29
+        partes: [PP, Vox, UPN, Coalición Canaria]
+        texto: "En la investidura fallida de Feijóo, votaron a su favor, además del PP, Vox, UPN y Coalición Canaria (172 votos en total)."
+        fuentes: [ds-15-pl-6, boe-2023-18907]
+      - fecha: 2026-04-22
+        partes: [PP, Vox]
+        texto: "Los acuerdos de gobierno de PP y Vox en Extremadura (16 de abril de 2026) y Aragón (22 de abril) incluyen la «prioridad nacional», definida como la «asignación prioritaria de los recursos públicos» a quienes tengan «arraigo real, duradero y verificable con el territorio»; en vivienda pública se exigen 10 años de empadronamiento para comprar y 5 para alquilar."
+        fuentes: [maldita-prioridad-nacional]
+        despues:
+          - texto: "Los dos partidos lo interpretan de forma distinta: Feijóo dijo que «es el arraigo, donde esté viviendo, con independencia de la nacionalidad de esa persona»; Vox lo vincula a la nacionalidad española («los españoles primero»), como en su programa de 2026."
+            fuentes: [maldita-prioridad-nacional, vox-programa]
+      - fecha: 2026-11-03
+        partes: [PP, UPN]
+        texto: "En Navarra, el PP concurre a las generales de 2026 en coalición con Unión del Pueblo Navarro (UPN-PP)."
+        fuentes: [boe-2026-23103]
+
+# Parties that only appear here (regional or nationalist, CLAUDE.md inclusion rule). Seats in 2023
+# and 2026 candidacies are computed by the site from datos/circunscripciones.json.
+otros_partidos:
+  nota:
+    texto: "Partidos de ámbito autonómico que tuvieron diputados en 2023. Los escaños son los de las elecciones de 2023 y las circunscripciones, las de sus candidaturas al Congreso para 2026."
+    fuentes: [boe-2023-18907, boe-2026-23103]
+  partidos:
+    - siglas: ERC
+      nombre: Esquerra Republicana de Catalunya
+      web: https://www.esquerra.cat/
+      siglas_2023: [ERC]
+      patron: "ESQUERRA REPUBLICANA"
+    - siglas: Junts
+      nombre: Junts per Catalunya
+      web: https://junts.cat/
+      siglas_2023: [JUNTS]
+      patron: "JUNTS"
+    - siglas: EH Bildu
+      nombre: Euskal Herria Bildu
+      web: https://ehbildu.eus/
+      siglas_2023: [EH Bildu]
+      patron: "BILDU"
+    - siglas: PNV
+      nombre: Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco
+      web: https://www.eaj-pnv.eus/
+      siglas_2023: [EAJ-PNV]
+      patron: "EAJ-PNV"
+    - siglas: BNG
+      nombre: Bloque Nacionalista Galego
+      web: https://www.bng.gal/
+      siglas_2023: [BNG]
+      patron: "BLOQUE NACIONALISTA GALEGO"
+    - siglas: CC
+      nombre: Coalición Canaria
+      web: https://coalicioncanaria.org/
+      siglas_2023: [CCa]
+      patron: "COALICI[OÓ]N CANARIA"
+    - siglas: UPN
+      nombre: Unión del Pueblo Navarro
+      web: https://www.upn.org/
+      siglas_2023: [UPN]
+      patron: "UNI[OÓ]N DEL PUEBLO NAVARRO"

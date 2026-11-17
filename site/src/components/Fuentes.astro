@@ -1,0 +1,19 @@
+---
+// Inline source links after a statement in the election section: [BOE-A-2026-23103] etc.
+import { formatDate } from '../lib/news';
+import { sourceLabel, type Doc } from '../lib/elecciones';
+
+interface Props {
+  fuentes: Doc[];
+}
+
+const { fuentes } = Astro.props;
+---
+
+{fuentes.length > 0 && (
+  <span class="src">
+    {fuentes.map((d) => (
+      <a href={d.url} rel="noopener" title={`${d.titulo}${d.fecha ? ` (${formatDate(d.fecha)})` : ''}`}>{sourceLabel(d)}</a>
+    ))}
+  </span>
+)}

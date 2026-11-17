@@ -1,0 +1,22 @@
+---
+import Base from '../../layouts/Base.astro';
+import { url } from '../../lib/news';
+import { BASE_ROUTE, getElection } from '../../lib/elecciones';
+
+const e = getElection();
+---
+
+<Base title="Cómo se ha hecho · Elecciones generales 2026" description="Fuentes, criterios y límites de la sección sobre las elecciones generales de 2026.">
+  <p class="eyebrow"><a href={url(`${BASE_ROUTE}/`)}>Elecciones generales 2026</a></p>
+  <h1>Cómo se ha hecho</h1>
+  <div class="prose" set:html={e.metodologia} />
+  <h2 id="requisitos">Qué haría falta: las etiquetas</h2>
+  <dl class="facts">
+    {Object.entries(e.requisitos).map(([, r]) => (
+      <>
+        <dt><a href={r.url} rel="noopener">{r.titulo}</a></dt>
+        <dd>{r.texto}</dd>
+      </>
+    ))}
+  </dl>
+</Base>

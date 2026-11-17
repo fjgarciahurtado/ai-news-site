@@ -1,0 +1,236 @@
+# Ficha de partido. Schema and rules: CLAUDE.md, section "Elecciones generales 2026".
+# Every statement has `fuentes` (ids from eleccion.yaml `documentos`, ids from this file's
+# `documentos`, or inline {titulo, url, fecha}). Proposals stay empty until the party's own 2026
+# programme has been read.
+
+id: pp
+siglas: "PP"
+nombre: "Partido Popular"
+web: https://www.pp.es/
+
+# Entities (as written in articulos/ frontmatter) whose daily articles are listed on the page.
+entidades: ["PP", "Partido Popular", "Alberto Núñez Feijóo"]
+
+candidato:
+  texto: "Alberto Núñez Feijóo encabeza la lista del PP al Congreso por Madrid."
+  fuentes: [boe-2026-23103]
+
+# Official candidacy names in BOE-A-2026-23103 that belong to this party (regex, case-insensitive);
+# the site counts and lists the matching constituencies.
+candidaturas_2026:
+  patron: "PARTIDO POPULAR|PARTIT POPULAR|\\(PP\\)"
+  texto: "En Navarra concurre en coalición con Unión del Pueblo Navarro (UPN)."
+  fuentes: [boe-2026-23103]
+
+inclusion:
+  texto: "33,06 % de los votos válidos en las generales de 2023 (8.160.837 votos) y 34,21 % en las europeas de 2024 (5.996.627 votos)."
+  fuentes: [boe-2023-18907, boe-2024-13092]
+
+documentos:
+  programa-2026:
+    titulo: "Reconstrucción Nacional. El programa del cambio necesario para España"
+    url: https://www.pp.es/wp-content/uploads/2026/11/LA-RECONSTRUCCION-NACIONAL.pdf
+    fecha: 2026-11-09  # PDF creation date; read in full on 2026-11-16
+
+programa:
+  documento: programa-2026
+
+# A selection of the programme's 249 numbered measures: the most concrete one or two per topic.
+# Read from the PDF on 2026-11-16; `referencia` is the measure number in the document.
+propuestas:
+  - id: un-millon-de-viviendas
+    tema: vivienda
+    referencia: Medida 144
+    texto: "Construir un millón de viviendas movilizando suelo público y privado con comunidades autónomas y ayuntamientos, con una nueva Ley del Suelo, licencias de obra resueltas en tres meses con silencio positivo y la posibilidad de convertir oficinas y locales en vivienda asequible. El programa no fija un plazo para el millón de viviendas."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "El urbanismo y la vivienda son competencias que asumen las comunidades autónomas; el programa plantea hacerlo en colaboración con ellas y con los ayuntamientos."
+      fuentes: [ce-148, programa-2026]
+
+  - id: derogar-ley-vivienda
+    tema: vivienda
+    referencia: Medida 145
+    texto: "Derogar la Ley de Vivienda y suprimir las zonas de mercado tensionado y el índice de precios del alquiler."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La Ley 12/2023, por el derecho a la vivienda, es una ley ordinaria: derogarla requiere otra ley ordinaria."
+      fuentes: [ley-12-2023]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2023-04-27
+        texto: "En el debate final de la Ley de vivienda en el Congreso, la diputada del PP Zurita Expósito anunció «un no rotundo a esta ley». El texto se aprobó por 176 votos a favor, 167 en contra y 1 abstención."
+        fuentes: [ds-14-pl-265]
+
+  - id: desalojo-48-horas
+    tema: vivienda
+    referencia: Medida 157
+    texto: "Una ley para que el propietario recupere una vivienda ocupada en 48 horas por orden judicial, que las comunidades de propietarios puedan pedir el desalojo, que el empadronamiento del ocupante sea nulo y penas más duras para las mafias de la ocupación."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, ley-organica]
+    viabilidad:
+      texto: "Los procedimientos civiles están en la Ley de Enjuiciamiento Civil (ley ordinaria); endurecer penas exige reformar el Código Penal, que es una ley orgánica."
+      fuentes: [ley-1-2000, lo-10-1995]
+    antecedentes:
+      - tipo: en-contra
+        fecha: 2022-11-29
+        texto: "El Congreso rechazó tramitar la proposición de ley orgánica del PP contra la ocupación ilegal: 160 votos a favor, 178 en contra y 6 abstenciones."
+        fuentes: [ds-14-pl-227]
+      - tipo: a-favor
+        fecha: 2026-05-19
+        texto: "El Congreso tomó en consideración una nueva proposición de ley orgánica del PP contra la ocupación ilegal de inmuebles por 171 votos a favor, 164 en contra y 11 abstenciones."
+        fuentes: [acta-15-pl-20260519]
+
+  - id: irpf-rentas-medias-y-bajas
+    tema: fiscalidad
+    referencia: Medidas 177 y 178
+    texto: "Bajar el IRPF a rentas medias y bajas y a familias subiendo los mínimos personales y familiares; que quien cobre el salario mínimo no pague IRPF, con un umbral que suba automáticamente con el SMI; y deflactar la tarifa del impuesto según la inflación."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "El IRPF está regulado por la Ley 35/2006, una ley ordinaria."
+      fuentes: [ley-35-2006]
+
+  - id: iva-cero-alimentos
+    tema: fiscalidad
+    referencia: Medida 180
+    texto: "Aplicar un IVA del 0 % a los alimentos básicos, incluidos carne, pescado y conservas, mientras dure lo que el programa llama «la actual crisis de inflación y de poder adquisitivo»."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "Los tipos del IVA están fijados en la Ley 37/1992, una ley ordinaria."
+      fuentes: [ley-37-1992]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2023-01-24
+        texto: "El Real Decreto-ley 20/2022 rebajó del 4 % al 0 % el IVA de los alimentos básicos; el Congreso lo convalidó por 175 votos a favor, 7 en contra y 164 abstenciones. Muestra que la medida puede aprobarse por decreto-ley."
+        fuentes: [rdl-20-2022, ds-14-pl-239]
+      - tipo: a-favor
+        fecha: 2023-04-27
+        texto: "En el Pleno del Congreso, la diputada del PP Riolobos Regadera recordó que su grupo proponía bajar el IVA de los alimentos básicos, «ahora el de la carne, el pescado y las conservas»."
+        fuentes: [ds-14-pl-265]
+
+  - id: pensiones-ipc
+    tema: pensiones
+    referencia: Medida 108
+    texto: "Revalorizar cada año las pensiones con el IPC, reconstruir el Pacto de Toledo e incentivar la jubilación activa con deducciones en el IRPF."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La revalorización anual con el IPC medio ya está en la ley desde la Ley 21/2021, que reformó el artículo 58 de la Ley General de la Seguridad Social; mantenerla no requiere cambios legales."
+      fuentes: [ley-21-2021]
+
+  - id: regularizaciones-y-arraigo
+    tema: inmigracion
+    referencia: Medida 42
+    texto: "Reformar la Ley de Extranjería para prohibir las regularizaciones masivas e indiscriminadas, hacer del arraigo una vía individual y excepcional, y que el empadronamiento por sí solo no dé acceso a ayudas económicas no urgentes."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La Ley de Extranjería es la Ley Orgánica 4/2000: reformarla exige mayoría absoluta del Congreso."
+      fuentes: [lo-4-2000]
+    antecedentes:
+      - tipo: en-contra
+        fecha: 2024-04-09
+        texto: "El Congreso admitió a trámite la iniciativa legislativa popular para una regularización extraordinaria de personas extranjeras por 310 votos a favor y 33 en contra; con 137 diputados del PP en la Cámara, esa mayoría no se alcanza sin votos del PP. En el debate, su portavoz, Acedo Reyes, lo planteó como una «cuestión de Estado» que debe combinar el control de fronteras con las vías legales de entrada."
+        fuentes: [ds-15-pl-36, boe-2023-18907]
+
+  - id: compromiso-de-integracion
+    tema: inmigracion
+    referencia: Medida 43
+    texto: "Exigir a quien quiera renovar su residencia temporal un compromiso de integración: aprender español, conocer la Constitución y los valores de la Unión Europea y, cuando corresponda, formarse para el empleo."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "Las condiciones de residencia de los extranjeros están en la Ley Orgánica 4/2000."
+      fuentes: [lo-4-2000]
+
+  - id: ley-de-nacionalidad
+    tema: inmigracion
+    referencia: Medidas 141 y 142
+    texto: "Una nueva Ley de Nacionalidad con más requisitos (residencia legal y continuada, conocimiento del español, la historia y las instituciones, buena conducta, sin antecedentes y al corriente con Hacienda y la Seguridad Social), trato preferente para los países de la Hispanidad y pérdida de la nacionalidad, para quienes no sean españoles de origen, por condena firme por determinados delitos graves."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La Constitución deja a la ley la adquisición y pérdida de la nacionalidad (hoy reguladas en el Código Civil, ley ordinaria) y prohíbe privar de ella a los españoles de origen; por eso la propuesta se limita a quienes no lo son."
+      fuentes: [ce-11, codigo-civil]
+
+  - id: fiscal-general-independiente
+    tema: instituciones
+    referencia: Medida 70
+    texto: "Un nuevo Estatuto del Ministerio Fiscal: mandato único de cinco años para el fiscal general, que no cesaría con el Gobierno que lo propuso, informe del Consejo General del Poder Judicial preceptivo y vinculante para nombrarlo y cese automático si es procesado."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "El Estatuto del Ministerio Fiscal es la Ley 50/1981, ley ordinaria. La Constitución dice que el fiscal general se nombra a propuesta del Gobierno, «oído el Consejo General del Poder Judicial»."
+      fuentes: [ley-50-1981, ce-124]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2024-08-05
+        texto: "La Ley Orgánica 3/2024 reformó el Estatuto del Ministerio Fiscal: no puede ser propuesto fiscal general quien en los cinco años anteriores haya sido ministro, secretario de Estado o consejero autonómico, entre otros cargos."
+        fuentes: [lo-3-2024]
+
+  - id: jueces-eligen-cgpj
+    tema: instituciones
+    referencia: Medida 72
+    texto: "Que los jueces y magistrados elijan a los doce vocales judiciales del Consejo General del Poder Judicial, con incompatibilidad para quien haya ocupado cargos políticos en los cinco años anteriores y concursos de méritos para las plazas del Tribunal Supremo."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La Constitución fija que doce de los veinte vocales son jueces y magistrados «en los términos que establezca la ley orgánica»: el sistema de elección está en la Ley Orgánica del Poder Judicial."
+      fuentes: [ce-122, lo-6-1985]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2024-08-05
+        texto: "La Ley Orgánica 3/2024 encargó al Consejo General del Poder Judicial un informe sobre los sistemas europeos y una propuesta de reforma del sistema de elección de los vocales judiciales, aprobada por tres quintos de sus vocales, para que el Gobierno o las Cámaras la presenten como proyecto o proposición de ley."
+        fuentes: [lo-3-2024]
+
+  - id: financiacion-regimen-comun
+    tema: territorial
+    referencia: Medida 101
+    texto: "Que ninguna comunidad del régimen común salga de él ni haya regímenes de financiación singulares negociados bilateralmente, y reestructurar la deuda autonómica en el Consejo de Política Fiscal y Financiera con las mismas reglas para todas."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La financiación de las comunidades de régimen común está regulada por la Ley Orgánica 8/1980 (LOFCA)."
+      fuentes: [lo-8-1980]
+
+  - id: ensenanza-en-castellano
+    tema: educacion
+    referencia: Medida 96
+    texto: "Garantizar el derecho a recibir enseñanza en castellano en todas las etapas educativas y en toda España, respetando las lenguas cooficiales y cumpliendo las sentencias judiciales."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica, competencia-autonomica]
+    viabilidad:
+      texto: "El castellano es la lengua oficial del Estado y las demás lenguas son oficiales en sus comunidades según sus Estatutos. La ordenación general del sistema educativo está en la Ley Orgánica 2/2006 de Educación."
+      fuentes: [ce-3, lo-2-2006]
+
+  - id: nucleares
+    tema: energia
+    referencia: Medida 228
+    texto: "Eliminar el calendario de cierre de las centrales nucleares de Almaraz, Ascó, Vandellós, Cofrentes y Trillo y tramitar en los primeros cien días la extensión de su vida útil, con el visto bueno del Consejo de Seguridad Nuclear."
+    fuentes: [programa-2026]
+    requisitos: [gobierno]
+    viabilidad:
+      texto: "El programa plantea hacerlo por vía administrativa, tramitando la extensión de la vida útil con el visto bueno del Consejo de Seguridad Nuclear."
+      fuentes: [programa-2026]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2025-02-12
+        texto: "El Congreso aprobó una proposición no de ley del PP sobre el cierre programado de la generación nuclear por 171 votos a favor, 164 en contra y 14 abstenciones; no es vinculante para el Gobierno."
+        fuentes: [ds-15-pl-95]
+      - tipo: a-favor
+        fecha: 2025-06-27
+        texto: "El Congreso tomó en consideración la proposición de ley del PP «para garantizar la aportación de la energía nuclear en la descarbonización del sistema energético», que pasó a tramitarse en la Comisión de Transición Ecológica."
+        fuentes: [bocg-15-b-206-3]
+
+  - id: impuesto-produccion-electrica
+    tema: energia
+    referencia: Medida 229
+    texto: "Eliminar de inmediato el impuesto del 7 % sobre la producción eléctrica y sustituir los bonos social eléctrico y térmico por una Tarifa Social Única para los hogares vulnerables."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, gobierno]
+    viabilidad:
+      texto: "El impuesto se creó por la Ley 15/2012, una ley ordinaria. Tras la reforma del Real Decreto-ley 18/2026, convalidado por el Congreso, la ley ya fija un tipo del 3,5 % en 2027 y del 0 % desde el 1 de enero de 2028."
+      fuentes: [ley-15-2012, rdl-18-2026, boe-2026-16170]

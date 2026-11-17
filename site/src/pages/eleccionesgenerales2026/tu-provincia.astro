@@ -1,0 +1,177 @@
+---
+// How a vote turns into a seat in each constituency: 2026 seats (RD 806/2026) and the 2023
+// results (BOE-A-2023-18907) run through the LOREG art. 163 rules in the browser. No polls.
+import Base from '../../layouts/Base.astro';
+import Fuentes from '../../components/Fuentes.astro';
+import { url } from '../../lib/news';
+import { BASE_ROUTE, getElection, getSenate } from '../../lib/elecciones';
+
+const e = getElection();
+const senate = getSenate();
+const ce69 = { titulo: 'Constitución Española, artículo 69', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a69', fecha: '1978-12-29' };
+const loreg166 = { titulo: 'Ley Orgánica del Régimen Electoral General, artículo 166', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672#acientosesentayseis', fecha: '1985-06-20' };
+const formentera = { titulo: 'Reforma del apartado 3 del artículo 69 de la Constitución Española, a los efectos de que la isla de Formentera elija un senador propio, de 19 de mayo de 2026', url: 'https://www.boe.es/buscar/doc.php?id=BOE-A-2026-10881', fecha: '2026-05-19' };
+const loreg163 = { titulo: 'Ley Orgánica del Régimen Electoral General, artículo 163', url: 'https://www.boe.es/buscar/act.php?id=BOE-A-1985-11672#acientosesentaytres', fecha: '1985-06-20' };
+const sources = [e.dataSources.escanos_2026, e.dataSources.resultados_2023, e.dataSources.candidaturas_2026, e.dataSources.candidaturas_2026_correccion].filter(Boolean);
+const data = { provincias: e.provinces, nombres: e.candidaturas2023, senado: senate.circunscripciones };
+---
+
+<Base title="¿Cuánto vale tu voto en tu provincia?" description="Escaños de cada provincia el 29 de noviembre de 2026 y cuántos votos costó cada escaño en 2023, con la regla D'Hondt y la barrera del 3 %.">
+  <p class="eyebrow"><a href={url(`${BASE_ROUTE}/`)}>Elecciones generales 2026</a></p>
+  <h1>¿Cuánto vale tu voto en tu provincia?</h1>
+  <p class="lede">
+    Cada provincia elige un número fijo de diputados y los reparte con la regla D'Hondt entre las candidaturas que
+    pasan del 3 % de los votos válidos en esa provincia. Por eso un mismo número de votos puede dar un escaño en
+    Madrid y ninguno en Soria.
+  </p>
+  <p>
+    Esta página usa los escaños de 2026 y los <strong>resultados reales de 2023</strong>; no usa encuestas. Las
+    candidaturas de 2026 no son siempre las mismas que en 2023, así que las cifras sirven para entender el sistema
+    en tu provincia, no para predecir el resultado. <Fuentes fuentes={[...sources, loreg163]} />
+  </p>
+
+  <label class="picker">
+    <span>Provincia o ciudad autónoma</span>
+    <select id="provincia">
+      <option value="">Elige una…</option>
+      {e.provinces.map((p) => <option value={p.id}>{p.nombre}</option>)}
+    </select>
+  </label>
+
+  <div id="resultado" aria-live="polite"></div>
+
+  <noscript><p>Esta herramienta necesita JavaScript. Los datos completos están en las fuentes enlazadas arriba.</p></noscript>
+
+  <h2>Cómo leer los datos</h2>
+  <ul>
+    <li><strong>Barrera del 3 %</strong>: una candidatura con menos del 3 % de los votos válidos de la provincia no entra en el reparto.</li>
+    <li><strong>Le faltaron para otro escaño</strong>: cuántos votos más habría necesitado una candidatura en 2023 para ganar un escaño más, si el resto hubiera votado igual. El escaño lo habría perdido la candidatura que obtuvo el último.</li>
+    <li><strong>Con los escaños de 2026</strong>: si la provincia elige ahora un número distinto de diputados, se muestra cómo habría quedado el reparto con los mismos votos de 2023.</li>
+  </ul>
+
+  <h2>Y el Senado</h2>
+  <p>
+    Cada provincia elige cuatro senadores; Ceuta y Melilla, dos cada una, y en Baleares y Canarias cada isla con
+    Cabildo o Consejo Insular es una circunscripción: tres senadores en Gran Canaria, Mallorca y Tenerife y uno en las
+    demás islas. Desde la reforma constitucional de mayo de 2026, Formentera elige su propio senador. <Fuentes fuentes={[ce69, formentera]} />
+  </p>
+  <p>
+    No hay reparto proporcional: cada elector marca hasta tres candidatos en las provincias, dos en Gran Canaria,
+    Mallorca, Tenerife, Ceuta y Melilla y uno en las demás islas, y salen elegidos los candidatos con más votos hasta cubrir los escaños.
+    Además, cada parlamento autonómico designa senadores propios. Al elegir provincia verás quiénes fueron elegidos en
+    2023 y por cuántos votos. <Fuentes fuentes={[loreg166, ce69, ...(senate.fuente ? [senate.fuente] : [])]} />
+  </p>
+
+  <script type="application/json" id="datos-provincias" set:html={JSON.stringify(data)} />
+  <script>
+    type Cand = { siglas: string; votos: number; escanos: number };
+    type Prov = { id: string; nombre: string; escanos_2026: number; escanos_2023: number; validos_2023: number;
+      votantes_2023: number; electores_2023: number; candidaturas_2023: Cand[]; otros_2023: number; candidaturas_2026: string[] };
+    type Senador = { nombre: string; candidatura: string; votos: number; electo: boolean };
+    type CircSenado = { nombre: string; provincia: string; isla: boolean; escanos_2023: number; candidatos: Senador[] };
+    const { provincias, nombres, senado } = JSON.parse(document.getElementById('datos-provincias')!.textContent!) as
+      { provincias: Prov[]; nombres: Record<string, string>; senado: CircSenado[] };
+    const select = document.getElementById('provincia') as HTMLSelectElement;
+    const out = document.getElementById('resultado')!;
+    const fmt = (n: number) => Math.round(n).toLocaleString('es-ES');
+    const pct = (n: number) => n.toLocaleString('es-ES', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const name = (s: string) => esc(nombres[s] ? `${nombres[s]} (${s})` : s);
+    const abbr = (s: string) => `<abbr title="${esc(nombres[s] ?? s)}">${esc(s)}</abbr>`;
+
+    // LOREG art. 163: 3 % of valid votes, D'Hondt quotients, ties go to the candidacy with more votes.
+    function dhondt(cands: Cand[], seats: number, validos: number) {
+      const eligible = cands.filter((c) => c.votos * 100 >= 3 * validos);
+      const quotients = eligible.flatMap((c) => Array.from({ length: seats }, (_, k) => ({ c, q: c.votos / (k + 1) })));
+      quotients.sort((a, b) => b.q - a.q || b.c.votos - a.c.votos);
+      const won = quotients.slice(0, seats);
+      const result = new Map<string, number>();
+      for (const w of won) result.set(w.c.siglas, (result.get(w.c.siglas) ?? 0) + 1);
+      return { seats: result, last: won[won.length - 1], eligible: new Set(eligible.map((c) => c.siglas)) };
+    }
+
+    // LOREG art. 166: each voter marks up to 3 candidates (2 in Gran Canaria, Mallorca, Tenerife, Ceuta and
+    // Melilla, 1 in the other islands); the most-voted candidates are elected.
+    function senadoHtml(provId: string) {
+      const circs = senado.filter((c) => c.provincia === provId);
+      if (!circs.length) return '';
+      const marks = (c: CircSenado) => (!c.isla && !['Ceuta', 'Melilla'].includes(c.nombre) ? 3 : c.escanos_2023 >= 2 ? 2 : 1);
+      return `<h3>Senado</h3>` + circs.map((c) => {
+        const ranked = [...c.candidatos].sort((a, b) => b.votos - a.votos);
+        const shown = ranked.slice(0, c.escanos_2023 + 2);
+        const last = ranked[c.escanos_2023 - 1], next = ranked[c.escanos_2023];
+        const split = c.nombre.toUpperCase().includes('FORMENTERA')
+          ? '<p class="meta">En 2023 Eivissa y Formentera elegían un senador entre las dos; en 2026 eligen uno cada isla.</p>' : '';
+        return `${circs.length > 1 ? `<h4>${esc(c.nombre)}</h4>` : ''}
+          <p>Elige ${c.escanos_2023} ${c.escanos_2023 === 1 ? 'senador' : 'senadores'}; cada elector puede marcar hasta ${marks(c)}.
+          ${last && next ? `En 2023 el último elegido sacó ${fmt(last.votos - next.votos)} votos más que el siguiente candidato.` : ''}</p>
+          ${split}
+          <div class="table-wrap"><table class="compact">
+            <caption>Senado 2023: elegidos y los dos siguientes más votados.</caption>
+            <thead><tr><th>Candidato</th><th>Candidatura</th><th class="num">Votos</th><th>Elegido</th></tr></thead>
+            <tbody>${shown.map((x) => `<tr><td>${esc(x.nombre)}</td><td>${esc(x.candidatura)}</td>
+              <td class="num">${fmt(x.votos)}</td><td>${x.electo ? 'Sí' : 'No'}</td></tr>`).join('')}</tbody>
+          </table></div>`;
+      }).join('');
+    }
+
+    function render(id: string) {
+      const p = provincias.find((x) => x.id === id);
+      if (!p) { out.innerHTML = ''; return; }
+      const r23 = dhondt(p.candidaturas_2023, p.escanos_2023, p.validos_2023);
+      const barrera = p.validos_2023 * 0.03;
+      const lastQ = r23.last.q;
+      // Votes a candidacy needed for seat s+1, everyone else unchanged: its (s+1)-th quotient must
+      // beat the (S-s)-th largest quotient of the other eligible candidacies.
+      const others = (c: Cand) => p.candidaturas_2023
+        .filter((o) => o !== c && r23.eligible.has(o.siglas))
+        .flatMap((o) => Array.from({ length: p.escanos_2023 }, (_, k) => o.votos / (k + 1)))
+        .sort((a, b) => b - a);
+      const rows = p.candidaturas_2023.map((c) => {
+        const s = r23.seats.get(c.siglas) ?? 0;
+        const threshold = others(c)[p.escanos_2023 - s - 1] ?? 0;
+        let falta = Math.max(0, Math.floor(threshold * (s + 1)) + 1 - c.votos);
+        if (c.votos < barrera) falta = Math.max(falta, Math.ceil(barrera) - c.votos);
+        return `<tr><td>${abbr(c.siglas)}</td><td class="num">${fmt(c.votos)}</td>
+          <td class="num">${pct((100 * c.votos) / p.validos_2023)}</td><td class="num">${c.escanos}</td>
+          <td class="num">${c.votos < barrera ? 'no llegó al 3 %; ' : ''}${fmt(falta)}</td></tr>`;
+      }).join('');
+      const winners = p.candidaturas_2023.filter((c) => c.escanos > 0);
+      const smallest = winners[winners.length - 1];
+      let cambio = '';
+      if (p.escanos_2026 !== p.escanos_2023) {
+        const r26 = dhondt(p.candidaturas_2023, p.escanos_2026, p.validos_2023);
+        const reparto = [...r26.seats.entries()].map(([s, n]) => `${esc(s)} ${n}`).join(', ');
+        cambio = `<p>En 2026 elige <strong>${p.escanos_2026}</strong> diputados, ${Math.abs(p.escanos_2026 - p.escanos_2023)} ${p.escanos_2026 > p.escanos_2023 ? 'más' : 'menos'} que en 2023 (${p.escanos_2023}). Con los mismos votos de 2023, el reparto habría sido: ${reparto}.</p>`;
+      }
+      out.innerHTML = `
+        <h2>${esc(p.nombre)}</h2>
+        <p><strong>${p.escanos_2026}</strong> ${p.escanos_2026 === 1 ? 'diputado' : 'diputados'} el 29 de noviembre de 2026.
+          En 2023 votaron ${fmt(p.votantes_2023)} personas y hubo ${fmt(p.validos_2023)} votos válidos: la barrera del 3 % estaba en
+          ${fmt(barrera)} votos y, de media, cada escaño costó ${fmt(p.validos_2023 / p.escanos_2023)} votos.</p>
+        ${p.escanos_2023 > 1 ? `<p>El último escaño de 2023 fue para ${name(r23.last.c.siglas)}, con un cociente de ${fmt(lastQ)} votos.
+          La candidatura más pequeña que obtuvo escaño fue ${name(smallest.siglas)}, con el ${pct((100 * smallest.votos) / p.validos_2023)} % de los votos válidos.</p>`
+          : `<p>Con un solo diputado, el escaño es para la candidatura más votada.</p>`}
+        ${cambio}
+        <div class="table-wrap"><table>
+          <caption>Resultados de 2023 (candidaturas con escaño o con al menos el 1 %).</caption>
+          <thead><tr><th>Candidatura</th><th>Votos</th><th>%</th><th>Escaños</th><th>Le faltaron para otro escaño</th></tr></thead>
+          <tbody>${rows}</tbody>
+          <tfoot><tr><td>Otras</td><td class="num">${fmt(p.otros_2023)}</td><td class="num">${pct((100 * p.otros_2023) / p.validos_2023)}</td><td class="num">0</td><td></td></tr></tfoot>
+        </table></div>
+        <p class="meta">${p.candidaturas_2023.map((c) => `${esc(c.siglas)}: ${esc(nombres[c.siglas] ?? c.siglas)}`).join(' · ')}</p>
+        <h3>Candidaturas al Congreso en 2026</h3>
+        <ul class="compact">${p.candidaturas_2026.map((c) => `<li>${esc(c)}</li>`).join('')}</ul>
+        ${senadoHtml(p.id)}`;
+    }
+
+    select.addEventListener('change', () => {
+      history.replaceState(null, '', select.value ? `#${select.value}` : location.pathname);
+      render(select.value);
+    });
+    const initial = location.hash.slice(1);
+    if (provincias.some((p) => p.id === initial)) { select.value = initial; render(initial); }
+  </script>
+
+  <p class="meta"><a href={url(`${BASE_ROUTE}/metodologia/`)}>Cómo se ha hecho</a></p>
+</Base>

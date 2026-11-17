@@ -1,0 +1,106 @@
+# Cuestionario de afinidad (/eleccionesgenerales2026/afinidad/). Each question is a statement taken
+# from the parties' 2026 programmes. A party has a position only when one of its `propuestas` says it
+# (valor: 1) or proposes the opposite (valor: -1); `propuesta` is that proposal's id in
+# partidos/<partido>.yaml, so the page links the reader to it and to its sources. A party whose
+# programme says nothing on a question has no position: silence is never read as agreement or
+# disagreement. The page runs in the reader's browser and sends nothing anywhere.
+
+preguntas:
+  - id: vivienda-derecho
+    pregunta: "La vivienda debería ser un derecho fundamental en la Constitución, que se pueda exigir ante los tribunales."
+    posiciones:
+      psoe: {valor: 1, propuesta: vivienda-derecho-fundamental}
+      frente-amplio: {valor: 1, propuesta: vivienda-derecho-fundamental}
+
+  - id: limitar-alquiler
+    pregunta: "La ley debería limitar el precio del alquiler en las zonas donde la vivienda está más tensionada."
+    posiciones:
+      psoe: {valor: 1, propuesta: alquiler-zonas-tensionadas}
+      frente-amplio: {valor: 1, propuesta: tope-alquiler}
+      pp: {valor: -1, propuesta: derogar-ley-vivienda}
+      vox: {valor: -1, propuesta: derogar-ley-vivienda}
+
+  - id: jornada
+    pregunta: "La ley debería reducir la jornada laboral máxima por debajo de las 40 horas semanales."
+    posiciones:
+      psoe: {valor: 1, propuesta: jornada-37-5-horas}
+      frente-amplio: {valor: 1, propuesta: jornada-32-horas}
+
+  - id: smi
+    pregunta: "La ley debería garantizar que el salario mínimo sea al menos el 60 % del salario medio."
+    posiciones:
+      psoe: {valor: 1, propuesta: smi-60-por-ciento}
+      frente-amplio: {valor: 1, propuesta: smi-60-por-ciento}
+
+  - id: impuestos-altos
+    pregunta: "Hay que subir los impuestos a las rentas del capital y a los patrimonios más altos."
+    posiciones:
+      psoe: {valor: 1, propuesta: rentas-del-capital}
+      frente-amplio: {valor: 1, propuesta: grandes-patrimonios}
+
+  - id: sociedades
+    pregunta: "Hay que bajar el Impuesto sobre Sociedades."
+    posiciones:
+      vox: {valor: 1, propuesta: rebaja-impuestos}
+      frente-amplio: {valor: -1, propuesta: sociedades-tipo-minimo}
+
+  - id: irpf-rentas-medias
+    pregunta: "Hay que bajar el IRPF a las rentas medias y bajas."
+    posiciones:
+      pp: {valor: 1, propuesta: irpf-rentas-medias-y-bajas}
+      vox: {valor: 1, propuesta: rebaja-impuestos}
+      frente-amplio: {valor: 1, propuesta: irpf-salarios-bajos-y-altas-rentas}
+
+  - id: pensiones-constitucion
+    pregunta: "La revalorización de las pensiones con el IPC debería estar garantizada en la Constitución."
+    posiciones:
+      psoe: {valor: 1, propuesta: pensiones-en-la-constitucion}
+      frente-amplio: {valor: 1, propuesta: pensiones-en-la-constitucion}
+
+  - id: prestacion-crianza
+    pregunta: "El Estado debería pagar una prestación por cada hijo menor de edad a todas las familias."
+    posiciones:
+      psoe: {valor: 1, propuesta: prestacion-crianza}
+      frente-amplio: {valor: 1, propuesta: prestacion-crianza}
+
+  - id: nucleares
+    pregunta: "Las centrales nucleares deberían seguir funcionando más allá del calendario de cierre actual."
+    posiciones:
+      pp: {valor: 1, propuesta: nucleares}
+      vox: {valor: 1, propuesta: nucleares}
+      psoe: {valor: -1, propuesta: cierre-nuclear}
+      frente-amplio: {valor: -1, propuesta: luz-gratis-y-nucleares}
+
+  - id: regularizaciones
+    pregunta: "Hay que prohibir las regularizaciones extraordinarias de inmigrantes en situación irregular."
+    posiciones:
+      pp: {valor: 1, propuesta: regularizaciones-y-arraigo}
+      vox: {valor: 1, propuesta: regularizaciones-y-arraigo}
+      frente-amplio: {valor: -1, propuesta: regularizacion-estable}
+
+  - id: prioridad-nacional
+    pregunta: "Los españoles deberían tener preferencia sobre los extranjeros en el acceso a la vivienda pública y a las ayudas sociales."
+    posiciones:
+      vox: {valor: 1, propuesta: prioridad-nacional}
+
+  - id: cgpj
+    pregunta: "Los jueces deberían elegir a los doce vocales judiciales del Consejo General del Poder Judicial."
+    posiciones:
+      pp: {valor: 1, propuesta: jueces-eligen-cgpj}
+      vox: {valor: 1, propuesta: jueces-eligen-cgpj}
+
+  - id: castellano
+    pregunta: "Hay que garantizar la enseñanza en castellano en todo el territorio."
+    posiciones:
+      pp: {valor: 1, propuesta: ensenanza-en-castellano}
+      vox: {valor: 1, propuesta: educacion-lomloe}
+
+  - id: gasto-militar
+    pregunta: "España no debería comprometerse a destinar el 5 % del PIB a gasto militar."
+    posiciones:
+      frente-amplio: {valor: 1, propuesta: gasto-militar}
+
+  - id: republica
+    pregunta: "España debería avanzar hacia una república en la que se elija la Jefatura del Estado."
+    posiciones:
+      frente-amplio: {valor: 1, propuesta: republica-federal}

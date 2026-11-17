@@ -1,0 +1,75 @@
+# What a proposal legally needs in order to happen. Each proposal in partidos/*.yaml names one or
+# more of these ids in `requisitos`. Texts summarise the Constitution (read from the BOE
+# consolidated text on 2026-11-16); `url` points to the article.
+
+requisitos:
+  ley-ordinaria:
+    titulo: Ley ordinaria
+    texto: >-
+      La aprueba el Congreso por mayoría simple de los presentes. Si el Senado la veta (por mayoría
+      absoluta), el Congreso puede levantar el veto por mayoría absoluta, o por mayoría simple
+      pasados dos meses.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a90
+  ley-organica:
+    titulo: Ley orgánica (176 votos)
+    texto: >-
+      Necesaria para desarrollar derechos fundamentales, aprobar o reformar Estatutos de Autonomía,
+      el régimen electoral y otras materias que fija la Constitución. Exige mayoría absoluta del
+      Congreso (176 de 350 diputados) en una votación final sobre el conjunto.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a81
+  reforma-constitucional:
+    titulo: Reforma constitucional (3/5 de cada Cámara)
+    texto: >-
+      Exige tres quintos de cada Cámara (210 diputados); si no hay acuerdo, dos tercios del
+      Congreso con mayoría absoluta del Senado. Se somete a referéndum si lo pide una décima parte
+      de los miembros de cualquiera de las Cámaras.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a167
+  reforma-constitucional-agravada:
+    titulo: Reforma constitucional agravada (2/3, disolución y referéndum)
+    texto: >-
+      Para la revisión total o la que afecte al Título preliminar, a los derechos fundamentales
+      (sección 1.ª del capítulo segundo del Título I) o a la Corona: dos tercios de cada Cámara,
+      disolución de las Cortes, ratificación por las nuevas Cámaras por dos tercios y referéndum
+      obligatorio.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a168
+  decreto-ley:
+    titulo: Real decreto-ley (convalidación en 30 días)
+    texto: >-
+      El Gobierno puede dictarlo en caso de extraordinaria y urgente necesidad, pero no puede
+      afectar a las instituciones básicas del Estado, a los derechos y libertades del Título I, al
+      régimen autonómico ni al régimen electoral. El Congreso debe convalidarlo en 30 días o queda
+      derogado.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a86
+  presupuestos:
+    titulo: Presupuestos Generales del Estado
+    texto: >-
+      El Gobierno los elabora y las Cortes los aprueban cada año. Si no se aprueban, se prorrogan
+      los del año anterior. Una enmienda que aumente el gasto o reduzca los ingresos necesita la
+      conformidad del Gobierno.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a134
+  competencia-autonomica:
+    titulo: Competencia de las comunidades autónomas
+    texto: >-
+      Materias que las comunidades pueden asumir según sus Estatutos, como urbanismo y vivienda,
+      asistencia social o sanidad e higiene (artículo 148). El Estado puede fijar las condiciones
+      básicas (artículo 149), pero la aplicación depende de cada comunidad.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a148
+  competencia-ue:
+    titulo: Competencia de la Unión Europea
+    texto: >-
+      Materias cuyo ejercicio España ha atribuido a la Unión Europea mediante tratados autorizados
+      por ley orgánica (artículo 93). España no puede cambiarlas sola: necesita una decisión de
+      las instituciones europeas.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a93
+  gobierno:
+    titulo: Decisión del Gobierno (reglamento o acto)
+    texto: >-
+      El Gobierno puede adoptarla por real decreto, orden ministerial o acuerdo del Consejo de
+      Ministros, dentro de lo que permiten las leyes vigentes.
+    url: https://www.boe.es/buscar/act.php?id=BOE-A-1978-31229#a97
+
+# Majorities used by the pactos page and the feasibility tags.
+mayorias:
+  absoluta: 176
+  tres_quintos: 210
+  dos_tercios: 234

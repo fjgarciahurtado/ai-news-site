@@ -1,0 +1,2608 @@
+{
+ "_nota": "Generado a partir de documentos del BOE (ver fuentes). Votos de 2023: candidaturas con escaño o con al menos el 1 % de los votos válidos de la circunscripción; el resto se suma en otros_2023. No editar a mano.",
+ "fuentes": {
+  "escanos_2026": {
+   "titulo": "Real Decreto 806/2026, de 5 de octubre, de disolución del Congreso de los Diputados y del Senado y de convocatoria de elecciones (anexo)",
+   "url": "https://www.boe.es/boe/dias/2026/10/06/pdfs/BOE-A-2026-20742.pdf",
+   "fecha": "2026-10-06"
+  },
+  "resultados_2023": {
+   "titulo": "Resolución de 30 de agosto de 2023, de la Presidencia de la Junta Electoral Central, por la que se publica el resumen de los resultados de las elecciones al Congreso de los Diputados y al Senado de 23 de julio de 2023",
+   "url": "https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf",
+   "fecha": "2023-09-01"
+  },
+  "candidaturas_2026": {
+   "titulo": "Candidaturas proclamadas para las elecciones al Congreso de los Diputados y al Senado, convocadas por Real Decreto 806/2026, de 5 de octubre",
+   "url": "https://www.boe.es/boe/dias/2026/11/03/pdfs/BOE-A-2026-23103.pdf",
+   "fecha": "2026-11-03"
+  },
+  "candidaturas_2026_correccion": {
+   "titulo": "Corrección de errores de las candidaturas proclamadas para las elecciones al Congreso de los Diputados y al Senado, convocadas por Real Decreto 806/2026",
+   "url": "https://www.boe.es/boe/dias/2026/11/07/pdfs/BOE-A-2026-23383.pdf",
+   "fecha": "2026-11-07"
+  }
+ },
+ "nacional_2023": {
+  "electores": 37469458,
+  "votantes": 24952447,
+  "validos": 24688087
+ },
+ "candidaturas": {
+  "ADELANTE ANDALUCÍA": "Adelante Andalucía",
+  "BNG": "Bloque Nacionalista Galego",
+  "CCa": "Coalición Canaria",
+  "CUP-PR": "Candidatura d'Unitat Popular-Per la Ruptura",
+  "CpM": "Coalición por Melilla",
+  "EAJ-PNV": "Euzko Alderdi Jeltzalea-Partido Nacionalista Vasco",
+  "EH Bildu": "Euskal Herria Bildu",
+  "ERC": "Esquerra Republicana de Catalunya",
+  "EXISTE": "Coalición Existe",
+  "GBAI": "Geroa Bai",
+  "JM +": "Jaén Merece Más",
+  "JUNTS": "Junts",
+  "NC-bc": "Nueva Canarias-Bloque Canarista",
+  "PACMA": "Partido Animalista con el Medio Ambiente",
+  "PDeCAT-E-CiU": "Partit Demòcrata Europeu Català-Espai CiU",
+  "PP": "Partido Popular",
+  "PSC": "Partit dels Socialistes de Catalunya (PSC-PSOE)",
+  "PSOE": "Partido Socialista Obrero Español",
+  "SUMAR": "Sumar",
+  "SY": "Soria ¡Ya!",
+  "UPL": "Unión del Pueblo Leonés",
+  "UPN": "Unión del Pueblo Navarro",
+  "VOX": "VOX",
+  "VP": "Vamos Palencia",
+  "XAV": "Por Ávila",
+  "Zsi": "Zamora Sí"
+ },
+ "provincias": [
+  {
+   "id": "a-coruna",
+   "nombre": "Coruña (A)",
+   "escanos_2026": 8,
+   "escanos_2023": 8,
+   "electores_2023": 1085673,
+   "votantes_2023": 683187,
+   "validos_2023": 677702,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 292272,
+     "escanos": 4
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 190897,
+     "escanos": 2
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 82618,
+     "escanos": 1
+    },
+    {
+     "siglas": "BNG",
+     "votos": 67653,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 34410,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4655,
+   "candidaturas_2026": [
+    "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "VOX (VOX)",
+    "PARTIDO POPULAR (PP)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
+    "BLOQUE NACIONALISTA GALEGO (B.N.G.)",
+    "FRENTE OBRERO (FO)",
+    "PODEMOS (PODEMOS)",
+    "Frente Amplio-Fronte Ampla (FRENTE AMPLIO-FRONTE AMPLA)"
+   ]
+  },
+  {
+   "id": "albacete",
+   "nombre": "Albacete",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": null,
+   "votantes_2023": 223917,
+   "validos_2023": 221191,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 88299,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 76322,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 36750,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 15834,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2152,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "alicante",
+   "nombre": "Alicante/Alacant",
+   "escanos_2026": 12,
+   "escanos_2023": 12,
+   "electores_2023": 1306311,
+   "votantes_2023": 908842,
+   "validos_2023": 899192,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 330293,
+     "escanos": 5
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 287737,
+     "escanos": 4
+    },
+    {
+     "siglas": "VOX",
+     "votos": 146133,
+     "escanos": 2
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 115787,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 12667,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "PARTIDO POPULAR (PP)"
+   ]
+  },
+  {
+   "id": "almeria",
+   "nombre": "Almería",
+   "escanos_2026": 6,
+   "escanos_2023": 6,
+   "electores_2023": 516114,
+   "votantes_2023": 324405,
+   "validos_2023": 321242,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 131524,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 93282,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 68364,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 21485,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4123,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "VOX (VOX)",
+    "PARTIDO POPULAR (PP)",
+    "IZQUIERDA POR ALMERÍA (I.P.A.L.)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PODEMOS (PODEMOS)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "araba-alava",
+   "nombre": "Araba/Álava",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 260214,
+   "votantes_2023": 170538,
+   "validos_2023": 169107,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSOE",
+     "votos": 46775,
+     "escanos": 1
+    },
+    {
+     "siglas": "EH Bildu",
+     "votos": 32987,
+     "escanos": 1
+    },
+    {
+     "siglas": "PP",
+     "votos": 30212,
+     "escanos": 1
+    },
+    {
+     "siglas": "EAJ-PNV",
+     "votos": 28075,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 21561,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 6573,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2202,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE",
+    "EUSKAL HERRIA BILDU (EH BILDU)",
+    "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO POPULAR (PP)",
+    "FRENTE AMPLIO-FRONTE ZABALA (FRENTE AMPLIO-FRONTE ZABALA)",
+    "FEMINISTAS AL CONGRESO (PFAC)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "JUSTICIA Y LEY (JL)"
+   ]
+  },
+  {
+   "id": "asturias",
+   "nombre": "Asturias",
+   "escanos_2026": 7,
+   "escanos_2023": 7,
+   "electores_2023": 959023,
+   "votantes_2023": 603183,
+   "validos_2023": 597032,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 212816,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 205049,
+     "escanos": 2
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 88630,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 74571,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 9887,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO UNIONISTA ESTADO DE ESPAÑA (PUEDE)",
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FRENTE AMPLIU POR ASTURIES (FA)"
+   ]
+  },
+  {
+   "id": "avila",
+   "nombre": "Ávila",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 136669,
+   "votantes_2023": 99120,
+   "validos_2023": 97956,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 42369,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 26828,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 15068,
+     "escanos": 0
+    },
+    {
+     "siglas": "XAV",
+     "votos": 7362,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 5027,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 670,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO DEMÓCRATA SOCIAL JUBILADOS EUROPEOS (P.D.S.J.E.)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "badajoz",
+   "nombre": "Badajoz",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 550702,
+   "votantes_2023": 398233,
+   "validos_2023": 391461,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSOE",
+     "votos": 153473,
+     "escanos": 2
+    },
+    {
+     "siglas": "PP",
+     "votos": 148068,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 53492,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 26778,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 6425,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "FRENTE OBRERO (FO)",
+    "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA (NEX)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio (FA)",
+    "JUNTOS POR EXTREMADURA (J.U.E.X.)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PODEMOS (PODEMOS)"
+   ]
+  },
+  {
+   "id": "barcelona",
+   "nombre": "Barcelona",
+   "escanos_2026": 32,
+   "escanos_2023": 32,
+   "electores_2023": 4243500,
+   "votantes_2023": 2688720,
+   "validos_2023": 2667478,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSC",
+     "votos": 952347,
+     "escanos": 13
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 405993,
+     "escanos": 5
+    },
+    {
+     "siglas": "PP",
+     "votos": 367519,
+     "escanos": 5
+    },
+    {
+     "siglas": "ERC",
+     "votos": 328697,
+     "escanos": 4
+    },
+    {
+     "siglas": "JUNTS",
+     "votos": 258159,
+     "escanos": 3
+    },
+    {
+     "siglas": "VOX",
+     "votos": 201775,
+     "escanos": 2
+    },
+    {
+     "siglas": "CUP-PR",
+     "votos": 67266,
+     "escanos": 0
+    },
+    {
+     "siglas": "PACMA",
+     "votos": 28201,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 36462,
+   "candidaturas_2026": [
+    "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "JUNTS PER CATALUNYA (JxCat)",
+    "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "VOX (VOX)",
+    "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "DEMOCRACIA para el siglo 21 (D21)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "ALHORA (ALHORA)"
+   ]
+  },
+  {
+   "id": "bizkaia",
+   "nombre": "Bizkaia",
+   "escanos_2026": 8,
+   "escanos_2023": 8,
+   "electores_2023": 942983,
+   "votantes_2023": 614944,
+   "validos_2023": 609693,
+   "candidaturas_2023": [
+    {
+     "siglas": "EAJ-PNV",
+     "votos": 164188,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 157448,
+     "escanos": 2
+    },
+    {
+     "siglas": "EH Bildu",
+     "votos": 125867,
+     "escanos": 2
+    },
+    {
+     "siglas": "PP",
+     "votos": 70533,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 66592,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 16069,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 5605,
+   "candidaturas_2026": [
+    "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+    "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE",
+    "EUSKAL HERRIA BILDU (EH Bildu)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO",
+    "VOX (VOX)",
+    "FRENTE AMPLIO (FA)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "FEMINISTAS AL CONGRESO (PFAC)"
+   ]
+  },
+  {
+   "id": "burgos",
+   "nombre": "Burgos",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 296401,
+   "votantes_2023": 204886,
+   "validos_2023": 202569,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 82329,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 69775,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 25858,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 17508,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 5248,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PODEMOS (PODEMOS)",
+    "VOX (VOX)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "caceres",
+   "nombre": "Cáceres",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 339491,
+   "votantes_2023": 239747,
+   "validos_2023": 235851,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSOE",
+     "votos": 91692,
+     "escanos": 2
+    },
+    {
+     "siglas": "PP",
+     "votos": 89633,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 32076,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 16354,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4375,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO POPULAR (PP)",
+    "JUNTOS POR EXTREMADURA (J.U.E.X.)",
+    "PODEMOS (PODEMOS)",
+    "Frente Amplio (FA)",
+    "NUEVO EXTREMEÑISMO - ADELANTE EXTREMADURA (NEX)"
+   ]
+  },
+  {
+   "id": "cadiz",
+   "nombre": "Cádiz",
+   "escanos_2026": 8,
+   "escanos_2023": 9,
+   "electores_2023": 1017958,
+   "votantes_2023": 644801,
+   "validos_2023": 637098,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 221703,
+     "escanos": 4
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 211200,
+     "escanos": 3
+    },
+    {
+     "siglas": "VOX",
+     "votos": 96720,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 82115,
+     "escanos": 1
+    },
+    {
+     "siglas": "ADELANTE ANDALUCÍA",
+     "votos": 9191,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 9066,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "Frente Amplio Andaluz (FA)",
+    "PODEMOS (PODEMOS)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIDO POPULAR (PP)"
+   ]
+  },
+  {
+   "id": "cantabria",
+   "nombre": "Cantabria",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 507818,
+   "votantes_2023": 355145,
+   "validos_2023": 350150,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 147326,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 116596,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 49243,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 29713,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4010,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "PODEMOS (PODEMOS)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO POPULAR (PP)",
+    "FRENTE AMPLIO (FA)"
+   ]
+  },
+  {
+   "id": "castellon",
+   "nombre": "Castellón/Castelló",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 430830,
+   "votantes_2023": 311581,
+   "validos_2023": 307930,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 108302,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 100530,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 48913,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 44187,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 3343,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)",
+    "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO POPULAR (PP)"
+   ]
+  },
+  {
+   "id": "ceuta",
+   "nombre": "Ceuta",
+   "escanos_2026": 1,
+   "escanos_2023": 1,
+   "electores_2023": 63310,
+   "votantes_2023": 33674,
+   "validos_2023": 33321,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 12918,
+     "escanos": 1
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 11332,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 7752,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 821,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 170,
+   "candidaturas_2026": [
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "VOX (VOX)",
+    "PODEMOS (PAZ,CASA Y TRABAJO)",
+    "SE ACABO LA FIESTA (SALF)",
+    "FRENTE OBRERO"
+   ]
+  },
+  {
+   "id": "ciudad-real",
+   "nombre": "Ciudad Real",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 391495,
+   "votantes_2023": 286895,
+   "validos_2023": 282979,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 114709,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 100102,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 46046,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 17405,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2364,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "cordoba",
+   "nombre": "Córdoba",
+   "escanos_2026": 6,
+   "escanos_2023": 6,
+   "electores_2023": 645288,
+   "votantes_2023": 455564,
+   "validos_2023": 448602,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 169976,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 144080,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 62526,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 61594,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 6078,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FALANGE ESPAÑOLA DE LAS JONS (FE de las JONS)",
+    "PARTIDO POPULAR (PP)",
+    "FRENTE AMPLIO ANDALUZ (FA)",
+    "PODEMOS (PODEMOS)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)"
+   ]
+  },
+  {
+   "id": "cuenca",
+   "nombre": "Cuenca",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 152694,
+   "votantes_2023": 115280,
+   "validos_2023": 113808,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 45255,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 42528,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 17700,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 6325,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1031,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FRENTE AMPLIO (FA)"
+   ]
+  },
+  {
+   "id": "gipuzkoa",
+   "nombre": "Gipuzkoa",
+   "escanos_2026": 6,
+   "escanos_2023": 6,
+   "electores_2023": 585873,
+   "votantes_2023": 378965,
+   "validos_2023": 376621,
+   "candidaturas_2023": [
+    {
+     "siglas": "EH Bildu",
+     "votos": 117321,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 87709,
+     "escanos": 2
+    },
+    {
+     "siglas": "EAJ-PNV",
+     "votos": 85026,
+     "escanos": 2
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 40081,
+     "escanos": 0
+    },
+    {
+     "siglas": "PP",
+     "votos": 32721,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 7877,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 3881,
+   "candidaturas_2026": [
+    "EUSKAL HERRIA BILDU (EH BILDU)",
+    "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE) PSE-EE",
+    "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO (EAJ-PNV)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FRENTE OBRERO (FO)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "EUSKADIKO LANGILEEN ALDERDI KOMUNISTA/PARTIDO COMUNISTA",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "girona",
+   "nombre": "Girona",
+   "escanos_2026": 6,
+   "escanos_2023": 6,
+   "electores_2023": 546370,
+   "votantes_2023": 327159,
+   "validos_2023": 322988,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSC",
+     "votos": 93448,
+     "escanos": 2
+    },
+    {
+     "siglas": "JUNTS",
+     "votos": 63251,
+     "escanos": 2
+    },
+    {
+     "siglas": "ERC",
+     "votos": 47531,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 35344,
+     "escanos": 1
+    },
+    {
+     "siglas": "PP",
+     "votos": 31341,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 22706,
+     "escanos": 0
+    },
+    {
+     "siglas": "CUP-PR",
+     "votos": 18229,
+     "escanos": 0
+    },
+    {
+     "siglas": "PACMA",
+     "votos": 3531,
+     "escanos": 0
+    },
+    {
+     "siglas": "PDeCAT-E-CiU",
+     "votos": 3388,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1238,
+   "candidaturas_2026": [
+    "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "FRENTE OBRERO (FO)",
+    "JUNTS PER CATALUNYA (JxCat)",
+    "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "VOX (VOX)",
+    "ALHORA (ALHORA)",
+    "PARTIT POPULAR / PARTIDO POPULAR (PP)"
+   ]
+  },
+  {
+   "id": "granada",
+   "nombre": "Granada",
+   "escanos_2026": 7,
+   "escanos_2023": 7,
+   "electores_2023": 765478,
+   "votantes_2023": 509486,
+   "validos_2023": 502845,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 185996,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 165862,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 81080,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 58567,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 7283,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PODEMOS (PODEMOS)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio Andaluz (FA)"
+   ]
+  },
+  {
+   "id": "guadalajara",
+   "nombre": "Guadalajara",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 196983,
+   "votantes_2023": 142744,
+   "validos_2023": 140913,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 51195,
+     "escanos": 1
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 46479,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 27126,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 12907,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2063,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE AMPLIO (FA)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)"
+   ]
+  },
+  {
+   "id": "huelva",
+   "nombre": "Huelva",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 402504,
+   "votantes_2023": 260861,
+   "validos_2023": 256804,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 93565,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 92326,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 37572,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 26752,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4179,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA DE HUELVA (PSOE)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio Andaluz (FA)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PODEMOS (PODEMOS)"
+   ]
+  },
+  {
+   "id": "huesca",
+   "nombre": "Huesca",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 173391,
+   "votantes_2023": 121148,
+   "validos_2023": 119895,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 45783,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 40307,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 15155,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 13774,
+     "escanos": 0
+    },
+    {
+     "siglas": "EXISTE",
+     "votos": 1312,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2347,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "CHUNTA ARAGONESISTA-FRENTE AMPLIO ARAGÓN (CHA-IU-MS-FRENTE AMPLIO)",
+    "FEDERACION DE LOS INDEPENDIENTES DE ARAGON (FIA)"
+   ]
+  },
+  {
+   "id": "illes-balears",
+   "nombre": "Balears (Illes)",
+   "escanos_2026": 8,
+   "escanos_2023": 8,
+   "electores_2023": 828755,
+   "votantes_2023": 508233,
+   "validos_2023": 503280,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 179303,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 151786,
+     "escanos": 3
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 83487,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 76547,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 7453,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA DE LAS ISLAS BALEARES (PSIB-PSOE)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO POPULAR (PP)",
+    "ARAMÉS-FRONT AMPLI (ARAMÉS-EU-MS)"
+   ]
+  },
+  {
+   "id": "jaen",
+   "nombre": "Jaén",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 518371,
+   "votantes_2023": 373657,
+   "validos_2023": 368731,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 137617,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 133819,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 54400,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 29461,
+     "escanos": 0
+    },
+    {
+     "siglas": "JM +",
+     "votos": 8293,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2644,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO POPULAR (PP)",
+    "PODEMOS (PODEMOS)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "FRENTE AMPLIO (FA)"
+   ]
+  },
+  {
+   "id": "la-rioja",
+   "nombre": "Rioja (La)",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 252091,
+   "votantes_2023": 176945,
+   "validos_2023": 174663,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 79715,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 62322,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 17056,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 11470,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2492,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABO LA FIESTA (SALF)",
+    "FRENTE AMPLIO (FA)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX",
+    "PODEMOS",
+    "PARTIDO POPULAR (PP)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACIOS (ESCAÑOS EN BLANCO)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)"
+   ]
+  },
+  {
+   "id": "las-palmas",
+   "nombre": "Palmas (Las)",
+   "escanos_2026": 8,
+   "escanos_2023": 8,
+   "electores_2023": 898882,
+   "votantes_2023": 534912,
+   "validos_2023": 529337,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSOE",
+     "votos": 175671,
+     "escanos": 3
+    },
+    {
+     "siglas": "PP",
+     "votos": 136857,
+     "escanos": 3
+    },
+    {
+     "siglas": "VOX",
+     "votos": 77343,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 54369,
+     "escanos": 1
+    },
+    {
+     "siglas": "NC-bc",
+     "votos": 42430,
+     "escanos": 0
+    },
+    {
+     "siglas": "CCa",
+     "votos": 33558,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 6047,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "LIBERACIÓN CANARIA (LIB)",
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO DRAGO CANARIAS (D.R.G)",
+    "FRENTE OBRERO (FO)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "MUNICIPALISTAS PRIMERO CANARIAS-COALICIÓN CANARIA (1.ºCAN-CCa)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "POR UN MUNDO MÁS JUSTO (MUNDO+JUSTO)",
+    "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO COMUNISTA DEL PUEBLO CANARIO (PCPC)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)"
+   ]
+  },
+  {
+   "id": "leon",
+   "nombre": "León",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 422917,
+   "votantes_2023": 277726,
+   "validos_2023": 275240,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 101605,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 92578,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 35451,
+     "escanos": 0
+    },
+    {
+     "siglas": "UPL",
+     "votos": 22675,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 18577,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2777,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PROYECTO ALANTRE (P. ALANTRE)",
+    "VOX (VOX)",
+    "PARTIDO REGIONALISTA DEL PAIS LEONES (PREPAL)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "Frente Amplio (FA)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)"
+   ]
+  },
+  {
+   "id": "lleida",
+   "nombre": "Lleida",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 317225,
+   "votantes_2023": 186929,
+   "validos_2023": 184539,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSC",
+     "votos": 54414,
+     "escanos": 2
+    },
+    {
+     "siglas": "ERC",
+     "votos": 34331,
+     "escanos": 1
+    },
+    {
+     "siglas": "JUNTS",
+     "votos": 33228,
+     "escanos": 1
+    },
+    {
+     "siglas": "PP",
+     "votos": 23699,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 14561,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 12560,
+     "escanos": 0
+    },
+    {
+     "siglas": "CUP-PR",
+     "votos": 5449,
+     "escanos": 0
+    },
+    {
+     "siglas": "PDeCAT-E-CiU",
+     "votos": 1865,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 2373,
+   "candidaturas_2026": [
+    "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "JUNTS PER CATALUNYA (JxCat)",
+    "FRENTE OBRERO (FO)",
+    "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "VOX (VOX)",
+    "PARTIT ANIMALISTA AMB EL MEDI AMBIENT (PACMA)",
+    "PARTIDO POPULAR (PP)",
+    "ALHORA (ALHORA)"
+   ]
+  },
+  {
+   "id": "lugo",
+   "nombre": "Lugo",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 337755,
+   "votantes_2023": 200709,
+   "validos_2023": 198566,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 99769,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 60163,
+     "escanos": 1
+    },
+    {
+     "siglas": "BNG",
+     "votos": 17197,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 10287,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 8643,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1256,
+   "candidaturas_2026": [
+    "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE (PSdeG-PSOE)",
+    "PODEMOS (PODEMOS)",
+    "VOX (VOX)",
+    "FRENTE OBRERO (FO)",
+    "BLOQUE NACIONALISTA GALEGO (BNG)",
+    "PARTIDO POPULAR (PP)",
+    "FRENTE AMPLIO-FRONTE AMPLA (FRENTE AMPLIO-FRONTE AMPLA)",
+    "SE ACABÓ LA FIESTA (SALF)"
+   ]
+  },
+  {
+   "id": "madrid",
+   "nombre": "Madrid",
+   "escanos_2026": 38,
+   "escanos_2023": 37,
+   "electores_2023": 5224561,
+   "votantes_2023": 3639500,
+   "validos_2023": 3608673,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 1463183,
+     "escanos": 16
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 1004599,
+     "escanos": 10
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 557780,
+     "escanos": 6
+    },
+    {
+     "siglas": "VOX",
+     "votos": 506164,
+     "escanos": 5
+    }
+   ],
+   "otros_2023": 47987,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO HUMANISTA (PH)",
+    "DEMOCRACIA PARA EL SIGLO 21 (D21)",
+    "IUSTITIA EUROPA (IE)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "Frente Amplio (FA)",
+    "PODEMOS (PODEMOS)"
+   ]
+  },
+  {
+   "id": "malaga",
+   "nombre": "Málaga",
+   "escanos_2026": 11,
+   "escanos_2023": 11,
+   "electores_2023": 1239846,
+   "votantes_2023": 798557,
+   "validos_2023": 788338,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 302000,
+     "escanos": 5
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 239172,
+     "escanos": 3
+    },
+    {
+     "siglas": "VOX",
+     "votos": 129758,
+     "escanos": 2
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 96652,
+     "escanos": 1
+    },
+    {
+     "siglas": "PACMA",
+     "votos": 8487,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4760,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "VOX (VOX)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO POPULAR (PP)",
+    "ALTERNATIVA MALAGUEÑA (29)",
+    "José María Calvo Guerra",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PODEMOS (PODEMOS)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "melilla",
+   "nombre": "Melilla",
+   "escanos_2026": 1,
+   "escanos_2023": 1,
+   "electores_2023": 61118,
+   "votantes_2023": 27649,
+   "validos_2023": 27349,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 13446,
+     "escanos": 1
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 6943,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 4359,
+     "escanos": 0
+    },
+    {
+     "siglas": "CpM",
+     "votos": 1298,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 827,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 223,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+    "PARTIDO POPULAR (PP)"
+   ]
+  },
+  {
+   "id": "murcia",
+   "nombre": "Murcia",
+   "escanos_2026": 10,
+   "escanos_2023": 10,
+   "electores_2023": 1099703,
+   "votantes_2023": 755255,
+   "validos_2023": 747797,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 307972,
+     "escanos": 4
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 189210,
+     "escanos": 3
+    },
+    {
+     "siglas": "VOX",
+     "votos": 163124,
+     "escanos": 2
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 71578,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 10879,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "TERCERA EDAD EN ACCIÓN (3e)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO POPULAR (PP)",
+    "PODEMOS (PODEMOS)",
+    "UNION CARTAGINENSE (UC)",
+    "Frente Amplio (FA)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)"
+   ]
+  },
+  {
+   "id": "navarra",
+   "nombre": "Navarra",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 519918,
+   "votantes_2023": 345095,
+   "validos_2023": 341844,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSOE",
+     "votos": 93553,
+     "escanos": 2
+    },
+    {
+     "siglas": "EH Bildu",
+     "votos": 58954,
+     "escanos": 1
+    },
+    {
+     "siglas": "PP",
+     "votos": 57134,
+     "escanos": 1
+    },
+    {
+     "siglas": "UPN",
+     "votos": 52188,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 43922,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 19491,
+     "escanos": 0
+    },
+    {
+     "siglas": "GBAI",
+     "votos": 9938,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 3774,
+   "candidaturas_2026": [
+    "EUSKAL HERRIA BILDU (EH BILDU)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA DE NAVARRA-PSOE (PSN-PSOE)",
+    "EGUZKILORE (EGUZKILORE)",
+    "GEROA BAI (GBAI)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "UNIÓN DEL PUEBLO NAVARRO EN COALICIÓN CON EL PARTIDO POPULAR (UPN-PP)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "FRENTE AMPLIO-FRONTE ZABALA (FRENTE AMPLIO-FRONTE ZABALA)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)"
+   ]
+  },
+  {
+   "id": "ourense",
+   "nombre": "Ourense",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 355765,
+   "votantes_2023": 188065,
+   "validos_2023": 186271,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 93182,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 56035,
+     "escanos": 1
+    },
+    {
+     "siglas": "BNG",
+     "votos": 15317,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 10171,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 9080,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1377,
+   "candidaturas_2026": [
+    "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO COMUNISTA DOS TRABALLADORES DA GALIZA (PCTG)",
+    "PODEMOS (PODEMOS)",
+    "VOX (VOX)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO POPULAR (PP)",
+    "BLOQUE NACIONALISTA GALEGO (BNG)",
+    "POR UN MUNDO MAIS XUSTO (MUNDO+JUSTO)",
+    "Frente Amplio-Fronte Ampla (FRENTE AMPLIO-FRONTE AMPLA)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)"
+   ]
+  },
+  {
+   "id": "palencia",
+   "nombre": "Palencia",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 137642,
+   "votantes_2023": 98079,
+   "validos_2023": 96962,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 40709,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 33613,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 12504,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 5877,
+     "escanos": 0
+    },
+    {
+     "siglas": "VP",
+     "votos": 1917,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1509,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "pontevedra",
+   "nombre": "Pontevedra",
+   "escanos_2026": 7,
+   "escanos_2023": 7,
+   "electores_2023": 909434,
+   "votantes_2023": 579125,
+   "validos_2023": 573124,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 227658,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 179737,
+     "escanos": 3
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 75615,
+     "escanos": 1
+    },
+    {
+     "siglas": "BNG",
+     "votos": 53828,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 27539,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4882,
+   "candidaturas_2026": [
+    "Frente Obrero (FO)",
+    "VOX (VOX)",
+    "Partido Comunista dos Traballadores da Galiza (PCTG)",
+    "Partido dos Socialistas de Galicia-PSOE (PSdeG-PSOE)",
+    "Escanos en Branco para deixar Escanos Baleiros (ESCAÑOS EN BLANCO)",
+    "Partido Popular (PP)",
+    "Frente Amplio - Fronte Ampla (FRENTE AMPLIO - FRONTE AMPLA)",
+    "BLOQUE NACIONALISTA GALEGO (BNG)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PODEMOS (PODEMOS)"
+   ]
+  },
+  {
+   "id": "salamanca",
+   "nombre": "Salamanca",
+   "escanos_2026": 4,
+   "escanos_2023": 4,
+   "electores_2023": 300506,
+   "votantes_2023": 201419,
+   "validos_2023": 199110,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 93318,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 60718,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 29203,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 11012,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 3210,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "PODEMOS (PODEMOS)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO REGIONALISTA DEL PAIS LEONES (PREPAL)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "santa-cruz-de-tenerife",
+   "nombre": "Santa Cruz de Tenerife",
+   "escanos_2026": 7,
+   "escanos_2023": 7,
+   "electores_2023": 881217,
+   "votantes_2023": 500777,
+   "validos_2023": 494373,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 174770,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 165590,
+     "escanos": 3
+    },
+    {
+     "siglas": "CCa",
+     "votos": 82805,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 53632,
+     "escanos": 0
+    },
+    {
+     "siglas": "PACMA",
+     "votos": 6147,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 6341,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "Coalición Canaria-Municipalistas Primero Canarias (CCa-1.ºCAN)",
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO DRAGO CANARIAS (D.R.G)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FRENTE OBRERO (FO)",
+    "VOX (VOX)",
+    "UNIDAD DEL PUEBLO CANARIO UPC (NC-BC, PODEMOS, IU, SUMAR)",
+    "LIBERACIÓN CANARIA (LIB)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "FEMINISM8 (F8)"
+   ]
+  },
+  {
+   "id": "segovia",
+   "nombre": "Segovia",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 119454,
+   "votantes_2023": 89945,
+   "validos_2023": 88613,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 39894,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 27113,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 12510,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 7137,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1084,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "Frente Amplio (FA)",
+    "PARTIDO POPULAR (PP)"
+   ]
+  },
+  {
+   "id": "sevilla",
+   "nombre": "Sevilla",
+   "escanos_2026": 12,
+   "escanos_2023": 12,
+   "electores_2023": 1564082,
+   "votantes_2023": 1075133,
+   "validos_2023": 1059358,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSOE",
+     "votos": 387760,
+     "escanos": 5
+    },
+    {
+     "siglas": "PP",
+     "votos": 353663,
+     "escanos": 4
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 148745,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 141087,
+     "escanos": 1
+    }
+   ],
+   "otros_2023": 17152,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "ADELANTE ANDALUCÍA (ADELANTE ANDALUCÍA)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PODEMOS (PODEMOS)",
+    "Frente Amplio Andaluz (FA)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)"
+   ]
+  },
+  {
+   "id": "soria",
+   "nombre": "Soria",
+   "escanos_2026": 2,
+   "escanos_2023": 2,
+   "electores_2023": 75768,
+   "votantes_2023": 51157,
+   "validos_2023": 50769,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 18895,
+     "escanos": 1
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 14966,
+     "escanos": 1
+    },
+    {
+     "siglas": "SY",
+     "votos": 9697,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 4978,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 1711,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 237,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "SORIA ¡YA! (SY)",
+    "Frente Amplio (FA)",
+    "PARTIDO POPULAR (PP)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)",
+    "PODEMOS (PODEMOS)"
+   ]
+  },
+  {
+   "id": "tarragona",
+   "nombre": "Tarragona",
+   "escanos_2026": 6,
+   "escanos_2023": 6,
+   "electores_2023": 596689,
+   "votantes_2023": 372426,
+   "validos_2023": 368024,
+   "candidaturas_2023": [
+    {
+     "siglas": "PSC",
+     "votos": 121126,
+     "escanos": 2
+    },
+    {
+     "siglas": "ERC",
+     "votos": 55461,
+     "escanos": 1
+    },
+    {
+     "siglas": "PP",
+     "votos": 51061,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 41719,
+     "escanos": 1
+    },
+    {
+     "siglas": "JUNTS",
+     "votos": 40791,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 38039,
+     "escanos": 0
+    },
+    {
+     "siglas": "CUP-PR",
+     "votos": 8700,
+     "escanos": 0
+    },
+    {
+     "siglas": "PACMA",
+     "votos": 3797,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4162,
+   "candidaturas_2026": [
+    "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE) (PSC)",
+    "ESQUERRA REPUBLICANA DE CATALUNYA (ERC)",
+    "FRENTE OBRERO (FO)",
+    "JUNTS PER CATALUNYA (JxCat)",
+    "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA (PCTC)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "Comuns-Front Ampli (COMUNS-FRONT AMPLI)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "CONVERGENTS (CNV)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "PARTIT POPULAR / PARTIDO POPULAR (PP)",
+    "ALHORA (ALHORA)"
+   ]
+  },
+  {
+   "id": "teruel",
+   "nombre": "Teruel",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 106352,
+   "votantes_2023": 76561,
+   "validos_2023": 75913,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 26586,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 22226,
+     "escanos": 1
+    },
+    {
+     "siglas": "EXISTE",
+     "votos": 11348,
+     "escanos": 0
+    },
+    {
+     "siglas": "VOX",
+     "votos": 9932,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 4126,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1285,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "VOX (VOX)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "TERUEL EXISTE (TERUEL EXISTE)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO POPULAR (PP)",
+    "PODEMOS (PODEMOS)"
+   ]
+  },
+  {
+   "id": "toledo",
+   "nombre": "Toledo",
+   "escanos_2026": 6,
+   "escanos_2023": 6,
+   "electores_2023": 542567,
+   "votantes_2023": 392988,
+   "validos_2023": 387200,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 146533,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 126072,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 76044,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 31876,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 4064,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "PARTIDO POPULAR (PP)",
+    "PODEMOS (PODEMOS)",
+    "Frente Amplio (FA)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)"
+   ]
+  },
+  {
+   "id": "valencia",
+   "nombre": "Valencia/València",
+   "escanos_2026": 16,
+   "escanos_2023": 16,
+   "electores_2023": 1999340,
+   "votantes_2023": 1451187,
+   "validos_2023": 1437161,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 483469,
+     "escanos": 6
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 461353,
+     "escanos": 5
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 242839,
+     "escanos": 3
+    },
+    {
+     "siglas": "VOX",
+     "votos": 218657,
+     "escanos": 2
+    }
+   ],
+   "otros_2023": 20033,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "VOX (VOX)",
+    "COMPROMÍS: FRONT VALENCIÀ (COMPROMIS-EUPV-PODEM-ERPV)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "PARTIDO AUTÓNOMOS (PARTIDO AUTÓNOMOS)",
+    "VALENCIA UNIDA (VLC)",
+    "RENACER RENAIXER (RRB)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "PARTIDO POPULAR (PP)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "AGENDA VALENCIANA (AGENDA VALENCIANA)"
+   ]
+  },
+  {
+   "id": "valladolid",
+   "nombre": "Valladolid",
+   "escanos_2026": 5,
+   "escanos_2023": 5,
+   "electores_2023": 431381,
+   "votantes_2023": 319312,
+   "validos_2023": 316309,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 129170,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 103596,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 47948,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 28049,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 5127,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "FRENTE OBRERO (FO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "PARTIDO NACIONALISTA DE CASTILLA Y LEÓN - UNION REFORMISTA",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "VOX (VOX)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO POPULAR (PP)",
+    "Frente Amplio (FA)",
+    "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS (ESCAÑOS EN BLANCO)"
+   ]
+  },
+  {
+   "id": "zamora",
+   "nombre": "Zamora",
+   "escanos_2026": 3,
+   "escanos_2023": 3,
+   "electores_2023": 162998,
+   "votantes_2023": 104671,
+   "validos_2023": 103410,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 46196,
+     "escanos": 2
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 33601,
+     "escanos": 1
+    },
+    {
+     "siglas": "VOX",
+     "votos": 13652,
+     "escanos": 0
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 5839,
+     "escanos": 0
+    },
+    {
+     "siglas": "Zsi",
+     "votos": 1843,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 1357,
+   "candidaturas_2026": [
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "PARTIDO REGIONALISTA DEL PAIS LEONES (PREPAL)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "PARTIDO POPULAR (PP)",
+    "FRENTE OBRERO (FO)",
+    "Frente Amplio (FA)"
+   ]
+  },
+  {
+   "id": "zaragoza",
+   "nombre": "Zaragoza",
+   "escanos_2026": 7,
+   "escanos_2023": 7,
+   "electores_2023": 740060,
+   "votantes_2023": 523410,
+   "validos_2023": 518705,
+   "candidaturas_2023": [
+    {
+     "siglas": "PP",
+     "votos": 186776,
+     "escanos": 3
+    },
+    {
+     "siglas": "PSOE",
+     "votos": 159858,
+     "escanos": 2
+    },
+    {
+     "siglas": "VOX",
+     "votos": 79376,
+     "escanos": 1
+    },
+    {
+     "siglas": "SUMAR",
+     "votos": 69925,
+     "escanos": 1
+    },
+    {
+     "siglas": "EXISTE",
+     "votos": 7780,
+     "escanos": 0
+    }
+   ],
+   "otros_2023": 10297,
+   "candidaturas_2026": [
+    "FRENTE OBRERO (FO)",
+    "PARTIDO SOCIALISTA OBRERO ESPAÑOL (PSOE)",
+    "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA (PCTE)",
+    "POR UN MUNDO MAS JUSTO (MUNDO+JUSTO)",
+    "VOX (VOX)",
+    "PODEMOS (PODEMOS)",
+    "FEDERACION DE LOS INDEPENDIENTES DE ARAGON (F.I.A.)",
+    "PARTIDO POPULAR (PP)",
+    "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE (PACMA)",
+    "Chunta Aragonesista-Frente Amplio Aragón (CHA-IU-MS-FRENTE AMPLIO)",
+    "SE ACABÓ LA FIESTA (SALF)",
+    "FALANGE ESPAÑOLA DE LAS J.O.N.S. (FE de las JONS)"
+   ]
+  }
+ ]
+}

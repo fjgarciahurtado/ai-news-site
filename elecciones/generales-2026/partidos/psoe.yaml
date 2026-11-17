@@ -1,0 +1,231 @@
+# Ficha de partido. Schema and rules: CLAUDE.md, section "Elecciones generales 2026".
+# Every statement has `fuentes` (ids from eleccion.yaml `documentos`, ids from this file's
+# `documentos`, or inline {titulo, url, fecha}). Proposals stay empty until the party's own 2026
+# programme has been read.
+
+id: psoe
+siglas: "PSOE"
+nombre: "Partido Socialista Obrero Español"
+web: https://www.psoe.es/
+
+# Entities (as written in articulos/ frontmatter) whose daily articles are listed on the page.
+entidades: ["PSOE", "Pedro Sánchez"]
+
+candidato:
+  texto: "Pedro Sánchez Pérez-Castejón encabeza la lista del PSOE al Congreso por Madrid."
+  fuentes: [boe-2026-23103]
+
+# Official candidacy names in BOE-A-2026-23103 that belong to this party (regex, case-insensitive);
+# the site counts and lists the matching constituencies.
+candidaturas_2026:
+  patron: "SOCIALISTA|\\(PSOE|\\bPSC\\b|PSdeG"
+  texto: "En Cataluña concurre como Partit dels Socialistes de Catalunya (PSC-PSOE) y en otras comunidades con el nombre de su federación (PSdeG-PSOE, PSE-EE, PSN-PSOE...)."
+  fuentes: [boe-2026-23103]
+
+inclusion:
+  texto: "26,74 % de los votos válidos en las generales de 2023 (6.600.383 votos), más un 4,95 % del PSC (1.221.335 votos), y 30,19 % en las europeas de 2024 (5.290.945 votos)."
+  fuentes: [boe-2023-18907, boe-2024-13092]
+
+documentos:
+  programa-2026:
+    titulo: "La fuerza de seguir avanzando. Programa elecciones generales 29 noviembre 2026 (copia publicada por Demócrata)"
+    url: https://www.democrata.es/uploads/s1/35/40/05/6/programapsoe29n26.pdf
+    fecha: 2026-11-15  # PDF creation date (author PSOE); read on 2026-11-16. psoe.es blocks automated access.
+
+programa:
+  documento: programa-2026
+
+# A selection of the programme's 500 numbered commitments: the most concrete per topic.
+# Read from the PDF on 2026-11-16; `referencia` is the commitment number in the document.
+propuestas:
+  - id: vivienda-derecho-fundamental
+    tema: vivienda
+    referencia: Compromisos 37 y 366
+    texto: "Reformar la Constitución para que la vivienda se considere un derecho fundamental que la ciudadanía pueda exigir a los poderes públicos, y avanzar en la protección de la salud como derecho fundamental."
+    fuentes: [programa-2026]
+    requisitos: [reforma-constitucional-agravada]
+    viabilidad:
+      texto: "Hoy el derecho a la vivienda es el artículo 47, en el capítulo de principios rectores, que solo pueden alegarse ante los tribunales según lo que dispongan las leyes que los desarrollen. Llevarlo a la sección 1.ª del capítulo II del título I, la de los derechos fundamentales, sigue el procedimiento del artículo 168: dos tercios de cada Cámara, disolución de las Cortes, aprobación por las nuevas Cámaras con dos tercios y referéndum."
+      fuentes: [ce-47, ce-53, ce-168]
+
+  - id: vivienda-1-por-ciento-pib
+    tema: vivienda
+    referencia: Compromisos 38, 39 y 41
+    texto: "Movilizar cada año el 1 % del PIB para el acceso a la vivienda, con todas las administraciones y el ICO a través del Fondo España Crece; ampliar el parque público y protegido hasta la media europea y, con el Plan Estatal de Vivienda 2026-2030, que la vivienda pública o protegida permanente sea al menos la cuarta parte de la nueva."
+    fuentes: [programa-2026]
+    requisitos: [presupuestos, competencia-autonomica]
+    viabilidad:
+      texto: "La vivienda es una de las competencias que pueden asumir las comunidades autónomas; el programa plantea hacerlo transfiriéndoles recursos y sumando a todas las administraciones."
+      fuentes: [ce-148, programa-2026]
+
+  - id: casa-47
+    tema: vivienda
+    referencia: Compromiso 42
+    texto: "Constituir, a través de la entidad estatal CASA 47, un parque público estatal de 100.000 viviendas, construidas o compradas, para venta o alquiler estable a precio asequible, que se sumarían a las de comunidades autónomas y ayuntamientos."
+    fuentes: [programa-2026]
+    requisitos: [gobierno, presupuestos]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2025-12-11
+        texto: "El Real Decreto 1123/2025 transformó la Entidad Pública Empresarial de Suelo (SEPES) en CASA 47 Entidad Pública Empresarial, para reorientar su actividad hacia la vivienda asequible."
+        fuentes: [rd-1123-2025]
+
+  - id: alquiler-zonas-tensionadas
+    tema: vivienda
+    referencia: Compromisos 61 a 63
+    texto: "Alargar la duración de los contratos de alquiler, congelar temporalmente las rentas que superen los índices de referencia en los mercados tensionados y que el Ministerio de Vivienda publique el mapa de zonas tensionadas que, según el programa, deben elaborar las comunidades autónomas y no están haciendo."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, competencia-autonomica]
+    viabilidad:
+      texto: "Las zonas de mercado residencial tensionado están reguladas en la Ley 12/2023, por el derecho a la vivienda, y la duración de los contratos en la Ley de Arrendamientos Urbanos; ambas son leyes ordinarias."
+      fuentes: [ley-12-2023, ley-29-1994]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2023-05-25
+        texto: "El proyecto de ley del Gobierno por el derecho a la vivienda, que regula las zonas de mercado residencial tensionado, se aprobó en el Congreso por 176 votos a favor y 167 en contra y se publicó como Ley 12/2023."
+        fuentes: [ds-14-pl-265, ley-12-2023]
+
+  - id: impuesto-grandes-tenedores
+    tema: vivienda
+    referencia: Compromisos 70 y 72
+    texto: "Un impuesto progresivo sobre las viviendas de grandes propietarios y fondos que no se destinen a alquiler residencial asequible: las de uso turístico, las vacías y las alquiladas a precio abusivo."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+
+  - id: smi-60-por-ciento
+    tema: empleo
+    referencia: Compromiso 87
+    texto: "Fijar por ley que el salario mínimo esté por encima del 60 % del salario medio, actualizarlo periódicamente y evitar que las subidas se neutralicen absorbiendo complementos salariales."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "Hoy el Gobierno fija el salario mínimo cada año, tras consultar a sindicatos y organizaciones empresariales, según los criterios del artículo 27 del Estatuto de los Trabajadores; un suelo legal requiere reformar ese artículo por ley."
+      fuentes: [rdleg-2-2015]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2026-02-19
+        texto: "El salario mínimo que fija el Gobierno por real decreto pasó de 900 euros al mes en 2019 a 1.221 euros al mes en 2026, en catorce pagas."
+        fuentes: [rd-1462-2018, rd-126-2026]
+
+  - id: jornada-37-5-horas
+    tema: empleo
+    referencia: Compromiso 108
+    texto: "Completar la reducción de la jornada a 37,5 horas semanales sin pérdida de salario, con un calendario acordado en el diálogo social y periodos transitorios para las pymes, e incentivar que los convenios avancen hacia las 35 horas."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "La jornada máxima ordinaria es hoy de cuarenta horas semanales de promedio anual, según el artículo 34 del Estatuto de los Trabajadores, un texto con rango de ley que se modifica por ley ordinaria."
+      fuentes: [rdleg-2-2015]
+    antecedentes:
+      - tipo: en-contra
+        fecha: 2025-09-10
+        texto: "El Congreso devolvió al Gobierno el proyecto de ley para reducir la duración máxima de la jornada ordinaria, defendido por la vicepresidenta segunda y ministra de Trabajo: las enmiendas a la totalidad de Junts, Vox y PP se aprobaron por 178 votos a favor y 170 en contra."
+        fuentes: [ds-15-pl-135]
+
+  - id: pensiones-en-la-constitucion
+    tema: pensiones
+    referencia: Compromisos 100 y 365
+    texto: "Blindar en la Constitución el sistema público de pensiones y su revalorización con el IPC."
+    fuentes: [programa-2026]
+    requisitos: [reforma-constitucional]
+    viabilidad:
+      texto: "Hoy las pensiones están en el artículo 50, entre los principios rectores. El programa no dice en qué parte de la Constitución irían: fuera de la sección 1.ª del capítulo II del título I, la reforma sigue el artículo 167 (tres quintos de cada Cámara); dentro de ella, el 168. La revalorización anual con el IPC ya está en la ley desde la Ley 21/2021."
+      fuentes: [ce-50, ce-167, ce-168, ley-21-2021]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2021-12-29
+        texto: "La Ley 21/2021 fijó en la ley la revalorización anual de las pensiones con el IPC medio, el compromiso que el programa propone llevar a la Constitución."
+        fuentes: [ley-21-2021]
+
+  - id: rentas-del-capital
+    tema: fiscalidad
+    referencia: Compromiso 130
+    texto: "Subir la tributación de las rentas del capital más altas: mantener el 19 % hasta 6.000 euros y el 21 % hasta 50.000, y subir los tipos a partir de ahí hasta un máximo del 35 % para las rentas del capital de más de 300.000 euros."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    viabilidad:
+      texto: "El IRPF, que grava estas rentas, está regulado por la Ley 35/2006, una ley ordinaria."
+      fuentes: [ley-35-2006]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2024-12-21
+        texto: "La Ley 7/2024 añadió desde 2025 un tramo para las rentas del ahorro de más de 300.000 euros: 15 % en la escala estatal y 15 % en la autonómica, un 30 % en total. El programa propone llegar al 35 %."
+        fuentes: [ley-7-2024, ley-35-2006]
+
+  - id: tasas-tobin-y-lujo
+    tema: fiscalidad
+    referencia: Compromisos 131, 132 y 135
+    texto: "Duplicar el impuesto sobre transacciones financieras (tasa Tobin) del 0,2 % al 0,4 %, crear una tasa sobre viajes de lujo con fuerte huella de carbono (jets privados, grandes yates, billetes en clase business con salida desde España) y gravar más a las grandes tecnológicas y al sector de la inteligencia artificial."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2020-10-16
+        texto: "Las leyes 4/2020 y 5/2020 crearon el Impuesto sobre Determinados Servicios Digitales, al 3 %, y el Impuesto sobre las Transacciones Financieras, al 0,2 %, el que el programa propone duplicar."
+        fuentes: [ley-4-2020, ley-5-2020]
+
+  - id: prestacion-crianza
+    tema: otros
+    referencia: Compromisos 134 y 192
+    texto: "Una prestación estatal por crianza para todos los hogares con menores, progresiva y con más protección para los de renta baja, financiada con la nueva tributación de grandes patrimonios y rentas del capital; y convertir el mínimo por descendiente del IRPF en un crédito fiscal reembolsable, que según el programa alcanzaría a 2 millones de hogares que hoy no se benefician de él."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, presupuestos]
+    viabilidad:
+      texto: "El mínimo por descendientes forma parte del IRPF, regulado por la Ley 35/2006, una ley ordinaria."
+      fuentes: [ley-35-2006]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2021-12-21
+        texto: "La Ley 19/2021, del ingreso mínimo vital, creó el complemento de ayuda para la infancia: una cantidad mensual por cada menor de los hogares por debajo de ciertos umbrales de renta y patrimonio."
+        fuentes: [ley-19-2021]
+
+  - id: sanidad-7-por-ciento
+    tema: sanidad
+    referencia: Compromisos 136 a 138
+    texto: "Consolidar una financiación pública de la sanidad en torno al 7 % del PIB para acabar con las listas de espera; incorporar poco a poco a la sanidad pública los tratamientos dentales básicos de los adultos, con una ayuda de hasta 200 euros al año mientras tanto; y una ley que haga de la gestión directa la forma preferente de prestar la sanidad."
+    fuentes: [programa-2026]
+    requisitos: [ley-ordinaria, presupuestos, competencia-autonomica]
+
+  - id: financiacion-autonomica
+    tema: territorial
+    referencia: Compromisos 229 y 231
+    texto: "Aplicar el nuevo sistema de financiación autonómica propuesto por el Gobierno y aprobado en el Consejo de Política Fiscal y Financiera, con 21.000 millones de euros adicionales, y avanzar en la asunción por el Estado de 83.000 millones de deuda autonómica."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica]
+    viabilidad:
+      texto: "La financiación de las comunidades de régimen común está regulada por la Ley Orgánica 8/1980 (LOFCA)."
+      fuentes: [lo-8-1980]
+    antecedentes:
+      - tipo: a-favor
+        fecha: 2025-12-09
+        texto: "El Gobierno remitió a las Cortes el proyecto de ley para que el Estado asuma 83.252 millones de euros de deuda de las comunidades autónomas de régimen común."
+        fuentes: [hacienda-condonacion]
+
+  - id: cierre-nuclear
+    tema: energia
+    referencia: Compromiso 240
+    texto: "Mantener el calendario de cierre de las centrales nucleares hasta 2035, con proyectos de transición justa en las comarcas afectadas."
+    fuentes: [programa-2026]
+    requisitos: [gobierno]
+    antecedentes:
+      - tipo: en-contra
+        fecha: 2025-02-12
+        texto: "El Congreso aprobó una proposición no de ley del PP para revisar el cierre programado de las centrales nucleares por 171 votos a favor, 164 en contra y 14 abstenciones; no es vinculante para el Gobierno."
+        fuentes: [ds-15-pl-95]
+
+  - id: voto-16-y-aforamientos
+    tema: instituciones
+    referencia: Compromisos 372 y 373
+    texto: "Rebajar la edad de voto a los 16 años y suprimir el aforamiento de los cargos públicos para los delitos ajenos a su cargo."
+    fuentes: [programa-2026]
+    requisitos: [ley-organica, reforma-constitucional]
+    viabilidad:
+      texto: "La ley electoral reconoce el derecho de sufragio a los españoles mayores de edad, y la Constitución fija la mayoría de edad en los 18 años; la ley electoral es orgánica. El aforamiento de diputados, senadores y miembros del Gobierno ante el Tribunal Supremo está en los artículos 71 y 102 de la Constitución, por lo que suprimirlo para ellos requiere reformarla."
+      fuentes: [loreg, ce-12, ce-71, ce-102]
+
+  - id: plan-integracion
+    tema: inmigracion
+    referencia: Compromisos 388 y 389
+    texto: "Desplegar el Plan de Integración y Ciudadanía 2026-2030, con 500 millones de euros iniciales, y ampliar las vías legales y seguras de protección internacional, con reasentamiento y visados humanitarios."
+    fuentes: [programa-2026]
+    requisitos: [gobierno, presupuestos]

@@ -1,0 +1,35 @@
+# Ficha de partido. Schema and rules: CLAUDE.md, section "Elecciones generales 2026".
+# Every statement has `fuentes` (ids from eleccion.yaml `documentos`, ids from this file's
+# `documentos`, or inline {titulo, url, fecha}). Proposals stay empty until the party's own 2026
+# programme has been read.
+
+id: podemos
+siglas: "Podemos"
+nombre: "Podemos"
+web: https://podemos.info/
+
+# Entities (as written in articulos/ frontmatter) whose daily articles are listed on the page.
+entidades: ["Podemos", "Irene Montero", "Ione Belarra"]
+
+candidato:
+  texto: "Irene Montero Gil encabeza la lista de Podemos al Congreso por Madrid."
+  fuentes: [boe-2026-23103]
+
+# Official candidacy names in BOE-A-2026-23103 that belong to this party (regex, case-insensitive);
+# the site counts and lists the matching constituencies.
+candidaturas_2026:
+  patron: "\\(PODEMOS\\)|^PODEMOS$|PODEM-|PODEMOS, IU"
+  # Lists shared with other forces (counted apart on the page).
+  compartida: "COMPROM|PODEMOS, IU"
+  texto: "En las tres circunscripciones valencianas concurre dentro de Compromís: Front Valencià (COMPROMIS-EUPV-PODEM-ERPV) y en Las Palmas y Santa Cruz de Tenerife dentro de Unidad del Pueblo Canario (NC-BC, PODEMOS, IU, SUMAR)."
+  fuentes: [boe-2026-23103]
+
+inclusion:
+  texto: "3,30 % de los votos válidos en las europeas de 2024 (578.007 votos), con candidatura propia."
+  fuentes: [boe-2024-13092]
+
+documentos: {}
+
+programa: null
+
+propuestas: []

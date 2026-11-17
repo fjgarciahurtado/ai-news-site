@@ -1,0 +1,7395 @@
+{
+ "fuentes": {
+  "resultados_2023": {
+   "titulo": "Resolución de 30 de agosto de 2023, de la Junta Electoral Central: resultados de las elecciones al Congreso y al Senado de 23 de julio de 2023",
+   "url": "https://www.boe.es/boe/dias/2023/09/01/pdfs/BOE-A-2023-18907.pdf",
+   "fecha": "2023-09-01"
+  }
+ },
+ "circunscripciones": [
+  {
+   "nombre": "Albacete",
+   "provincia": "albacete",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Simón Valentín Bueno Vargas",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 91216,
+     "electo": true
+    },
+    {
+     "nombre": "Miriam García Navarro",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 89492,
+     "electo": true
+    },
+    {
+     "nombre": "Pilar Milagros Rojo Noguera",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 87462,
+     "electo": true
+    },
+    {
+     "nombre": "Amparo Torres Valencoso",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 77585,
+     "electo": true
+    },
+    {
+     "nombre": "Alberto Iglesias Martínez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 74603,
+     "electo": false
+    },
+    {
+     "nombre": "Donelia Roldán Martínez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 72546,
+     "electo": false
+    },
+    {
+     "nombre": "Ginés Luis Núñez Martínez",
+     "candidatura": "VOX",
+     "votos": 31301,
+     "electo": false
+    },
+    {
+     "nombre": "María Ángeles Gutiérrez Montañana",
+     "candidatura": "VOX",
+     "votos": 29489,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Antonio Gil García",
+     "candidatura": "VOX",
+     "votos": 28270,
+     "electo": false
+    },
+    {
+     "nombre": "Iago Vázquez Vázquez",
+     "candidatura": "SUMAR",
+     "votos": 16196,
+     "electo": false
+    },
+    {
+     "nombre": "María Dolores Serrano Egea",
+     "candidatura": "SUMAR",
+     "votos": 13781,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Enrique Plaza Senabre",
+     "candidatura": "SUMAR",
+     "votos": 13458,
+     "electo": false
+    },
+    {
+     "nombre": "María Josefa Vizcaíno Pina",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2898,
+     "electo": false
+    },
+    {
+     "nombre": "José Serrano Paradinas",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1120,
+     "electo": false
+    },
+    {
+     "nombre": "Francesc Cremades Gómez",
+     "candidatura": "RECORTES CERO",
+     "votos": 742,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Alicante/Alacant",
+   "provincia": "alicante",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Eva Ortiz Vilella",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 338386,
+     "electo": true
+    },
+    {
+     "nombre": "Agustín Almodóbar Barceló",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 326809,
+     "electo": true
+    },
+    {
+     "nombre": "María Dolores Esteve Juan",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 322094,
+     "electo": true
+    },
+    {
+     "nombre": "Ana Martínez Zaragoza",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 300586,
+     "electo": true
+    },
+    {
+     "nombre": "Antonia Moreno Ruiz",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 284617,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Franco Gutiez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 267652,
+     "electo": false
+    },
+    {
+     "nombre": "Irene Lisarte Villalba",
+     "candidatura": "VOX",
+     "votos": 124821,
+     "electo": false
+    },
+    {
+     "nombre": "David Moreno Narganes",
+     "candidatura": "VOX",
+     "votos": 116968,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Alcaraz Ramos",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 111238,
+     "electo": false
+    },
+    {
+     "nombre": "Lesmy Menéndez González",
+     "candidatura": "VOX",
+     "votos": 109384,
+     "electo": false
+    },
+    {
+     "nombre": "Llum Quiñonero Hernández",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 97639,
+     "electo": false
+    },
+    {
+     "nombre": "Pau Francesc Torregrosa i Coloma",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 86666,
+     "electo": false
+    },
+    {
+     "nombre": "Obdulia Pérez Cerdán",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 12987,
+     "electo": false
+    },
+    {
+     "nombre": "Teresa Muñoz Armentia",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 8996,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Olmedo Sáez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 8931,
+     "electo": false
+    },
+    {
+     "nombre": "Adrián Martínez Ramos",
+     "candidatura": "RECORTES CERO",
+     "votos": 3081,
+     "electo": false
+    },
+    {
+     "nombre": "María José Molina Martínez",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 2283,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Antonio Ramírez Fernández",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 1170,
+     "electo": false
+    },
+    {
+     "nombre": "Elisa Pérez-Marsá Mira",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 1095,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Almería",
+   "provincia": "almeria",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Miguel Ángel Castellón Rubio",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 129806,
+     "electo": true
+    },
+    {
+     "nombre": "Juan José Matarí Sáez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 125559,
+     "electo": true
+    },
+    {
+     "nombre": "Carmen Belén López Zapata",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 124493,
+     "electo": true
+    },
+    {
+     "nombre": "Antonio Martínez Rodríguez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 91868,
+     "electo": true
+    },
+    {
+     "nombre": "María Teresa Piqueras Valarino",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 90355,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Francisco Garrido Egea",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 85795,
+     "electo": false
+    },
+    {
+     "nombre": "Germán Arqueros Rodríguez",
+     "candidatura": "VOX",
+     "votos": 64820,
+     "electo": false
+    },
+    {
+     "nombre": "Rodrigo Navarro Sánchez",
+     "candidatura": "VOX",
+     "votos": 62106,
+     "electo": false
+    },
+    {
+     "nombre": "Emma Montserrat Descalzo Esteban",
+     "candidatura": "VOX",
+     "votos": 61321,
+     "electo": false
+    },
+    {
+     "nombre": "Carolina García Tomás",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 23514,
+     "electo": false
+    },
+    {
+     "nombre": "José Miguel Ramos Garrido",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 18541,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Esteban Martínez",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 17271,
+     "electo": false
+    },
+    {
+     "nombre": "Marina Gil Martínez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3448,
+     "electo": false
+    },
+    {
+     "nombre": "Inmaculada Gema Burkhardt Pérez",
+     "candidatura": "ALMERIENSES - REGIONALISTAS PRO ALMERÍA",
+     "votos": 2649,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Conejero Calvo-Flores",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2223,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Nogales Valenzuela",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2102,
+     "electo": false
+    },
+    {
+     "nombre": "María Dolores Linde Izquierdo",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 984,
+     "electo": false
+    },
+    {
+     "nombre": "Isabel María Teva García",
+     "candidatura": "RECORTES CERO",
+     "votos": 906,
+     "electo": false
+    },
+    {
+     "nombre": "Zeus Ismael Rodríguez Fernández",
+     "candidatura": "LIBRES",
+     "votos": 554,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Araba/Álava",
+   "provincia": "araba-alava",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Julia María Liberal Liberal",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 45868,
+     "electo": true
+    },
+    {
+     "nombre": "Adolfo Lander Vera",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 42738,
+     "electo": true
+    },
+    {
+     "nombre": "Paula Somalo García",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 42148,
+     "electo": true
+    },
+    {
+     "nombre": "Josu Estarrona Elizondo",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 35535,
+     "electo": true
+    },
+    {
+     "nombre": "Aitziber Salazar Arresti",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 34102,
+     "electo": false
+    },
+    {
+     "nombre": "Almudena Otaola Urquijo",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 31610,
+     "electo": false
+    },
+    {
+     "nombre": "Pablo Vicente Sáenz de Urturi",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 31486,
+     "electo": false
+    },
+    {
+     "nombre": "Iñaki Oyarzabal de Miguel",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 29736,
+     "electo": false
+    },
+    {
+     "nombre": "Idoia Garmendia Telleria",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 29139,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa Peral Díez",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 28956,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Ibarrondo Bajo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 28261,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Carlos Medina Martínez",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 28054,
+     "electo": false
+    },
+    {
+     "nombre": "Leticia Jiménez Loza",
+     "candidatura": "SUMAR",
+     "votos": 20578,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Burdallo Bautista",
+     "candidatura": "SUMAR",
+     "votos": 15955,
+     "electo": false
+    },
+    {
+     "nombre": "Ester Palacio García",
+     "candidatura": "SUMAR",
+     "votos": 15644,
+     "electo": false
+    },
+    {
+     "nombre": "Ignacio Cuadrado Rubio",
+     "candidatura": "VOX",
+     "votos": 6102,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Fernández Rodríguez",
+     "candidatura": "VOX",
+     "votos": 5591,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Carlos Ochoa Husillos",
+     "candidatura": "VOX",
+     "votos": 5213,
+     "electo": false
+    },
+    {
+     "nombre": "Susana Robredo Oraá",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1769,
+     "electo": false
+    },
+    {
+     "nombre": "Ana María Gil Perdices",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1126,
+     "electo": false
+    },
+    {
+     "nombre": "Markel Arambarri Larrinaga",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 875,
+     "electo": false
+    },
+    {
+     "nombre": "María Concepción Alfajeme Domínguez",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 781,
+     "electo": false
+    },
+    {
+     "nombre": "Josu Errasti Foronda",
+     "candidatura": "RECORTES CERO",
+     "votos": 597,
+     "electo": false
+    },
+    {
+     "nombre": "Liher Calleja Montero",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 538,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa María Gómez Saldaña",
+     "candidatura": "BIDEZKO MUNDURANTZ",
+     "votos": 310,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Asturias",
+   "provincia": "asturias",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Pablo González Menéndez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 216691,
+     "electo": true
+    },
+    {
+     "nombre": "María Fernández Álvarez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 215066,
+     "electo": true
+    },
+    {
+     "nombre": "María Teresa Mallada de Castro",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 213858,
+     "electo": true
+    },
+    {
+     "nombre": "José Manuel Fernández Díaz (Chami)",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 209295,
+     "electo": true
+    },
+    {
+     "nombre": "Fernando Lastra Valdés",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 206832,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Álvarez González",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 201546,
+     "electo": false
+    },
+    {
+     "nombre": "Faustino Sabio López",
+     "candidatura": "SUMAR",
+     "votos": 80002,
+     "electo": false
+    },
+    {
+     "nombre": "María Lluisa Nogueiro Cereigido",
+     "candidatura": "SUMAR",
+     "votos": 75623,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier Martínez Andrade",
+     "candidatura": "SUMAR",
+     "votos": 67406,
+     "electo": false
+    },
+    {
+     "nombre": "María Aránzazu Martínez Riola",
+     "candidatura": "VOX",
+     "votos": 62732,
+     "electo": false
+    },
+    {
+     "nombre": "Juan José Merino Rodríguez",
+     "candidatura": "VOX",
+     "votos": 58721,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Martínez Buelga",
+     "candidatura": "VOX",
+     "votos": 56307,
+     "electo": false
+    },
+    {
+     "nombre": "Sandra Antonia Álvarez Martínez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5840,
+     "electo": false
+    },
+    {
+     "nombre": "Elena Inmaculada Lomba Monjardín",
+     "candidatura": "ASTURIAS EXISTE-ESPAÑA VACIADA",
+     "votos": 5545,
+     "electo": false
+    },
+    {
+     "nombre": "Joaquín Arce Fernández",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3733,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Martínez Turrero",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 3693,
+     "electo": false
+    },
+    {
+     "nombre": "María Silvia Alonso Soldado",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3433,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Manuel Obeso Carrera",
+     "candidatura": "ASTURIAS EXISTE-ESPAÑA VACIADA",
+     "votos": 3345,
+     "electo": false
+    },
+    {
+     "nombre": "Nayara García Fernández",
+     "candidatura": "ASTURIAS EXISTE-ESPAÑA VACIADA",
+     "votos": 3033,
+     "electo": false
+    },
+    {
+     "nombre": "Lorenzo Rodríguez Rivero",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1916,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Cancio Martínez",
+     "candidatura": "RECORTES CERO",
+     "votos": 986,
+     "electo": false
+    },
+    {
+     "nombre": "María Antonia Prado González",
+     "candidatura": "RECORTES CERO",
+     "votos": 624,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Fernández Santos",
+     "candidatura": "PARTIDO UNIONISTA ESTADO DE ESPAÑA",
+     "votos": 520,
+     "electo": false
+    },
+    {
+     "nombre": "Jaime Madroñal Menéndez",
+     "candidatura": "RECORTES CERO",
+     "votos": 465,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Ávila",
+   "provincia": "avila",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Juan Pablo Martín Martín",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 42755,
+     "electo": true
+    },
+    {
+     "nombre": "Alicia García Rodríguez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 41693,
+     "electo": true
+    },
+    {
+     "nombre": "Piedad Sánchez García",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 40692,
+     "electo": true
+    },
+    {
+     "nombre": "Jesús Caro Adanero",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 25946,
+     "electo": true
+    },
+    {
+     "nombre": "María Virginia Parra Garrosa",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 25359,
+     "electo": false
+    },
+    {
+     "nombre": "Celestino Romo Suárez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 23602,
+     "electo": false
+    },
+    {
+     "nombre": "Noelia Carretero Carmona",
+     "candidatura": "VOX",
+     "votos": 12059,
+     "electo": false
+    },
+    {
+     "nombre": "Ruth Pindado González",
+     "candidatura": "POR ÁVILA",
+     "votos": 10912,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Salazar Moreta",
+     "candidatura": "VOX",
+     "votos": 10858,
+     "electo": false
+    },
+    {
+     "nombre": "Clara Isabel Rubio Contreras",
+     "candidatura": "VOX",
+     "votos": 10463,
+     "electo": false
+    },
+    {
+     "nombre": "Gregorio Arturo Varas González",
+     "candidatura": "POR ÁVILA",
+     "votos": 8853,
+     "electo": false
+    },
+    {
+     "nombre": "Marcos Antonio Ajates Álvarez",
+     "candidatura": "POR ÁVILA",
+     "votos": 8388,
+     "electo": false
+    },
+    {
+     "nombre": "Rebeca Acevedo García",
+     "candidatura": "SUMAR",
+     "votos": 6153,
+     "electo": false
+    },
+    {
+     "nombre": "Antonino González Canalejo",
+     "candidatura": "SUMAR",
+     "votos": 4323,
+     "electo": false
+    },
+    {
+     "nombre": "Dolores Navarro Hernández",
+     "candidatura": "SUMAR",
+     "votos": 3899,
+     "electo": false
+    },
+    {
+     "nombre": "Anaís Martín García",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 696,
+     "electo": false
+    },
+    {
+     "nombre": "José María Jiménez Hernández",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 334,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Alonso García",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 266,
+     "electo": false
+    },
+    {
+     "nombre": "Sergio Álvarez Gallego",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 251,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Miguel González Tena",
+     "candidatura": "RECORTES CERO",
+     "votos": 133,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Badajoz",
+   "provincia": "badajoz",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Rafael Damián Lemus Rubiales",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 151087,
+     "electo": true
+    },
+    {
+     "nombre": "María Teresa Macías Mateos",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 150764,
+     "electo": true
+    },
+    {
+     "nombre": "José Antonio Monago Terraza",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 148448,
+     "electo": true
+    },
+    {
+     "nombre": "Carmen Pagador López",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 147020,
+     "electo": true
+    },
+    {
+     "nombre": "Manuel Borrego Rodríguez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 146413,
+     "electo": false
+    },
+    {
+     "nombre": "María Natividad Fuentes del Puerto",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 144421,
+     "electo": false
+    },
+    {
+     "nombre": "Gonzalo Pozo Guisado",
+     "candidatura": "VOX",
+     "votos": 45084,
+     "electo": false
+    },
+    {
+     "nombre": "Marta Gervasia Garrido Moreno",
+     "candidatura": "VOX",
+     "votos": 42441,
+     "electo": false
+    },
+    {
+     "nombre": "José Félix Quintana Barona",
+     "candidatura": "VOX",
+     "votos": 40647,
+     "electo": false
+    },
+    {
+     "nombre": "Salud Ángel Ramos Vergeles",
+     "candidatura": "SUMAR",
+     "votos": 26825,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Ibarlucea Paredes",
+     "candidatura": "SUMAR",
+     "votos": 22793,
+     "electo": false
+    },
+    {
+     "nombre": "Adrián Rodríguez Santos",
+     "candidatura": "SUMAR",
+     "votos": 22616,
+     "electo": false
+    },
+    {
+     "nombre": "Diego José Albardonedo Díez-Ochoa",
+     "candidatura": "BLOQUE EXTREMEÑO",
+     "votos": 6178,
+     "electo": false
+    },
+    {
+     "nombre": "María Dolores Díez-Madroñero González",
+     "candidatura": "BLOQUE EXTREMEÑO",
+     "votos": 5364,
+     "electo": false
+    },
+    {
+     "nombre": "José María Fernández Chavero",
+     "candidatura": "BLOQUE EXTREMEÑO",
+     "votos": 4967,
+     "electo": false
+    },
+    {
+     "nombre": "Olga Lama Rodríguez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2964,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Jaramillo Expósito",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1743,
+     "electo": false
+    },
+    {
+     "nombre": "María Guadalupe Cascón Pérez",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1230,
+     "electo": false
+    },
+    {
+     "nombre": "Ainhoa Pérez Noguera",
+     "candidatura": "RECORTES CERO",
+     "votos": 604,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Mallorca",
+   "provincia": "illes-balears",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "María Salom Coll",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 143225,
+     "electo": true
+    },
+    {
+     "nombre": "Martí Ángel Torres Valls",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 135984,
+     "electo": true
+    },
+    {
+     "nombre": "Pere Joan Pons Sampietro",
+     "candidatura": "PARTIDO SOCIALISTA DE ISLAS BALEARES-PSOE",
+     "votos": 120255,
+     "electo": true
+    },
+    {
+     "nombre": "Teresa Suárez Genovard",
+     "candidatura": "PARTIDO SOCIALISTA DE ISLAS BALEARES-PSOE",
+     "votos": 113710,
+     "electo": false
+    },
+    {
+     "nombre": "Laura Pérez Reol",
+     "candidatura": "SUMAR MÉS",
+     "votos": 63586,
+     "electo": false
+    },
+    {
+     "nombre": "Gabriel Antonio Le Senne Presedo",
+     "candidatura": "VOX",
+     "votos": 55822,
+     "electo": false
+    },
+    {
+     "nombre": "Antoni Simó Tomàs Canyelles",
+     "candidatura": "SUMAR MÉS",
+     "votos": 52275,
+     "electo": false
+    },
+    {
+     "nombre": "María Vidal Bennasar",
+     "candidatura": "VOX",
+     "votos": 51156,
+     "electo": false
+    },
+    {
+     "nombre": "Neus Broto Pachiardi",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5725,
+     "electo": false
+    },
+    {
+     "nombre": "Fumio Maruta Maruta",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3411,
+     "electo": false
+    },
+    {
+     "nombre": "Adrià Ruiz Rosselló",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1152,
+     "electo": false
+    },
+    {
+     "nombre": "Elena Fernández Mateo",
+     "candidatura": "RECORTES CERO",
+     "votos": 820,
+     "electo": false
+    },
+    {
+     "nombre": "Guillermo García Salas",
+     "candidatura": "RECORTES CERO",
+     "votos": 494,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 3
+  },
+  {
+   "nombre": "Menorca",
+   "provincia": "illes-balears",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Cristóbal Marqués Palliser",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 16222,
+     "electo": true
+    },
+    {
+     "nombre": "Miquel Mariano Pons",
+     "candidatura": "PARTIDO SOCIALISTA DE ISLAS BALEARES-PSOE",
+     "votos": 15156,
+     "electo": false
+    },
+    {
+     "nombre": "Isa Allès Ferrer",
+     "candidatura": "SUMAR MÉS",
+     "votos": 8870,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Llabrés García",
+     "candidatura": "VOX",
+     "votos": 3577,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Triay Castro",
+     "candidatura": "RECORTES CERO",
+     "votos": 249,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "Eivissa-Formentera",
+   "provincia": "illes-balears",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Juanjo Ferrer Martínez",
+     "candidatura": "EIVISSA I FORMENTERA AL SENAT",
+     "votos": 26389,
+     "electo": true
+    },
+    {
+     "nombre": "Miguel Ángel Jerez Juan",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 23472,
+     "electo": false
+    },
+    {
+     "nombre": "Encarnación Castro Rojas",
+     "candidatura": "VOX",
+     "votos": 6607,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Sánchez Aranda",
+     "candidatura": "RECORTES CERO",
+     "votos": 577,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "Barcelona",
+   "provincia": "barcelona",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Manuel Cruz Rodríguez",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 858698,
+     "electo": true
+    },
+    {
+     "nombre": "Elena Vila Gómez",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 829562,
+     "electo": true
+    },
+    {
+     "nombre": "Gabriel Colomé García",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 769248,
+     "electo": true
+    },
+    {
+     "nombre": "Joan Queralt i Jiménez",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 488137,
+     "electo": true
+    },
+    {
+     "nombre": "Ernest Maragall i Mira",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 449935,
+     "electo": false
+    },
+    {
+     "nombre": "Laura Campos Ferrer",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 420254,
+     "electo": false
+    },
+    {
+     "nombre": "Ana María Surra Spadea",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 395769,
+     "electo": false
+    },
+    {
+     "nombre": "José Tutusaus Besante",
+     "candidatura": "PARTIDO POPULAR/PARTIT POPULAR",
+     "votos": 363510,
+     "electo": false
+    },
+    {
+     "nombre": "Mónica Parés Centeno",
+     "candidatura": "PARTIDO POPULAR/PARTIT POPULAR",
+     "votos": 353762,
+     "electo": false
+    },
+    {
+     "nombre": "Álvaro Benejam Peretó",
+     "candidatura": "PARTIDO POPULAR/PARTIT POPULAR",
+     "votos": 340168,
+     "electo": false
+    },
+    {
+     "nombre": "Concepción Abellán Carretero",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 315938,
+     "electo": false
+    },
+    {
+     "nombre": "Antoni Castellà i Clavé",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 303419,
+     "electo": false
+    },
+    {
+     "nombre": "Pere Camps Campos",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 282798,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa Huguet i Sugranyes",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 272729,
+     "electo": false
+    },
+    {
+     "nombre": "Antoni Morral i Berenguer",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 238807,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Carmona Navarro",
+     "candidatura": "VOX",
+     "votos": 165824,
+     "electo": false
+    },
+    {
+     "nombre": "María del Mar Buscá Rey",
+     "candidatura": "VOX",
+     "votos": 153065,
+     "electo": false
+    },
+    {
+     "nombre": "David Cosculluela Martínez-Galofré",
+     "candidatura": "VOX",
+     "votos": 145521,
+     "electo": false
+    },
+    {
+     "nombre": "Dimitri Nagib Defranc Cevallos",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 56473,
+     "electo": false
+    },
+    {
+     "nombre": "Luisa Claver Oñate",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 49077,
+     "electo": false
+    },
+    {
+     "nombre": "Lorena Iglesias Teixidó",
+     "candidatura": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU",
+     "votos": 36733,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Cuesta Hidalgo",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 34414,
+     "electo": false
+    },
+    {
+     "nombre": "Ferran Peris Serrano",
+     "candidatura": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+     "votos": 18737,
+     "electo": false
+    },
+    {
+     "nombre": "Antonina Rodrigo García",
+     "candidatura": "RECORTES CERO",
+     "votos": 8848,
+     "electo": false
+    },
+    {
+     "nombre": "Pilar Ruiz Palacios",
+     "candidatura": "RECORTES CERO",
+     "votos": 4419,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio de la Puerta Andrés",
+     "candidatura": "RECORTES CERO",
+     "votos": 4384,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Bizkaia",
+   "provincia": "bizkaia",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Nerea Ahedo Ceza",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 176614,
+     "electo": true
+    },
+    {
+     "nombre": "María Dolores Etxano Varela",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 167622,
+     "electo": true
+    },
+    {
+     "nombre": "Igotz López Torre",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 164577,
+     "electo": true
+    },
+    {
+     "nombre": "Txema Oleaga Zalvidea",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 154134,
+     "electo": true
+    },
+    {
+     "nombre": "Teresa Fernández García",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 147915,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Andrades García",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 141689,
+     "electo": false
+    },
+    {
+     "nombre": "Jasone Agirre Garitaonandia",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 133125,
+     "electo": false
+    },
+    {
+     "nombre": "Pello Zabarte Narbaiza",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 124704,
+     "electo": false
+    },
+    {
+     "nombre": "Natalia Gardeazabal Diez",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 121834,
+     "electo": false
+    },
+    {
+     "nombre": "Cristina Martínez Ruiz",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 69874,
+     "electo": false
+    },
+    {
+     "nombre": "Jon Albisu Seoane",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 67992,
+     "electo": false
+    },
+    {
+     "nombre": "Pablo Egusquiaguirre Martin",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 66314,
+     "electo": false
+    },
+    {
+     "nombre": "Andeka Larrea Larrondo",
+     "candidatura": "SUMAR",
+     "votos": 61830,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Muñoz López",
+     "candidatura": "SUMAR",
+     "votos": 53187,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Saiz Quintano",
+     "candidatura": "SUMAR",
+     "votos": 49617,
+     "electo": false
+    },
+    {
+     "nombre": "María Pérez Fernández",
+     "candidatura": "VOX",
+     "votos": 13832,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Varela Gómez",
+     "candidatura": "VOX",
+     "votos": 12922,
+     "electo": false
+    },
+    {
+     "nombre": "Eva María Rodríguez Martin",
+     "candidatura": "VOX",
+     "votos": 12270,
+     "electo": false
+    },
+    {
+     "nombre": "María López Galán",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4776,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Alberto Real de las Heras",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2848,
+     "electo": false
+    },
+    {
+     "nombre": "Esther Begoña Rodríguez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2727,
+     "electo": false
+    },
+    {
+     "nombre": "Iratxe Hernández Simón",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 2245,
+     "electo": false
+    },
+    {
+     "nombre": "Igone Bastida Esteban",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1710,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Ángel Gómez Esteban",
+     "candidatura": "RECORTES CERO",
+     "votos": 1459,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Burgos",
+   "provincia": "burgos",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Francisco Javier Lacalle Lacalle",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 81393,
+     "electo": true
+    },
+    {
+     "nombre": "Salvador de Foronda Vaquero",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 80357,
+     "electo": true
+    },
+    {
+     "nombre": "Raquel González Benito",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 78401,
+     "electo": true
+    },
+    {
+     "nombre": "Ander Gil García",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 69754,
+     "electo": true
+    },
+    {
+     "nombre": "María del Mar Arnaiz García",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 68118,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro Luis Alonso Bascones",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 62906,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Peña Lope",
+     "candidatura": "VOX",
+     "votos": 23081,
+     "electo": false
+    },
+    {
+     "nombre": "Maite Alonso Ortega",
+     "candidatura": "VOX",
+     "votos": 20755,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Ortega Reoyo",
+     "candidatura": "VOX",
+     "votos": 19397,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge García Velasco",
+     "candidatura": "SUMAR",
+     "votos": 18524,
+     "electo": false
+    },
+    {
+     "nombre": "María Angeles Pizarro de la Fuente",
+     "candidatura": "SUMAR",
+     "votos": 16398,
+     "electo": false
+    },
+    {
+     "nombre": "Guillermo Ubieto Lopez",
+     "candidatura": "SUMAR",
+     "votos": 13409,
+     "electo": false
+    },
+    {
+     "nombre": "Gerardo Bilbao León",
+     "candidatura": "VÍA BURGALESA",
+     "votos": 5510,
+     "electo": false
+    },
+    {
+     "nombre": "Nazaret del Hierro González",
+     "candidatura": "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA",
+     "votos": 3327,
+     "electo": false
+    },
+    {
+     "nombre": "Fabio Pascual Díez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2348,
+     "electo": false
+    },
+    {
+     "nombre": "Tomás Camarero Arribas",
+     "candidatura": "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA",
+     "votos": 1991,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa Eva Alonso Gutiérrez",
+     "candidatura": "ESPAÑA VACIADA-PARTIDO CASTELLANO-TIERRA COMUNERA",
+     "votos": 1575,
+     "electo": false
+    },
+    {
+     "nombre": "David Soler Soneira",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1239,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Presa Irazabal",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 971,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Anadón Pedrola",
+     "candidatura": "RECORTES CERO",
+     "votos": 757,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Cáceres",
+   "provincia": "caceres",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Mónica Grados Caro",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 90104,
+     "electo": true
+    },
+    {
+     "nombre": "Miguel Ángel Nacarino Muriel",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 89108,
+     "electo": true
+    },
+    {
+     "nombre": "María Isabel Moreno Duque",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 88668,
+     "electo": true
+    },
+    {
+     "nombre": "María Dolores Marcos Moyano",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 88062,
+     "electo": true
+    },
+    {
+     "nombre": "Óscar Mateos Prieto",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 86849,
+     "electo": false
+    },
+    {
+     "nombre": "Raquel Medina Nuevo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 86098,
+     "electo": false
+    },
+    {
+     "nombre": "Ignacio Javier Gilete Tejero",
+     "candidatura": "VOX",
+     "votos": 27013,
+     "electo": false
+    },
+    {
+     "nombre": "Isabel Pilar Vivas Arceredillo",
+     "candidatura": "VOX",
+     "votos": 25612,
+     "electo": false
+    },
+    {
+     "nombre": "Santiago Muñoz Martín",
+     "candidatura": "VOX",
+     "votos": 25084,
+     "electo": false
+    },
+    {
+     "nombre": "Jon Álvarez Lorenzo",
+     "candidatura": "SUMAR",
+     "votos": 16460,
+     "electo": false
+    },
+    {
+     "nombre": "Milagros Martínez Morán",
+     "candidatura": "SUMAR",
+     "votos": 14514,
+     "electo": false
+    },
+    {
+     "nombre": "David Araújo Gómez",
+     "candidatura": "SUMAR",
+     "votos": 14395,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Andrade Hurtado",
+     "candidatura": "BLOQUE EXTREMEÑO",
+     "votos": 3473,
+     "electo": false
+    },
+    {
+     "nombre": "María Isabel de la Montaña Guisado González",
+     "candidatura": "BLOQUE EXTREMEÑO",
+     "votos": 2644,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Martín Recuero",
+     "candidatura": "BLOQUE EXTREMEÑO",
+     "votos": 2157,
+     "electo": false
+    },
+    {
+     "nombre": "José Julio Tiemblo Pérez",
+     "candidatura": "SOMOS CÁCERES",
+     "votos": 2011,
+     "electo": false
+    },
+    {
+     "nombre": "Sara González Sánchez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1892,
+     "electo": false
+    },
+    {
+     "nombre": "Adelaida Augusto Vaquero",
+     "candidatura": "SOMOS CÁCERES",
+     "votos": 1479,
+     "electo": false
+    },
+    {
+     "nombre": "Emilia Parrón Campos",
+     "candidatura": "SOMOS CÁCERES",
+     "votos": 1283,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Manuel Cobos Serrano",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 608,
+     "electo": false
+    },
+    {
+     "nombre": "José Calvo Bru",
+     "candidatura": "RECORTES CERO",
+     "votos": 380,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Cádiz",
+   "provincia": "cadiz",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "José Ignacio Landaluce Calleja",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 223648,
+     "electo": true
+    },
+    {
+     "nombre": "María José García-Pelayo Jurado",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 216236,
+     "electo": true
+    },
+    {
+     "nombre": "María del Carmen Pérez Becerra",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 208400,
+     "electo": true
+    },
+    {
+     "nombre": "Alfonso Carlos Moscoso González",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 206747,
+     "electo": true
+    },
+    {
+     "nombre": "Cándida Verdier Mayoral",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 199457,
+     "electo": false
+    },
+    {
+     "nombre": "José Ramón Ortega Domínguez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 189438,
+     "electo": false
+    },
+    {
+     "nombre": "Enrique José García-Máiquez López",
+     "candidatura": "VOX",
+     "votos": 84296,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Sánchez Godés",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 78496,
+     "electo": false
+    },
+    {
+     "nombre": "Bárbara María Teresa Escañuela Álvarez",
+     "candidatura": "VOX",
+     "votos": 77398,
+     "electo": false
+    },
+    {
+     "nombre": "Isabel María Fernández Orihuela",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 74627,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando de la Cruz Muñoz",
+     "candidatura": "VOX",
+     "votos": 72941,
+     "electo": false
+    },
+    {
+     "nombre": "Ángeles Beatriz Rodríguez Borrego",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 67274,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier García Fernández",
+     "candidatura": "ADELANTE ANDALUCÍA",
+     "votos": 12990,
+     "electo": false
+    },
+    {
+     "nombre": "Vanessa María Sánchez Martín",
+     "candidatura": "ADELANTE ANDALUCÍA",
+     "votos": 10879,
+     "electo": false
+    },
+    {
+     "nombre": "Encarnación Vicente Pina",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 9871,
+     "electo": false
+    },
+    {
+     "nombre": "Victoria Eva Zarco Jiménez",
+     "candidatura": "ADELANTE ANDALUCÍA",
+     "votos": 9172,
+     "electo": false
+    },
+    {
+     "nombre": "Ángela Arana González",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 6800,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel María Cabello Izquierdo",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 6694,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Belén Lobo González",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 2194,
+     "electo": false
+    },
+    {
+     "nombre": "Vanesa María Santos Guerrero",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 1392,
+     "electo": false
+    },
+    {
+     "nombre": "Hassan Ben Sid Amar Mohamed",
+     "candidatura": "RECORTES CERO",
+     "votos": 1112,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Cantabria",
+   "provincia": "cantabria",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Elena Castillo López",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 151183,
+     "electo": true
+    },
+    {
+     "nombre": "Severiano Ángel Cuesta Alonso",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 147367,
+     "electo": true
+    },
+    {
+     "nombre": "Juan Carlos García Diego",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 145735,
+     "electo": true
+    },
+    {
+     "nombre": "Secundino Caso Roiz",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 116730,
+     "electo": true
+    },
+    {
+     "nombre": "Ester Bolado Somavilla",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 115653,
+     "electo": false
+    },
+    {
+     "nombre": "Eugenia Gómez De Diego",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 110219,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Álvarez Ibáñez",
+     "candidatura": "VOX",
+     "votos": 40199,
+     "electo": false
+    },
+    {
+     "nombre": "Sara María Campos Oceja",
+     "candidatura": "VOX",
+     "votos": 37774,
+     "electo": false
+    },
+    {
+     "nombre": "Marcelino Astobiza Arce",
+     "candidatura": "VOX",
+     "votos": 36197,
+     "electo": false
+    },
+    {
+     "nombre": "Mercedes Boix Rovira",
+     "candidatura": "SUMAR",
+     "votos": 30481,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Agúndez de la Cruz",
+     "candidatura": "SUMAR",
+     "votos": 24200,
+     "electo": false
+    },
+    {
+     "nombre": "María Argentina Cabarga Peña",
+     "candidatura": "SUMAR",
+     "votos": 23088,
+     "electo": false
+    },
+    {
+     "nombre": "Xose Costa Álvarez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4299,
+     "electo": false
+    },
+    {
+     "nombre": "Federico José Saiz Sandoval",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1808,
+     "electo": false
+    },
+    {
+     "nombre": "Sergio Larredonda González",
+     "candidatura": "RECORTES CERO",
+     "votos": 1416,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Castellón/Castelló",
+   "provincia": "castellon",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Vicente Martínez Mus",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 111393,
+     "electo": true
+    },
+    {
+     "nombre": "Susana Marqués Escoín",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 109397,
+     "electo": true
+    },
+    {
+     "nombre": "Amparo Marco Gual",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 107391,
+     "electo": true
+    },
+    {
+     "nombre": "Vicente Tejedo Tormo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 105932,
+     "electo": true
+    },
+    {
+     "nombre": "Eva Redondo Gamero",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 101309,
+     "electo": false
+    },
+    {
+     "nombre": "Gonzalo Moliner Bellod",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 94391,
+     "electo": false
+    },
+    {
+     "nombre": "Elsa Vilalta Fonfría",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 44387,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro Sancho Calduch",
+     "candidatura": "VOX",
+     "votos": 41745,
+     "electo": false
+    },
+    {
+     "nombre": "Luisa Espinós Zafra",
+     "candidatura": "VOX",
+     "votos": 37918,
+     "electo": false
+    },
+    {
+     "nombre": "Marta Caballero Godes",
+     "candidatura": "VOX",
+     "votos": 36611,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Segarra Silvestre",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 34888,
+     "electo": false
+    },
+    {
+     "nombre": "Axel Noel Monfort Cano",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 31317,
+     "electo": false
+    },
+    {
+     "nombre": "Francisca Hernández Rodríguez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3949,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Tur Juan",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2329,
+     "electo": false
+    },
+    {
+     "nombre": "Cristina Rozas Martínez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2307,
+     "electo": false
+    },
+    {
+     "nombre": "Ricardo Cano Gaviria",
+     "candidatura": "RECORTES CERO",
+     "votos": 1056,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Amoros Mezquita",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 735,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa María Lentini Chao",
+     "candidatura": "RECORTES CERO",
+     "votos": 631,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Ciudad Real",
+   "provincia": "ciudad-real",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Rosa María Romero Sánchez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 117847,
+     "electo": true
+    },
+    {
+     "nombre": "Leopoldo Jerónimo Sierra Gallardo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 116163,
+     "electo": true
+    },
+    {
+     "nombre": "Raúl Dalmacio Valero Mejía",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 114024,
+     "electo": true
+    },
+    {
+     "nombre": "Julián Nieva Delgado",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 100666,
+     "electo": true
+    },
+    {
+     "nombre": "María del Señor Fresneda Guerra",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 99176,
+     "electo": false
+    },
+    {
+     "nombre": "José Fernández Teno",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 95731,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Felipe Sánchez-Crespo Ruiz del Moral",
+     "candidatura": "VOX",
+     "votos": 38063,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Ruiz Bolaños",
+     "candidatura": "VOX",
+     "votos": 35822,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Fernández Ayala",
+     "candidatura": "VOX",
+     "votos": 34467,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Garrido Morales",
+     "candidatura": "SUMAR",
+     "votos": 17612,
+     "electo": false
+    },
+    {
+     "nombre": "Minerva del Hoyo Ramírez",
+     "candidatura": "SUMAR",
+     "votos": 16143,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Moreno Valiente",
+     "candidatura": "SUMAR",
+     "votos": 13650,
+     "electo": false
+    },
+    {
+     "nombre": "María Antonieta Martín de Almagro López-",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2819,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Rodríguez Hervás",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1742,
+     "electo": false
+    },
+    {
+     "nombre": "Iñigo Carrión Echevarría",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 964,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Cerro de Lara",
+     "candidatura": "RECORTES CERO",
+     "votos": 914,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Córdoba",
+   "provincia": "cordoba",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Fernando Priego Chacón",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 174571,
+     "electo": true
+    },
+    {
+     "nombre": "Cristina Casanueva Jiménez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 170525,
+     "electo": true
+    },
+    {
+     "nombre": "Lorena Guerra Sánchez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 166484,
+     "electo": true
+    },
+    {
+     "nombre": "María de los Ángeles Luna Morales",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 146697,
+     "electo": true
+    },
+    {
+     "nombre": "Alfonso Muñoz Cuenca",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 139885,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Lara Estepa",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 138352,
+     "electo": false
+    },
+    {
+     "nombre": "Sergio Domingo Álvarez del Moral",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 55910,
+     "electo": false
+    },
+    {
+     "nombre": "Dolores Ventura Sánchez",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 52590,
+     "electo": false
+    },
+    {
+     "nombre": "Rocío Puebla Mendoza",
+     "candidatura": "VOX",
+     "votos": 51399,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Muñoz Cañuelo",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 51150,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel Castellano Cañete",
+     "candidatura": "VOX",
+     "votos": 48810,
+     "electo": false
+    },
+    {
+     "nombre": "María de los Dolores Fernández Córdoba",
+     "candidatura": "VOX",
+     "votos": 46845,
+     "electo": false
+    },
+    {
+     "nombre": "Sara Romero Valenzuela",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4802,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Urbano Navas",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3159,
+     "electo": false
+    },
+    {
+     "nombre": "María Pilar Bares Ruiz",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3057,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Infante Lisarte",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1763,
+     "electo": false
+    },
+    {
+     "nombre": "María Lourdes Bellido Garrido",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1422,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Ruiz Nosea",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1282,
+     "electo": false
+    },
+    {
+     "nombre": "Guillermo González Sánchez",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1258,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Bermudo Munzón",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1155,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Muro Romero",
+     "candidatura": "RECORTES CERO",
+     "votos": 944,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Coruña (A)",
+   "provincia": "a-coruna",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Rosa María Gallego Neira",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 282314,
+     "electo": true
+    },
+    {
+     "nombre": "Verónica María Casal Míguez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 274545,
+     "electo": true
+    },
+    {
+     "nombre": "Manuel Santos Ruiz Rivas",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 271990,
+     "electo": true
+    },
+    {
+     "nombre": "José Antonio Sánchez Bugallo",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 191809,
+     "electo": true
+    },
+    {
+     "nombre": "Natividad González Laso",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 179739,
+     "electo": false
+    },
+    {
+     "nombre": "Fabián Canosa Pasantes",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 169068,
+     "electo": false
+    },
+    {
+     "nombre": "Xesús Gómez Antelo",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 89328,
+     "electo": false
+    },
+    {
+     "nombre": "María Pilar Jiménez Aleixandre",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 81962,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Cipriano Fernández Ageitos",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 71563,
+     "electo": false
+    },
+    {
+     "nombre": "María Socorro Cea Vázquez",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 70356,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Sánchez Aguión",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 58871,
+     "electo": false
+    },
+    {
+     "nombre": "María Pilar Candocia Pita",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 56804,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Fuentes Lamas",
+     "candidatura": "VOX",
+     "votos": 28516,
+     "electo": false
+    },
+    {
+     "nombre": "José Enrique Fernández del Campo Carreño",
+     "candidatura": "VOX",
+     "votos": 25306,
+     "electo": false
+    },
+    {
+     "nombre": "María Catalina Ces Casais",
+     "candidatura": "VOX",
+     "votos": 24435,
+     "electo": false
+    },
+    {
+     "nombre": "Isabel Barral Domínguez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 7426,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Miguel González Seijas",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4195,
+     "electo": false
+    },
+    {
+     "nombre": "María Belén Placer García",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4102,
+     "electo": false
+    },
+    {
+     "nombre": "Alberto Paz Viñas",
+     "candidatura": "RECORTES CERO",
+     "votos": 1840,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Cuenca",
+   "provincia": "cuenca",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Benjamín Prieto Valencia",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 46726,
+     "electo": true
+    },
+    {
+     "nombre": "María Jesús Bonilla Domínguez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 45986,
+     "electo": true
+    },
+    {
+     "nombre": "Alejo Joaquín Miranda de Larra Arnaiz",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 44687,
+     "electo": true
+    },
+    {
+     "nombre": "Carmen Torralba Valiente",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 42177,
+     "electo": true
+    },
+    {
+     "nombre": "Alfonso Escudero Ortega",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 40899,
+     "electo": false
+    },
+    {
+     "nombre": "Ester Barrios Cañas",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 40352,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Rodríguez Bartolomé",
+     "candidatura": "VOX",
+     "votos": 14835,
+     "electo": false
+    },
+    {
+     "nombre": "María José López Beamud",
+     "candidatura": "VOX",
+     "votos": 13845,
+     "electo": false
+    },
+    {
+     "nombre": "David Borja Pérez",
+     "candidatura": "VOX",
+     "votos": 13210,
+     "electo": false
+    },
+    {
+     "nombre": "Jacobo Medianero Millán",
+     "candidatura": "SUMAR",
+     "votos": 7316,
+     "electo": false
+    },
+    {
+     "nombre": "Maite Julia Pérez Quiroz",
+     "candidatura": "SUMAR",
+     "votos": 6442,
+     "electo": false
+    },
+    {
+     "nombre": "María Amparo Merino Segovia",
+     "candidatura": "SUMAR",
+     "votos": 5807,
+     "electo": false
+    },
+    {
+     "nombre": "Caridad Lledó Perea",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 989,
+     "electo": false
+    },
+    {
+     "nombre": "José Ángel Camacho Mora",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 342,
+     "electo": false
+    },
+    {
+     "nombre": "Mario Martínez Belmar",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 339,
+     "electo": false
+    },
+    {
+     "nombre": "Esther Ordóñez Fernández",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 304,
+     "electo": false
+    },
+    {
+     "nombre": "Cristina Hervás Mediavilla",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 271,
+     "electo": false
+    },
+    {
+     "nombre": "Encarnación Serrano Paricio",
+     "candidatura": "RECORTES CERO",
+     "votos": 241,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Ros Córcoles",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 208,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Gipuzkoa",
+   "provincia": "gipuzkoa",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Gorka Elejabarrieta Díaz",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 118906,
+     "electo": true
+    },
+    {
+     "nombre": "Olaia Duarte Lopez",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 117073,
+     "electo": true
+    },
+    {
+     "nombre": "Mario Zubiaga Garate",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 112565,
+     "electo": true
+    },
+    {
+     "nombre": "Luke Uribe-Etxebarria Apalategi",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 90080,
+     "electo": true
+    },
+    {
+     "nombre": "María Mercedes Garmendia Bereciartu",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 87756,
+     "electo": false
+    },
+    {
+     "nombre": "Izaskun Gómez Cermeño",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 85708,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Uribarren Axpe",
+     "candidatura": "EUZKO ALDERDI JELTZALEA-PARTIDO NACIONALISTA VASCO",
+     "votos": 84699,
+     "electo": false
+    },
+    {
+     "nombre": "Oscar Valbuena Pascual",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 80644,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Priede Merchán",
+     "candidatura": "PARTIDO SOCIALISTA DE EUSKADI-EUSKADIKO EZKERRA (PSOE)",
+     "votos": 79405,
+     "electo": false
+    },
+    {
+     "nombre": "José Carlos García Rodrigo Ameztoy",
+     "candidatura": "SUMAR",
+     "votos": 34447,
+     "electo": false
+    },
+    {
+     "nombre": "Lidia Muñoz Ucher",
+     "candidatura": "SUMAR",
+     "votos": 32915,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Cristóbal de Sande",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 31993,
+     "electo": false
+    },
+    {
+     "nombre": "María Garrapiz Rivas",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 31379,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier Fernández de Diego",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 30506,
+     "electo": false
+    },
+    {
+     "nombre": "Inés María Benítez Lozano",
+     "candidatura": "SUMAR",
+     "votos": 30304,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro Ignacio Gandásegui Agorreta",
+     "candidatura": "VOX",
+     "votos": 6886,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandra Moreno Miguel",
+     "candidatura": "VOX",
+     "votos": 6344,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Rubio Gastón",
+     "candidatura": "VOX",
+     "votos": 5987,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Jiménez Cervera",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2320,
+     "electo": false
+    },
+    {
+     "nombre": "Mónica Beraza Gómez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2188,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Manuel Esparza Billalabeitia",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1539,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Lizarralde Aguirre",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1515,
+     "electo": false
+    },
+    {
+     "nombre": "Amaya Larrea Loran",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1409,
+     "electo": false
+    },
+    {
+     "nombre": "Luis García Molina",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1116,
+     "electo": false
+    },
+    {
+     "nombre": "Jakes Iñarra Lasagabaster",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE EUSKADI/EUSKADIKO",
+     "votos": 789,
+     "electo": false
+    },
+    {
+     "nombre": "Roberto Gómez Egido",
+     "candidatura": "RECORTES CERO",
+     "votos": 614,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Martínez Bárbara",
+     "candidatura": "BIDEZKO MUNDURANTZ",
+     "votos": 320,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Girona",
+   "provincia": "girona",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Consol Canteny Arbolí",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 83432,
+     "electo": true
+    },
+    {
+     "nombre": "Martí Sans Pairuto",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 76372,
+     "electo": true
+    },
+    {
+     "nombre": "Lluïsa Blanch Fulcarà",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 74739,
+     "electo": true
+    },
+    {
+     "nombre": "Joan Bagué Roura",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 73006,
+     "electo": true
+    },
+    {
+     "nombre": "Jordi Martí Deulofeu",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 67002,
+     "electo": false
+    },
+    {
+     "nombre": "Albert Piñeira Brosel",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 65296,
+     "electo": false
+    },
+    {
+     "nombre": "Montserrat Mindan Cortada",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 64108,
+     "electo": false
+    },
+    {
+     "nombre": "Josep María Terricabras i Nogueras",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 62938,
+     "electo": false
+    },
+    {
+     "nombre": "Susanna Pagés Jutglar",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 55939,
+     "electo": false
+    },
+    {
+     "nombre": "Jordi Lloveras Avellí",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 32934,
+     "electo": false
+    },
+    {
+     "nombre": "Alfonso Sánchez Fisac",
+     "candidatura": "PARTIT POPULAR/PARTIDO POPULAR",
+     "votos": 30855,
+     "electo": false
+    },
+    {
+     "nombre": "Vanesa Mányik Jiménez",
+     "candidatura": "PARTIT POPULAR/PARTIDO POPULAR",
+     "votos": 29244,
+     "electo": false
+    },
+    {
+     "nombre": "Anna Portillo Cuberes",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 28975,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Ramón Iturriagagoitia Bassas",
+     "candidatura": "PARTIT POPULAR/PARTIDO POPULAR",
+     "votos": 28164,
+     "electo": false
+    },
+    {
+     "nombre": "Rubén Paz Martín",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 22814,
+     "electo": false
+    },
+    {
+     "nombre": "Ana María Catalán Martínez",
+     "candidatura": "VOX",
+     "votos": 18177,
+     "electo": false
+    },
+    {
+     "nombre": "Jordi Vivo Fernández",
+     "candidatura": "VOX",
+     "votos": 16820,
+     "electo": false
+    },
+    {
+     "nombre": "Cristina Ruz Navarro",
+     "candidatura": "VOX",
+     "votos": 15982,
+     "electo": false
+    },
+    {
+     "nombre": "Elena Costa Farré",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 9652,
+     "electo": false
+    },
+    {
+     "nombre": "Alicia Fuentes Company",
+     "candidatura": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU",
+     "votos": 5475,
+     "electo": false
+    },
+    {
+     "nombre": "Ramon Torredemer Turu",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 5463,
+     "electo": false
+    },
+    {
+     "nombre": "Camila Fernanda Parra Alvarado",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 5023,
+     "electo": false
+    },
+    {
+     "nombre": "Tomás Ferreira Crubellati",
+     "candidatura": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+     "votos": 2597,
+     "electo": false
+    },
+    {
+     "nombre": "Sandra Barba Olaiz",
+     "candidatura": "RECORTES CERO",
+     "votos": 1142,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Granada",
+   "provincia": "granada",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Vicente Azpitarte Pérez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 188627,
+     "electo": true
+    },
+    {
+     "nombre": "Francisco Joaquín Camacho Borrego",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 184219,
+     "electo": true
+    },
+    {
+     "nombre": "María Eva Martín Pérez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 182755,
+     "electo": true
+    },
+    {
+     "nombre": "José Entrena Ávila",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 168819,
+     "electo": true
+    },
+    {
+     "nombre": "Elvira Ramón Utrabo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 165260,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro José Zubeldia Santoyo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 156465,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Pérez Padial",
+     "candidatura": "VOX",
+     "votos": 68716,
+     "electo": false
+    },
+    {
+     "nombre": "María de La Cruz Lozano Marín",
+     "candidatura": "VOX",
+     "votos": 64323,
+     "electo": false
+    },
+    {
+     "nombre": "David Navarro Quesada",
+     "candidatura": "VOX",
+     "votos": 61091,
+     "electo": false
+    },
+    {
+     "nombre": "Mariano Martin Civantos",
+     "candidatura": "SUMAR",
+     "votos": 52750,
+     "electo": false
+    },
+    {
+     "nombre": "Matilde Ramiro Gutiérrez",
+     "candidatura": "SUMAR",
+     "votos": 47358,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Puentedura Anllo",
+     "candidatura": "SUMAR",
+     "votos": 47123,
+     "electo": false
+    },
+    {
+     "nombre": "Encarnación Hidalgo Tenorio",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 6785,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel María Díaz Claudio",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4118,
+     "electo": false
+    },
+    {
+     "nombre": "María del Pilar Bensusan Martín",
+     "candidatura": "JUNTOS POR GRANADA",
+     "votos": 3845,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Darío Ruiz Jiménez",
+     "candidatura": "JUNTOS POR GRANADA",
+     "votos": 2373,
+     "electo": false
+    },
+    {
+     "nombre": "José Antonio Sánchez Pérez",
+     "candidatura": "JUNTOS POR GRANADA",
+     "votos": 2287,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Castillo Moral",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 2167,
+     "electo": false
+    },
+    {
+     "nombre": "Pablo Mora Fumero",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1706,
+     "electo": false
+    },
+    {
+     "nombre": "Kim Joaquina Pérez Fernández-Figares",
+     "candidatura": "RECORTES CERO",
+     "votos": 1000,
+     "electo": false
+    },
+    {
+     "nombre": "Emilio Jiménez Rodríguez",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 958,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Ordinas Montojo",
+     "candidatura": "RECORTES CERO",
+     "votos": 434,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Guadalajara",
+   "provincia": "guadalajara",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Lucas Castillo Rodríguez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 52910,
+     "electo": true
+    },
+    {
+     "nombre": "María Patricio Zafra",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 51531,
+     "electo": true
+    },
+    {
+     "nombre": "María Montserrat Rivas de la Torre",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 50376,
+     "electo": true
+    },
+    {
+     "nombre": "Araceli Martínez Esteban",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 47313,
+     "electo": true
+    },
+    {
+     "nombre": "José Luis Blanco Moreno",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 45365,
+     "electo": false
+    },
+    {
+     "nombre": "Riansares Serrano Morales",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 43417,
+     "electo": false
+    },
+    {
+     "nombre": "Juan González Perabá Miralles",
+     "candidatura": "VOX",
+     "votos": 24213,
+     "electo": false
+    },
+    {
+     "nombre": "María del Sagrario Muñoz Valverde",
+     "candidatura": "VOX",
+     "votos": 22729,
+     "electo": false
+    },
+    {
+     "nombre": "José María Antón García",
+     "candidatura": "VOX",
+     "votos": 21704,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Antonio Pendás Zacarías",
+     "candidatura": "SUMAR",
+     "votos": 13217,
+     "electo": false
+    },
+    {
+     "nombre": "Ángeles Yagüe Gordo",
+     "candidatura": "SUMAR",
+     "votos": 12247,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Touset López",
+     "candidatura": "SUMAR",
+     "votos": 9907,
+     "electo": false
+    },
+    {
+     "nombre": "María del Pilar Samper Samper",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2261,
+     "electo": false
+    },
+    {
+     "nombre": "Jaime Gil Merino",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 734,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Fernández Asenjo",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 606,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Cortés Tejedor",
+     "candidatura": "RECORTES CERO",
+     "votos": 518,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Enrique Nieto del Canto",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 393,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Huelva",
+   "provincia": "huelva",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Carmelo Romero Hernández",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 93630,
+     "electo": true
+    },
+    {
+     "nombre": "María Eugenia Limón Bayo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 92269,
+     "electo": true
+    },
+    {
+     "nombre": "Juan Manuel González Camacho",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 89953,
+     "electo": true
+    },
+    {
+     "nombre": "Amaro Huelva Betanzos",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 87611,
+     "electo": true
+    },
+    {
+     "nombre": "Ángela María Ramírez del Toro",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 87318,
+     "electo": false
+    },
+    {
+     "nombre": "Syra Senra Zarza",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 85105,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Segovia Brome",
+     "candidatura": "VOX",
+     "votos": 32965,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Bermejo Martins",
+     "candidatura": "VOX",
+     "votos": 28934,
+     "electo": false
+    },
+    {
+     "nombre": "Amalia Josefa Ballester Goytia",
+     "candidatura": "VOX",
+     "votos": 27465,
+     "electo": false
+    },
+    {
+     "nombre": "David Domingo Fernández Calderón",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 25561,
+     "electo": false
+    },
+    {
+     "nombre": "María Amaya de Llanos Hernández",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 23314,
+     "electo": false
+    },
+    {
+     "nombre": "María Pereira Yáñez",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 21265,
+     "electo": false
+    },
+    {
+     "nombre": "María Virginia Pereira Hidalgo",
+     "candidatura": "POR HUELVA",
+     "votos": 4337,
+     "electo": false
+    },
+    {
+     "nombre": "María del Mar Coello García",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3182,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Delgado García",
+     "candidatura": "POR HUELVA",
+     "votos": 2835,
+     "electo": false
+    },
+    {
+     "nombre": "Belén María Martín Suárez",
+     "candidatura": "POR HUELVA",
+     "votos": 2597,
+     "electo": false
+    },
+    {
+     "nombre": "José Rodríguez Valle",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1911,
+     "electo": false
+    },
+    {
+     "nombre": "Josefa María Mesa Gallardo",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1738,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Martínez Villegas",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 773,
+     "electo": false
+    },
+    {
+     "nombre": "José Antonio González Vaz",
+     "candidatura": "RECORTES CERO",
+     "votos": 626,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Huesca",
+   "provincia": "huesca",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Melania Mur Sangrá",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 46025,
+     "electo": true
+    },
+    {
+     "nombre": "Javier Campoy Monreal",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 44828,
+     "electo": true
+    },
+    {
+     "nombre": "Ana María Beltrán Villalba",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 43718,
+     "electo": true
+    },
+    {
+     "nombre": "Rosa María Serrano Sierra",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 41182,
+     "electo": true
+    },
+    {
+     "nombre": "Gonzalo Palacín Guarné",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 39453,
+     "electo": false
+    },
+    {
+     "nombre": "María Lourdes Arruebo de Lope",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 37477,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Orús Morlans",
+     "candidatura": "SUMAR ARAGÓN",
+     "votos": 13306,
+     "electo": false
+    },
+    {
+     "nombre": "María Lorena García López",
+     "candidatura": "VOX",
+     "votos": 12799,
+     "electo": false
+    },
+    {
+     "nombre": "María Dolores Giménez Banzo",
+     "candidatura": "SUMAR ARAGÓN",
+     "votos": 11774,
+     "electo": false
+    },
+    {
+     "nombre": "Marcos Juan Francoy Foncillas",
+     "candidatura": "VOX",
+     "votos": 11653,
+     "electo": false
+    },
+    {
+     "nombre": "Vanessa Polanco Gómez de Agüero",
+     "candidatura": "VOX",
+     "votos": 11017,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier Sadornil Gutiérrez",
+     "candidatura": "SUMAR ARAGÓN",
+     "votos": 9889,
+     "electo": false
+    },
+    {
+     "nombre": "Valero Aguayos Bestué",
+     "candidatura": "ARAGÓN EXISTE-COALICIÓN EXISTE",
+     "votos": 2747,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Otto Bellosta",
+     "candidatura": "ARAGÓN EXISTE-COALICIÓN EXISTE",
+     "votos": 2002,
+     "electo": false
+    },
+    {
+     "nombre": "Nuria Pargada Zapater",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 1553,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Villa Vispe",
+     "candidatura": "ARAGÓN EXISTE-COALICIÓN EXISTE",
+     "votos": 1502,
+     "electo": false
+    },
+    {
+     "nombre": "Paula María González Ozaez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1318,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Labat Latorre",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 1015,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Alberto Uruen Ortas",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 944,
+     "electo": false
+    },
+    {
+     "nombre": "Nuria Soler Ferrer",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 868,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Rosa Lobera Serrano",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 819,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Martín Vega",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 690,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Atrián Garcés",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 500,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier Palop Sancho",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 326,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Alcoba Calleja",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 318,
+     "electo": false
+    },
+    {
+     "nombre": "Julio Calvo Francés",
+     "candidatura": "RECORTES CERO",
+     "votos": 258,
+     "electo": false
+    },
+    {
+     "nombre": "Ibeth Lorena Gómez Verdezoto",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 125,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Pedro Juanín Esteban",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 120,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Jaén",
+   "provincia": "jaen",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Francisco Javier Márquez Sánchez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 141443,
+     "electo": true
+    },
+    {
+     "nombre": "Mariola Aranda García",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 138351,
+     "electo": true
+    },
+    {
+     "nombre": "José Latorre Ruiz",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 133826,
+     "electo": true
+    },
+    {
+     "nombre": "Francisco Javier Bermúdez Carrillo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 133344,
+     "electo": true
+    },
+    {
+     "nombre": "Manuel Ángel Fernández Palomino",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 129453,
+     "electo": false
+    },
+    {
+     "nombre": "Josefa Jurado Huertas",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 128413,
+     "electo": false
+    },
+    {
+     "nombre": "Eugenio Ismael Rodríguez Castillo",
+     "candidatura": "VOX",
+     "votos": 45480,
+     "electo": false
+    },
+    {
+     "nombre": "María del Mar Delgado Garrucho",
+     "candidatura": "VOX",
+     "votos": 42741,
+     "electo": false
+    },
+    {
+     "nombre": "David Lara Álvarez",
+     "candidatura": "VOX",
+     "votos": 40577,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco José López Ruano",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 28886,
+     "electo": false
+    },
+    {
+     "nombre": "Remedios Castaño Domene",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 27531,
+     "electo": false
+    },
+    {
+     "nombre": "Álvaro Rodríguez García",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 23999,
+     "electo": false
+    },
+    {
+     "nombre": "Candelaria Ponce de León Ochando",
+     "candidatura": "JAÉN MERECE MÁS",
+     "votos": 14342,
+     "electo": false
+    },
+    {
+     "nombre": "Encarnación Aguayo Tello",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4177,
+     "electo": false
+    },
+    {
+     "nombre": "María de la Concepción Berná Guisado",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1503,
+     "electo": false
+    },
+    {
+     "nombre": "Teresa Recena González",
+     "candidatura": "RECORTES CERO",
+     "votos": 1236,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "León",
+   "provincia": "leon",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Antonio Silván Rodríguez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 101403,
+     "electo": true
+    },
+    {
+     "nombre": "María Asunción Mayo Fernández",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 99272,
+     "electo": true
+    },
+    {
+     "nombre": "Jorge García Vega",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 97396,
+     "electo": true
+    },
+    {
+     "nombre": "Salvador Vidal Varela",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 90619,
+     "electo": true
+    },
+    {
+     "nombre": "María del Carmen Morán Franco",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 88280,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Alfonso González",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 84270,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Callado Cobo",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 32678,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco José García Paramio",
+     "candidatura": "VOX",
+     "votos": 28914,
+     "electo": false
+    },
+    {
+     "nombre": "Mónica Rey García",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 28706,
+     "electo": false
+    },
+    {
+     "nombre": "María Montserrat Carbajo Carro",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 26593,
+     "electo": false
+    },
+    {
+     "nombre": "Lope Arcos García",
+     "candidatura": "VOX",
+     "votos": 25600,
+     "electo": false
+    },
+    {
+     "nombre": "Silvia Ordás Merino",
+     "candidatura": "VOX",
+     "votos": 25141,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Monteira de la Fuente",
+     "candidatura": "SUMAR",
+     "votos": 19747,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Fuentes Carro",
+     "candidatura": "SUMAR",
+     "votos": 14866,
+     "electo": false
+    },
+    {
+     "nombre": "Joaquín Rodero Carretero",
+     "candidatura": "SUMAR",
+     "votos": 13493,
+     "electo": false
+    },
+    {
+     "nombre": "María Begoña Fernández García",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1813,
+     "electo": false
+    },
+    {
+     "nombre": "Esther Domínguez Jové",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 1649,
+     "electo": false
+    },
+    {
+     "nombre": "Catalina Antúnez García",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 1118,
+     "electo": false
+    },
+    {
+     "nombre": "David López Vara",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 980,
+     "electo": false
+    },
+    {
+     "nombre": "Mónica Ruiz Rico",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 929,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro Gómez García",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 874,
+     "electo": false
+    },
+    {
+     "nombre": "José Rubén Sánchez Bravo",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 756,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Fernández Villar",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 563,
+     "electo": false
+    },
+    {
+     "nombre": "Enrique Carlos Abad Martínez",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 486,
+     "electo": false
+    },
+    {
+     "nombre": "María Menéndez Menéndez",
+     "candidatura": "RECORTES CERO",
+     "votos": 283,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Lleida",
+   "provincia": "lleida",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Dionís Oña Martín",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 48601,
+     "electo": true
+    },
+    {
+     "nombre": "Pasión Gador Romero García",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 45632,
+     "electo": true
+    },
+    {
+     "nombre": "Jan Pomés López",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 44353,
+     "electo": true
+    },
+    {
+     "nombre": "Sara Bailac i Ardanuy",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 43919,
+     "electo": true
+    },
+    {
+     "nombre": "Carme Lostao i Otero",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 38488,
+     "electo": false
+    },
+    {
+     "nombre": "María Teresa (Mayte) Rivero Segalàs",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 37285,
+     "electo": false
+    },
+    {
+     "nombre": "Xavier Castellana i Gamisans",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 36048,
+     "electo": false
+    },
+    {
+     "nombre": "Marta Gispert Rocasalbas",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 34440,
+     "electo": false
+    },
+    {
+     "nombre": "Josep María Ribera Currià",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 32153,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel Balao García",
+     "candidatura": "PARTIDO POPULAR/PARTIT POPULAR",
+     "votos": 23371,
+     "electo": false
+    },
+    {
+     "nombre": "Manel Parra Cabello",
+     "candidatura": "PARTIDO POPULAR/PARTIT POPULAR",
+     "votos": 22242,
+     "electo": false
+    },
+    {
+     "nombre": "Dolors Roca Curcó",
+     "candidatura": "PARTIDO POPULAR/PARTIT POPULAR",
+     "votos": 21930,
+     "electo": false
+    },
+    {
+     "nombre": "Elena Carmen Motos Hervás",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 14566,
+     "electo": false
+    },
+    {
+     "nombre": "Sergio Talamonte Sánchez",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 11022,
+     "electo": false
+    },
+    {
+     "nombre": "Isabel Mas Picatoste",
+     "candidatura": "VOX",
+     "votos": 10433,
+     "electo": false
+    },
+    {
+     "nombre": "Nessa Molina Cano",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 9854,
+     "electo": false
+    },
+    {
+     "nombre": "María Isabel Guzman Cornejo",
+     "candidatura": "VOX",
+     "votos": 9658,
+     "electo": false
+    },
+    {
+     "nombre": "Josep María Mirada Profitós",
+     "candidatura": "VOX",
+     "votos": 9589,
+     "electo": false
+    },
+    {
+     "nombre": "María Josep (Marisé) Piñol Carrera",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 3231,
+     "electo": false
+    },
+    {
+     "nombre": "Ivan Duran Pujol",
+     "candidatura": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU",
+     "votos": 3043,
+     "electo": false
+    },
+    {
+     "nombre": "José Luís Dolz Fernández",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 1999,
+     "electo": false
+    },
+    {
+     "nombre": "Lorena Torrano Bote",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 1970,
+     "electo": false
+    },
+    {
+     "nombre": "Lamberto Pons Sànchez",
+     "candidatura": "ESCONS EN BLANC",
+     "votos": 1143,
+     "electo": false
+    },
+    {
+     "nombre": "José Luís López Hernández",
+     "candidatura": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+     "votos": 1109,
+     "electo": false
+    },
+    {
+     "nombre": "Maila Surisca Ramos",
+     "candidatura": "ESCONS EN BLANC",
+     "votos": 909,
+     "electo": false
+    },
+    {
+     "nombre": "Julián Márquez Frías",
+     "candidatura": "ESCONS EN BLANC",
+     "votos": 751,
+     "electo": false
+    },
+    {
+     "nombre": "José Aureliano Fernández Fernández",
+     "candidatura": "RECORTES CERO",
+     "votos": 473,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Lugo",
+   "provincia": "lugo",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "José Manuel Barreiro Fernández",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 95897,
+     "electo": true
+    },
+    {
+     "nombre": "María José Gómez Rodríguez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 94187,
+     "electo": true
+    },
+    {
+     "nombre": "Juan Carlos Serrano López",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 92419,
+     "electo": true
+    },
+    {
+     "nombre": "César Alejandro Mogo Zaro",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 58773,
+     "electo": true
+    },
+    {
+     "nombre": "Marina Ramudo Graña",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 56010,
+     "electo": false
+    },
+    {
+     "nombre": "José Fernández Fernández",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 53660,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa Ana Prieto Florines",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 21124,
+     "electo": false
+    },
+    {
+     "nombre": "María Montserrat Porteiro Sánchez",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 16597,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Gegunde Díaz",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 14861,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Otero Bello",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 10727,
+     "electo": false
+    },
+    {
+     "nombre": "María Ángeles Gayoso Fraga",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 8380,
+     "electo": false
+    },
+    {
+     "nombre": "Noelia Rabanal González",
+     "candidatura": "VOX",
+     "votos": 7363,
+     "electo": false
+    },
+    {
+     "nombre": "José Méndez Torres",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 6655,
+     "electo": false
+    },
+    {
+     "nombre": "Rubén Rodríguez Río",
+     "candidatura": "VOX",
+     "votos": 6423,
+     "electo": false
+    },
+    {
+     "nombre": "Rubén Graña Fernández",
+     "candidatura": "VOX",
+     "votos": 6110,
+     "electo": false
+    },
+    {
+     "nombre": "Alicia Beatriz Rodríguez Pérez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1792,
+     "electo": false
+    },
+    {
+     "nombre": "Andrés Castañón Rincón",
+     "candidatura": "PARTIDO COMUNISTA DOS TRABALLADORES DE GALIZA",
+     "votos": 496,
+     "electo": false
+    },
+    {
+     "nombre": "Fermín Escaray Lozano",
+     "candidatura": "POR UN MUNDO MAIS XUSTO",
+     "votos": 478,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Puga Fraga",
+     "candidatura": "RECORTES CERO",
+     "votos": 392,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Madrid",
+   "provincia": "madrid",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Pedro Rollán Ojeda",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 1505318,
+     "electo": true
+    },
+    {
+     "nombre": "Pío García-Escudero Márquez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 1468969,
+     "electo": true
+    },
+    {
+     "nombre": "Paloma Martín Martín",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 1453394,
+     "electo": true
+    },
+    {
+     "nombre": "José Manuel Franco Pardo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 1063568,
+     "electo": true
+    },
+    {
+     "nombre": "María del Valle Luna Zarza",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 981051,
+     "electo": false
+    },
+    {
+     "nombre": "Carolina Cordero Núñez",
+     "candidatura": "SUMAR",
+     "votos": 569765,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Lozano Mendoza",
+     "candidatura": "SUMAR",
+     "votos": 458931,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Bustelo García del Real",
+     "candidatura": "VOX",
+     "votos": 442850,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro del Cura Sánchez",
+     "candidatura": "SUMAR",
+     "votos": 415508,
+     "electo": false
+    },
+    {
+     "nombre": "Julia Escobar Moreno",
+     "candidatura": "VOX",
+     "votos": 410404,
+     "electo": false
+    },
+    {
+     "nombre": "Zoe Milagros Valdés Martínez",
+     "candidatura": "VOX",
+     "votos": 387940,
+     "electo": false
+    },
+    {
+     "nombre": "Santiago Llorente Gutiérrez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 100732,
+     "electo": false
+    },
+    {
+     "nombre": "Asunción Estévez Chacón",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 42060,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Barrios Terroso",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 22098,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Antúnez Alcántara",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 21772,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Serrano Paradinas",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 17733,
+     "electo": false
+    },
+    {
+     "nombre": "Hugo Carrasco González",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 12980,
+     "electo": false
+    },
+    {
+     "nombre": "María Isabel Pinel Olmeda",
+     "candidatura": "PARTIDO HUMANISTA",
+     "votos": 8298,
+     "electo": false
+    },
+    {
+     "nombre": "Martín Ricardo Saenz de Ynestrillas Pérez",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 7318,
+     "electo": false
+    },
+    {
+     "nombre": "Fabián Appel Katz",
+     "candidatura": "RECORTES CERO",
+     "votos": 7090,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Antonio Gómez del Pulgar Alcaide",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4374,
+     "electo": false
+    },
+    {
+     "nombre": "Juana Constantina Zlotescu Simatu",
+     "candidatura": "RECORTES CERO",
+     "votos": 3940,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Casero Hernández",
+     "candidatura": "RECORTES CERO",
+     "votos": 3908,
+     "electo": false
+    },
+    {
+     "nombre": "Eva Ubago Castro",
+     "candidatura": "PARTIDO HUMANISTA",
+     "votos": 3520,
+     "electo": false
+    },
+    {
+     "nombre": "Joaquín Pablo Segado Bixquert",
+     "candidatura": "PARTIDO HUMANISTA",
+     "votos": 3168,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Málaga",
+   "provincia": "malaga",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "José Alberto Armijo Navas",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 304853,
+     "electo": true
+    },
+    {
+     "nombre": "Ángel Luis González Muñoz",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 292062,
+     "electo": true
+    },
+    {
+     "nombre": "Lucía Yeves Leal",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 288692,
+     "electo": true
+    },
+    {
+     "nombre": "Rafael Granados Ruiz",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 239075,
+     "electo": true
+    },
+    {
+     "nombre": "María Dolores Narváez Bandera",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 234557,
+     "electo": false
+    },
+    {
+     "nombre": "Salvador Javier Rojas Merino",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 218938,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Jesús Ruiz Ballesteros",
+     "candidatura": "VOX",
+     "votos": 111904,
+     "electo": false
+    },
+    {
+     "nombre": "Gemma María Palomo Ferrer",
+     "candidatura": "VOX",
+     "votos": 102669,
+     "electo": false
+    },
+    {
+     "nombre": "Patricia García Leiva",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 98531,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Reyes Rabell",
+     "candidatura": "VOX",
+     "votos": 97208,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Rodríguez Ramírez",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 78701,
+     "electo": false
+    },
+    {
+     "nombre": "Noemí Vinuesa Calleja",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 76694,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Inmaculada Sánchez Carmona",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 15626,
+     "electo": false
+    },
+    {
+     "nombre": "Eva Ramos Taillefer",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 9220,
+     "electo": false
+    },
+    {
+     "nombre": "Federico José Cuesta Torres",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 9184,
+     "electo": false
+    },
+    {
+     "nombre": "María Carmen Mestanza Garrido",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 4829,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco José Rodríguez Marín",
+     "candidatura": "RECORTES CERO",
+     "votos": 2954,
+     "electo": false
+    },
+    {
+     "nombre": "Alfonso González Extremera",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 2032,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Murcia",
+   "provincia": "murcia",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Francisco Martín Bernabé Pérez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 303628,
+     "electo": true
+    },
+    {
+     "nombre": "Antonio Luengo Zapata",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 295678,
+     "electo": true
+    },
+    {
+     "nombre": "Antonia López Moya",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 292705,
+     "electo": true
+    },
+    {
+     "nombre": "Inmaculada Sánchez Roca",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 199680,
+     "electo": true
+    },
+    {
+     "nombre": "Caridad Rubio Martínez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 189602,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Carlos Contreras Martínez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 181091,
+     "electo": false
+    },
+    {
+     "nombre": "José Francisco Garre Izquierdo",
+     "candidatura": "VOX",
+     "votos": 159086,
+     "electo": false
+    },
+    {
+     "nombre": "María Ángela Berzal Sánchez",
+     "candidatura": "VOX",
+     "votos": 151190,
+     "electo": false
+    },
+    {
+     "nombre": "Juana María Navarro Aguilera",
+     "candidatura": "VOX",
+     "votos": 147241,
+     "electo": false
+    },
+    {
+     "nombre": "Helena Vidal Brazales",
+     "candidatura": "SUMAR",
+     "votos": 69215,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Campillo Meseguer",
+     "candidatura": "SUMAR",
+     "votos": 56686,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Luis Hernández García",
+     "candidatura": "SUMAR",
+     "votos": 52111,
+     "electo": false
+    },
+    {
+     "nombre": "José Francisco Michelena Gil",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 7778,
+     "electo": false
+    },
+    {
+     "nombre": "Ana María Espinosa Belenguer",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 7127,
+     "electo": false
+    },
+    {
+     "nombre": "Óscar Pastor Bárcenas",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5153,
+     "electo": false
+    },
+    {
+     "nombre": "Joaquín de Domingo López",
+     "candidatura": "POR MI REGIÓN",
+     "votos": 3426,
+     "electo": false
+    },
+    {
+     "nombre": "Verónica Guillén Serrano",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 2529,
+     "electo": false
+    },
+    {
+     "nombre": "Juana María Rocamora Lillo",
+     "candidatura": "POR MI REGIÓN",
+     "votos": 2277,
+     "electo": false
+    },
+    {
+     "nombre": "José Luis Duarte Fustero",
+     "candidatura": "POR MI REGIÓN",
+     "votos": 2204,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Luis Pérez Ramos",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1911,
+     "electo": false
+    },
+    {
+     "nombre": "Manuela Pedreño López",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1811,
+     "electo": false
+    },
+    {
+     "nombre": "Sergio Sánchez Nicolás",
+     "candidatura": "RECORTES CERO",
+     "votos": 1023,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Yago Torregrosa",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 864,
+     "electo": false
+    },
+    {
+     "nombre": "Jenifer Nicolás Álvarez",
+     "candidatura": "RECORTES CERO",
+     "votos": 661,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Urteaga de Manuel",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 645,
+     "electo": false
+    },
+    {
+     "nombre": "María Ainhoa Martín Chamorro",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 476,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Navarra",
+   "provincia": "navarra",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Javier Remírez Apesteguía",
+     "candidatura": "PARTIDO SOCIALISTA DE NAVARRA-PSOE",
+     "votos": 93448,
+     "electo": true
+    },
+    {
+     "nombre": "Nuria Medina Santos",
+     "candidatura": "PARTIDO SOCIALISTA DE NAVARRA-PSOE",
+     "votos": 89107,
+     "electo": true
+    },
+    {
+     "nombre": "Antonio Magdaleno Alegría",
+     "candidatura": "PARTIDO SOCIALISTA DE NAVARRA-PSOE",
+     "votos": 83435,
+     "electo": true
+    },
+    {
+     "nombre": "María Mar Caballero Martínez",
+     "candidatura": "UNIÓN DEL PUEBLO NAVARRO",
+     "votos": 66132,
+     "electo": true
+    },
+    {
+     "nombre": "Koldo Leoz Garciandia",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 65004,
+     "electo": false
+    },
+    {
+     "nombre": "Mercedes Añon Monton",
+     "candidatura": "UNIÓN DEL PUEBLO NAVARRO",
+     "votos": 62470,
+     "electo": false
+    },
+    {
+     "nombre": "Amelia Salanueva Murguialday",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 61227,
+     "electo": false
+    },
+    {
+     "nombre": "Mario Fabo Calero",
+     "candidatura": "UNIÓN DEL PUEBLO NAVARRO",
+     "votos": 59975,
+     "electo": false
+    },
+    {
+     "nombre": "Amets Inda Gorriaran",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 58533,
+     "electo": false
+    },
+    {
+     "nombre": "Ruth Goñi Sarries",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 58060,
+     "electo": false
+    },
+    {
+     "nombre": "David González Jiménez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 56761,
+     "electo": false
+    },
+    {
+     "nombre": "Joseba Xabier Otondo Bikondoa",
+     "candidatura": "EUSKAL HERRIA BILDU-INDEPENDENTZIA EZKERRETIK",
+     "votos": 56230,
+     "electo": false
+    },
+    {
+     "nombre": "Miren Edurne Eguino Sasiain",
+     "candidatura": "SUMAR",
+     "votos": 42383,
+     "electo": false
+    },
+    {
+     "nombre": "Eva María González Fernández",
+     "candidatura": "SUMAR",
+     "votos": 32853,
+     "electo": false
+    },
+    {
+     "nombre": "Gaxan Sad Irisarri",
+     "candidatura": "SUMAR",
+     "votos": 28845,
+     "electo": false
+    },
+    {
+     "nombre": "Silvia Camaces Murillo",
+     "candidatura": "GEROA BAI",
+     "votos": 15295,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Luján Martínez",
+     "candidatura": "GEROA BAI",
+     "votos": 11539,
+     "electo": false
+    },
+    {
+     "nombre": "Joseba Orduña Navarro",
+     "candidatura": "GEROA BAI",
+     "votos": 10541,
+     "electo": false
+    },
+    {
+     "nombre": "Lydia Jaso Irisarri",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4263,
+     "electo": false
+    },
+    {
+     "nombre": "José Antonio Aparicio Martín",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 2408,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Nogueira López",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1357,
+     "electo": false
+    },
+    {
+     "nombre": "Patricio Miró Heredia",
+     "candidatura": "RECORTES CERO",
+     "votos": 1174,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Ourense",
+   "provincia": "ourense",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "María del Carmen Leyte Coello",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 88910,
+     "electo": true
+    },
+    {
+     "nombre": "Luis Menor Pérez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 87593,
+     "electo": true
+    },
+    {
+     "nombre": "Rosa María Sánchez Gándara",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 85657,
+     "electo": true
+    },
+    {
+     "nombre": "Rafael Rodríguez Villarino",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 52444,
+     "electo": true
+    },
+    {
+     "nombre": "Miguel Bautista Carballo",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 49327,
+     "electo": false
+    },
+    {
+     "nombre": "María Alida Iglesias Gil",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 48117,
+     "electo": false
+    },
+    {
+     "nombre": "María Cristina Cid Fernández",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 20477,
+     "electo": false
+    },
+    {
+     "nombre": "Xurxo Rodríguez Méndez",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 16144,
+     "electo": false
+    },
+    {
+     "nombre": "Xosé Carballido Presas",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 14738,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Nogueira Pérez",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 11023,
+     "electo": false
+    },
+    {
+     "nombre": "Lidia López Arteaga",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 9150,
+     "electo": false
+    },
+    {
+     "nombre": "Lilian Cerdeira Mosquera",
+     "candidatura": "VOX",
+     "votos": 7710,
+     "electo": false
+    },
+    {
+     "nombre": "Domingo Benito Otero Besteiro",
+     "candidatura": "VOX",
+     "votos": 6930,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Alberto Garrido López",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 6822,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel Rojas Silva",
+     "candidatura": "VOX",
+     "votos": 6591,
+     "electo": false
+    },
+    {
+     "nombre": "Margarita Pascal Misiti",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2053,
+     "electo": false
+    },
+    {
+     "nombre": "Quique Rodríguez Portabales",
+     "candidatura": "POR UN MUNDO MAIS XUSTO",
+     "votos": 581,
+     "electo": false
+    },
+    {
+     "nombre": "Adrián Nido García",
+     "candidatura": "PARTIDO COMUNISTA DOS TRABALLADORES DE GALIZA",
+     "votos": 448,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Diego Conde Eguileta",
+     "candidatura": "RECORTES CERO",
+     "votos": 346,
+     "electo": false
+    },
+    {
+     "nombre": "María del Mar Fernández Dibuja",
+     "candidatura": "COALICIÓN DE CENTRO DEMOCRÁTICO",
+     "votos": 237,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Álvarez Fernández",
+     "candidatura": "COALICIÓN DE CENTRO DEMOCRÁTICO",
+     "votos": 135,
+     "electo": false
+    },
+    {
+     "nombre": "Bruno Blanco Tourón",
+     "candidatura": "COALICIÓN DE CENTRO DEMOCRÁTICO",
+     "votos": 95,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Palencia",
+   "provincia": "palencia",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Jorge Domingo Martínez Antolín",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 40929,
+     "electo": true
+    },
+    {
+     "nombre": "Carlos Alfonso Polanco Rebolleda",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 39469,
+     "electo": true
+    },
+    {
+     "nombre": "María José Ortega Gómez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 39366,
+     "electo": true
+    },
+    {
+     "nombre": "Rosa María Aldea Gómez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 34903,
+     "electo": true
+    },
+    {
+     "nombre": "Jesús Manuel López Infante",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 32168,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Eulogio Hernández Portela",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 30781,
+     "electo": false
+    },
+    {
+     "nombre": "Ricardo Carrancio Sangrador",
+     "candidatura": "VOX",
+     "votos": 10641,
+     "electo": false
+    },
+    {
+     "nombre": "Yenifer Fernández Calleja",
+     "candidatura": "VOX",
+     "votos": 9644,
+     "electo": false
+    },
+    {
+     "nombre": "Carolina González Camino",
+     "candidatura": "VOX",
+     "votos": 9333,
+     "electo": false
+    },
+    {
+     "nombre": "Ester Becerril Fernández",
+     "candidatura": "SUMAR",
+     "votos": 6883,
+     "electo": false
+    },
+    {
+     "nombre": "Alberto Riol de Prado",
+     "candidatura": "SUMAR",
+     "votos": 5179,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Fidel Ramos Ibáñez",
+     "candidatura": "VAMOS PALENCIA",
+     "votos": 3244,
+     "electo": false
+    },
+    {
+     "nombre": "María Victoria Díaz Arranz",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 1162,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Carlos Cantera Fernández",
+     "candidatura": "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA",
+     "votos": 1055,
+     "electo": false
+    },
+    {
+     "nombre": "Natalia Martínez Antolín",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 838,
+     "electo": false
+    },
+    {
+     "nombre": "Ana García Vega",
+     "candidatura": "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA",
+     "votos": 787,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Rojo Trigueros",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 693,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Jesús Nevares Heredia",
+     "candidatura": "GRUPO INDEPENDIENTE PALENCIA TIERRA VIVA",
+     "votos": 690,
+     "electo": false
+    },
+    {
+     "nombre": "Rubén Cabezón Milla",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 376,
+     "electo": false
+    },
+    {
+     "nombre": "Marta Fernández Calvo",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 363,
+     "electo": false
+    },
+    {
+     "nombre": "Julio César de Alaíz Martínez",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 249,
+     "electo": false
+    },
+    {
+     "nombre": "David Caballero Merino",
+     "candidatura": "RECORTES CERO",
+     "votos": 154,
+     "electo": false
+    },
+    {
+     "nombre": "María Montserrat González Martín",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 137,
+     "electo": false
+    },
+    {
+     "nombre": "Óscar Córdova Molina",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 58,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Gran Canaria",
+   "provincia": "las-palmas",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Ramón Morales Quesada",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 149463,
+     "electo": true
+    },
+    {
+     "nombre": "Marta Jorgina Saavedra Doménech",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 143368,
+     "electo": true
+    },
+    {
+     "nombre": "Sergio Ramos Acosta",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 124098,
+     "electo": true
+    },
+    {
+     "nombre": "María del Mar Arévalo Araya",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 115232,
+     "electo": false
+    },
+    {
+     "nombre": "Yeray Antonio Suárez Salem",
+     "candidatura": "VOX",
+     "votos": 51118,
+     "electo": false
+    },
+    {
+     "nombre": "Beatriz Calzada Ojeda",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 30745,
+     "electo": false
+    },
+    {
+     "nombre": "José María Santana Suárez (Txema)",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 29587,
+     "electo": false
+    },
+    {
+     "nombre": "María Celeste Martel Martínez",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 27702,
+     "electo": false
+    },
+    {
+     "nombre": "Minerva Carmen Alonso Santana",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 26458,
+     "electo": false
+    },
+    {
+     "nombre": "José Joaquín O'Shanahan Juan",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 26130,
+     "electo": false
+    },
+    {
+     "nombre": "Jafeth David Alonso Estupiñán",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 23907,
+     "electo": false
+    },
+    {
+     "nombre": "Hiurma Castejón Suárez",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 7551,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Nieves Martín Plata",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3750,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Alberto Pardillos Fraile",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1596,
+     "electo": false
+    },
+    {
+     "nombre": "Raquel Díaz Santana",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1276,
+     "electo": false
+    },
+    {
+     "nombre": "Luz Rodríguez Gangura (Lucy)",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 1063,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Vázquez de la Torre Salinas",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 866,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio F. Mata Gutiérrez",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 538,
+     "electo": false
+    },
+    {
+     "nombre": "Francisca Dolores Artiles Hernández",
+     "candidatura": "RECORTES CERO",
+     "votos": 530,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 3
+  },
+  {
+   "nombre": "Lanzarote",
+   "provincia": "las-palmas",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Francisco Manuel Fajardo Palarea",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 21618,
+     "electo": true
+    },
+    {
+     "nombre": "Jeziel Martín Arrocha",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 13822,
+     "electo": false
+    },
+    {
+     "nombre": "Emilio José Machín Borges",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 7449,
+     "electo": false
+    },
+    {
+     "nombre": "María Esther Tamargo Acebal",
+     "candidatura": "VOX",
+     "votos": 5663,
+     "electo": false
+    },
+    {
+     "nombre": "María Antonia Perera Betancor",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 5505,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Belén Machín Guillén",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 1332,
+     "electo": false
+    },
+    {
+     "nombre": "Josep Rafael Sellés I Jover",
+     "candidatura": "RECORTES CERO",
+     "votos": 118,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "Fuerteventura",
+   "provincia": "las-palmas",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Paloma Hernández Cerezo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 10878,
+     "electo": true
+    },
+    {
+     "nombre": "Jorge Cándido Marante Martín",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 8924,
+     "electo": false
+    },
+    {
+     "nombre": "Isaí Blanco Marrero",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 8032,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Felipe Rastrero Martín",
+     "candidatura": "VOX",
+     "votos": 4390,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Letang Velarde",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 3397,
+     "electo": false
+    },
+    {
+     "nombre": "María de la Peña Armas Hernández",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 2650,
+     "electo": false
+    },
+    {
+     "nombre": "María Ángeles Encabo López",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 289,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Talavera Quevedo (Menchi)",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 79,
+     "electo": false
+    },
+    {
+     "nombre": "Gregoria Teresa Peña Luzardo",
+     "candidatura": "RECORTES CERO",
+     "votos": 22,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "Pontevedra",
+   "provincia": "pontevedra",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "María José (Pepa) Pardo Pumar",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 220415,
+     "electo": true
+    },
+    {
+     "nombre": "José Crespo Iglesias",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 215311,
+     "electo": true
+    },
+    {
+     "nombre": "Nidia María Arévalo Gómez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 212456,
+     "electo": true
+    },
+    {
+     "nombre": "María del Carmen (Carmela) Silva Rego",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 186980,
+     "electo": true
+    },
+    {
+     "nombre": "Luis López Bueno",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 170474,
+     "electo": false
+    },
+    {
+     "nombre": "Verónica Pichel Guisande",
+     "candidatura": "PARTIDO DOS SOCIALISTAS DE GALICIA-PSOE",
+     "votos": 164939,
+     "electo": false
+    },
+    {
+     "nombre": "Duarte Correa Piñeiro",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 68956,
+     "electo": false
+    },
+    {
+     "nombre": "Roberto Alonso Ucha",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 68826,
+     "electo": false
+    },
+    {
+     "nombre": "María José García Gómez",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 60385,
+     "electo": false
+    },
+    {
+     "nombre": "Gloria Alonso Domínguez",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 57658,
+     "electo": false
+    },
+    {
+     "nombre": "Ana Isabel Pérez Simal",
+     "candidatura": "SUMAR GALICIA",
+     "votos": 51801,
+     "electo": false
+    },
+    {
+     "nombre": "Ramón Nicolás Rodríguez",
+     "candidatura": "BLOQUE NACIONALISTA GALEGO",
+     "votos": 51503,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Torres Corredoira",
+     "candidatura": "VOX",
+     "votos": 23849,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Ramón Quintana Jato",
+     "candidatura": "VOX",
+     "votos": 21170,
+     "electo": false
+    },
+    {
+     "nombre": "Elisa María López Moldes",
+     "candidatura": "VOX",
+     "votos": 20658,
+     "electo": false
+    },
+    {
+     "nombre": "Alberto de Salazar Viñas",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5971,
+     "electo": false
+    },
+    {
+     "nombre": "Iria Montenegro García",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5185,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Ramón Soliño Álvarez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3498,
+     "electo": false
+    },
+    {
+     "nombre": "Martín Mascato Galiñanes",
+     "candidatura": "PARTIDO COMUNISTA DOS TRABALLADORES DE GALIZA",
+     "votos": 2097,
+     "electo": false
+    },
+    {
+     "nombre": "José Carlos Vázquez González",
+     "candidatura": "RECORTES CERO",
+     "votos": 1437,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Rioja (La)",
+   "provincia": "la-rioja",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Luis Martínez Portillo Subero",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 79729,
+     "electo": true
+    },
+    {
+     "nombre": "Carlos Yécora Roca",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 78360,
+     "electo": true
+    },
+    {
+     "nombre": "María del Mar San Martín Ibarra",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 77762,
+     "electo": true
+    },
+    {
+     "nombre": "Concepción Andreu Rodríguez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 62066,
+     "electo": true
+    },
+    {
+     "nombre": "Pedro Antonio Montalvo Íñigo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 60282,
+     "electo": false
+    },
+    {
+     "nombre": "Noelia González Pastor",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 58282,
+     "electo": false
+    },
+    {
+     "nombre": "Ignacio Aquesolo García",
+     "candidatura": "VOX",
+     "votos": 15088,
+     "electo": false
+    },
+    {
+     "nombre": "Susana Alesanco Ulecia",
+     "candidatura": "VOX",
+     "votos": 13968,
+     "electo": false
+    },
+    {
+     "nombre": "Hilda Cárdenas Díaz",
+     "candidatura": "VOX",
+     "votos": 13201,
+     "electo": false
+    },
+    {
+     "nombre": "Eunate García Miguel",
+     "candidatura": "SUMAR",
+     "votos": 13033,
+     "electo": false
+    },
+    {
+     "nombre": "Amaya Castro Sánchez",
+     "candidatura": "SUMAR",
+     "votos": 10954,
+     "electo": false
+    },
+    {
+     "nombre": "Ramón Sánchez Esteban",
+     "candidatura": "SUMAR",
+     "votos": 9147,
+     "electo": false
+    },
+    {
+     "nombre": "Carmen Nogales Florido",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1451,
+     "electo": false
+    },
+    {
+     "nombre": "José Carlos Palacios Miguel",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1166,
+     "electo": false
+    },
+    {
+     "nombre": "María Carmen Andrés Domínguez",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 913,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel Peralta Hernández",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 880,
+     "electo": false
+    },
+    {
+     "nombre": "María Olga Villanueva Henrichs",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 831,
+     "electo": false
+    },
+    {
+     "nombre": "Sonia Silvestrini García",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 816,
+     "electo": false
+    },
+    {
+     "nombre": "Berta Nasarre López",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 710,
+     "electo": false
+    },
+    {
+     "nombre": "Sacha Gabriel Pozo Puertas",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 608,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Artigas Canales",
+     "candidatura": "RECORTES CERO",
+     "votos": 416,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Salamanca",
+   "provincia": "salamanca",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Bienvenido de Arriba Sánchez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 93848,
+     "electo": true
+    },
+    {
+     "nombre": "Gonzalo Jesús Robles Orozco",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 91723,
+     "electo": true
+    },
+    {
+     "nombre": "Esther Basilia del Brío González",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 91148,
+     "electo": true
+    },
+    {
+     "nombre": "Elena Diego Castellanos",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 59967,
+     "electo": true
+    },
+    {
+     "nombre": "Aquiles Magide Bizarro",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 57049,
+     "electo": false
+    },
+    {
+     "nombre": "María Soledad Álvarez Cascón",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 55174,
+     "electo": false
+    },
+    {
+     "nombre": "María de los Ángeles Carpio Pérez",
+     "candidatura": "VOX",
+     "votos": 24110,
+     "electo": false
+    },
+    {
+     "nombre": "Javier Bernardo Teira Lafuente",
+     "candidatura": "VOX",
+     "votos": 22390,
+     "electo": false
+    },
+    {
+     "nombre": "José Luis Rodríguez Martín",
+     "candidatura": "VOX",
+     "votos": 21418,
+     "electo": false
+    },
+    {
+     "nombre": "Nuria María del Álamo Gómez",
+     "candidatura": "SUMAR",
+     "votos": 13303,
+     "electo": false
+    },
+    {
+     "nombre": "Alejandro Álvarez García",
+     "candidatura": "SUMAR",
+     "votos": 9524,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Díez Sierra",
+     "candidatura": "SUMAR",
+     "votos": 8812,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Manuel Montoiro Sánchez",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 2307,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier Recio Hernández",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 1979,
+     "electo": false
+    },
+    {
+     "nombre": "Alexandra Mangas García",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 1834,
+     "electo": false
+    },
+    {
+     "nombre": "Julio Alberto Ceballo Sánchez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1582,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Tomás Domínguez Domínguez",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 1393,
+     "electo": false
+    },
+    {
+     "nombre": "Patricia Santamaría Hernández",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 1080,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Rodríguez Martín",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 836,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Manuel Andrés López",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 618,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Arturo Sieira Mucientes",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 543,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Bautista Nieto",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 534,
+     "electo": false
+    },
+    {
+     "nombre": "Manuela Iglesias Carreño",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 403,
+     "electo": false
+    },
+    {
+     "nombre": "Hipólito Nicolás Cuesta Sánchez",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 279,
+     "electo": false
+    },
+    {
+     "nombre": "Ernesto Miguel Nungesser Luengo",
+     "candidatura": "RECORTES CERO",
+     "votos": 240,
+     "electo": false
+    },
+    {
+     "nombre": "María Luz Martín Mateo",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 172,
+     "electo": false
+    },
+    {
+     "nombre": "Víctor Manuel Zarza Gómez",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 118,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Tenerife",
+   "provincia": "santa-cruz-de-tenerife",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Pedro Manuel Martín Domínguez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 147040,
+     "electo": true
+    },
+    {
+     "nombre": "Marta Arocha Correa",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 138640,
+     "electo": true
+    },
+    {
+     "nombre": "Emilio José Navarro Castanedo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 122111,
+     "electo": true
+    },
+    {
+     "nombre": "Ana María Zurita Expósito",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 117876,
+     "electo": false
+    },
+    {
+     "nombre": "José Jonathan Domínguez Roger",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 63148,
+     "electo": false
+    },
+    {
+     "nombre": "Gladis de León León",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 60136,
+     "electo": false
+    },
+    {
+     "nombre": "María Aurora Martínez Rey",
+     "candidatura": "VOX",
+     "votos": 42270,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús González Abreu",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 40344,
+     "electo": false
+    },
+    {
+     "nombre": "Isidro Ventura García",
+     "candidatura": "VOX",
+     "votos": 39191,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Marrero Morales",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 27439,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Bisshopp Flores",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5654,
+     "electo": false
+    },
+    {
+     "nombre": "Andrea Rodríguez Clemente",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 4950,
+     "electo": false
+    },
+    {
+     "nombre": "Saúl Gómez Alberola",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 4705,
+     "electo": false
+    },
+    {
+     "nombre": "Odalys Padrón Padrón",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 3583,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro Jonay Díaz Hernández",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 2448,
+     "electo": false
+    },
+    {
+     "nombre": "María Tatiana Delgado Plasencia",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 935,
+     "electo": false
+    },
+    {
+     "nombre": "María Angustias Rodríguez García",
+     "candidatura": "RECORTES CERO",
+     "votos": 609,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Nacimiento García",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 587,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 3
+  },
+  {
+   "nombre": "La Palma",
+   "provincia": "santa-cruz-de-tenerife",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Kilian Sánchez San Juan",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 12912,
+     "electo": true
+    },
+    {
+     "nombre": "Borja Pérez Sicilia",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 12685,
+     "electo": false
+    },
+    {
+     "nombre": "Marcos José Lorenzo Martín",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 11090,
+     "electo": false
+    },
+    {
+     "nombre": "Clara Medina Fernández",
+     "candidatura": "SUMAR CANARIAS",
+     "votos": 2282,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Allende León Rodríguez",
+     "candidatura": "VOX",
+     "votos": 2254,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Jesús Martín Acosta",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 282,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel Pulido Rodríguez",
+     "candidatura": "NUEVA CANARIAS - BLOQUE CANARISTA",
+     "votos": 269,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Cuesta Bolao",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 52,
+     "electo": false
+    },
+    {
+     "nombre": "Rayco Pérez Rodríguez",
+     "candidatura": "RECORTES CERO",
+     "votos": 32,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "La Gomera",
+   "provincia": "santa-cruz-de-tenerife",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Fabián Chinea Correa",
+     "candidatura": "AGRUPACION SOCIALISTA GOMERA",
+     "votos": 3996,
+     "electo": true
+    },
+    {
+     "nombre": "José María Morales Herrera",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 3096,
+     "electo": false
+    },
+    {
+     "nombre": "Domingo Curbelo Sanz García",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 1747,
+     "electo": false
+    },
+    {
+     "nombre": "Moisés Plasencia Martín",
+     "candidatura": "COALICIÓN CANARIA",
+     "votos": 766,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Iván Negrín Méndez",
+     "candidatura": "VOX",
+     "votos": 572,
+     "electo": false
+    },
+    {
+     "nombre": "Mónica Carmen Padilla Herrera",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 139,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Gallo García",
+     "candidatura": "RECORTES CERO",
+     "votos": 54,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "El Hierro",
+   "provincia": "santa-cruz-de-tenerife",
+   "isla": true,
+   "candidatos": [
+    {
+     "nombre": "Aniceto Javier Armas González",
+     "candidatura": "AGRUPACION HERREÑA INDEPENDIENTE",
+     "votos": 2189,
+     "electo": true
+    },
+    {
+     "nombre": "Juan Rafael Zamora Padrón",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 1759,
+     "electo": false
+    },
+    {
+     "nombre": "Rubén Armiche Benítez Padrón",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 1173,
+     "electo": false
+    },
+    {
+     "nombre": "Dácil Felipe Guadarrama",
+     "candidatura": "ASAMBLEA HERREÑA",
+     "votos": 360,
+     "electo": false
+    },
+    {
+     "nombre": "Esperanza Medina Chávez",
+     "candidatura": "VOX",
+     "votos": 262,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Manuel Bobet Hernández",
+     "candidatura": "AHORA CANARIAS-PARTIDO COMUNISTA DEL PUEBLO CANARIO",
+     "votos": 68,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Luis Ros Soler",
+     "candidatura": "RECORTES CERO",
+     "votos": 24,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 1
+  },
+  {
+   "nombre": "Segovia",
+   "provincia": "segovia",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Paloma Inés Sanz Jerónimo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 40424,
+     "electo": true
+    },
+    {
+     "nombre": "Juan José Sanz Vitorio",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 39439,
+     "electo": true
+    },
+    {
+     "nombre": "María Angeles García Herrero",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 38781,
+     "electo": true
+    },
+    {
+     "nombre": "María del Lirio Martín García",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 27996,
+     "electo": true
+    },
+    {
+     "nombre": "Juan José Maroto Sáez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 26390,
+     "electo": false
+    },
+    {
+     "nombre": "Lourdes Álvarez Callejo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 25012,
+     "electo": false
+    },
+    {
+     "nombre": "Fuencisla Arévalo Galván",
+     "candidatura": "VOX",
+     "votos": 10934,
+     "electo": false
+    },
+    {
+     "nombre": "Enrique Jiménez Vaquerizo",
+     "candidatura": "VOX",
+     "votos": 10020,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel Luis Labrador Cruz",
+     "candidatura": "VOX",
+     "votos": 9581,
+     "electo": false
+    },
+    {
+     "nombre": "César Martín de Bernardo Paniagua",
+     "candidatura": "SUMAR",
+     "votos": 7725,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Serrano Hermo",
+     "candidatura": "SUMAR",
+     "votos": 6068,
+     "electo": false
+    },
+    {
+     "nombre": "María Dolores Casado San Inocencio",
+     "candidatura": "SUMAR",
+     "votos": 5646,
+     "electo": false
+    },
+    {
+     "nombre": "Nuria Serrenes Cachorro",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 831,
+     "electo": false
+    },
+    {
+     "nombre": "Joaquín Luis Mastache de la Peña",
+     "candidatura": "TERCERA EDAD EN ACCIÓN",
+     "votos": 642,
+     "electo": false
+    },
+    {
+     "nombre": "Pilar Barral Heredero",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 444,
+     "electo": false
+    },
+    {
+     "nombre": "Marc Izquierdo Lucas",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 332,
+     "electo": false
+    },
+    {
+     "nombre": "Borja Barroco Cámara",
+     "candidatura": "RECORTES CERO",
+     "votos": 296,
+     "electo": false
+    },
+    {
+     "nombre": "María Jesús Martín Arribas",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 225,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Luis Figueredo Alonso",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 152,
+     "electo": false
+    },
+    {
+     "nombre": "Myriam del Pozo Ramos",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 110,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Sevilla",
+   "provincia": "sevilla",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Antonio Gutiérrez Limones",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 382095,
+     "electo": true
+    },
+    {
+     "nombre": "Eva Patricia Bueno Campanario",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 374032,
+     "electo": true
+    },
+    {
+     "nombre": "Juan Manuel Ávila Gutiérrez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 356631,
+     "electo": true
+    },
+    {
+     "nombre": "Antonio Muñoz Martínez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 356536,
+     "electo": true
+    },
+    {
+     "nombre": "José Leocadio Ortega Irizo",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 343139,
+     "electo": false
+    },
+    {
+     "nombre": "Susana Rocío Cayuelas Porras",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 338011,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Arenas Posadas",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 145467,
+     "electo": false
+    },
+    {
+     "nombre": "Trinidad Pascual Zapata",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 128159,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Lay Begines",
+     "candidatura": "SUMAR ANDALUCÍA",
+     "votos": 125391,
+     "electo": false
+    },
+    {
+     "nombre": "Raul Morales del Piñal",
+     "candidatura": "VOX",
+     "votos": 121173,
+     "electo": false
+    },
+    {
+     "nombre": "Cristina María Galán Tristancho",
+     "candidatura": "VOX",
+     "votos": 111898,
+     "electo": false
+    },
+    {
+     "nombre": "María Auxiliadora Pastor Pérez Angulo",
+     "candidatura": "VOX",
+     "votos": 105766,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Perea Fernández",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 15528,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa María Jiménez Toledo",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 13675,
+     "electo": false
+    },
+    {
+     "nombre": "José Carneiro Aguilar",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 9153,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel López Martínez",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 4374,
+     "electo": false
+    },
+    {
+     "nombre": "José Carlos Baena Rodríguez",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 3361,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Vicedo Carmona",
+     "candidatura": "RECORTES CERO",
+     "votos": 3183,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Luis Jara Delgado",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 2387,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Luís Francisco Gil Lorenzo",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 1014,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Biedma Gil",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 551,
+     "electo": false
+    },
+    {
+     "nombre": "Nemesio Romero Estevez",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 475,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Soria",
+   "provincia": "soria",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "José Manuel Hernando García",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 18456,
+     "electo": true
+    },
+    {
+     "nombre": "Javier Jiménez Santamaría",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 17796,
+     "electo": true
+    },
+    {
+     "nombre": "María Cristina Rubio Blasco",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 17280,
+     "electo": true
+    },
+    {
+     "nombre": "Javier Antón Cacho",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 14611,
+     "electo": true
+    },
+    {
+     "nombre": "Ana María Romero Rupérez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 13820,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús María Cedazo Mínguez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 13050,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Vallejo Muñoz",
+     "candidatura": "SORIA ¡YA!",
+     "votos": 11433,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Arévalo Jiménez",
+     "candidatura": "SORIA ¡YA!",
+     "votos": 10198,
+     "electo": false
+    },
+    {
+     "nombre": "Silvia Largo Del Barrio",
+     "candidatura": "SORIA ¡YA!",
+     "votos": 9756,
+     "electo": false
+    },
+    {
+     "nombre": "Alberto Enrique Peñuelas Felipe",
+     "candidatura": "VOX",
+     "votos": 4599,
+     "electo": false
+    },
+    {
+     "nombre": "María Montserrat Rubio Blázquez",
+     "candidatura": "VOX",
+     "votos": 4038,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Alonso Omeñaca",
+     "candidatura": "VOX",
+     "votos": 3796,
+     "electo": false
+    },
+    {
+     "nombre": "Nicasio Martínez Gracia",
+     "candidatura": "SUMAR",
+     "votos": 2370,
+     "electo": false
+    },
+    {
+     "nombre": "María Milagros Solano Rodrigo",
+     "candidatura": "SUMAR",
+     "votos": 1600,
+     "electo": false
+    },
+    {
+     "nombre": "Mario Calonge Calvo",
+     "candidatura": "SUMAR",
+     "votos": 1345,
+     "electo": false
+    },
+    {
+     "nombre": "Ana María Carrión de la Llana",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 262,
+     "electo": false
+    },
+    {
+     "nombre": "César Domínguez Baños",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 127,
+     "electo": false
+    },
+    {
+     "nombre": "Álvaro Galera Arias",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 92,
+     "electo": false
+    },
+    {
+     "nombre": "Lua Buera Ayllón",
+     "candidatura": "RECORTES CERO",
+     "votos": 62,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Tarragona",
+   "provincia": "tarragona",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Manel de la Vega Carrera",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 108820,
+     "electo": true
+    },
+    {
+     "nombre": "Núria Rovira Costas",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 106336,
+     "electo": true
+    },
+    {
+     "nombre": "Mario Soler Santos",
+     "candidatura": "PARTIT DELS SOCIALISTES DE CATALUNYA (PSC-PSOE)",
+     "votos": 99154,
+     "electo": true
+    },
+    {
+     "nombre": "Jordi Gaseni Blanch",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 71440,
+     "electo": true
+    },
+    {
+     "nombre": "Laura Castel Fort",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 66424,
+     "electo": false
+    },
+    {
+     "nombre": "Josep Rufà Gràcia",
+     "candidatura": "ESQUERRA REPUBLICANA DE CATALUNYA-ESQUERRES PER LA",
+     "votos": 60692,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Luna Vivas",
+     "candidatura": "PARTIT POPULAR/PARTIDO POPULAR",
+     "votos": 50254,
+     "electo": false
+    },
+    {
+     "nombre": "Montserrat Duch Cartañá",
+     "candidatura": "PARTIT POPULAR/PARTIDO POPULAR",
+     "votos": 49041,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel Cilleruelo Andrés",
+     "candidatura": "PARTIT POPULAR/PARTIDO POPULAR",
+     "votos": 47303,
+     "electo": false
+    },
+    {
+     "nombre": "Josep Andreu Domingo",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 47165,
+     "electo": false
+    },
+    {
+     "nombre": "María Elena Queral Castellà",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 43490,
+     "electo": false
+    },
+    {
+     "nombre": "Eugeni Sedano Monasterio",
+     "candidatura": "JUNTS PER CATALUNYA-JUNTS",
+     "votos": 39728,
+     "electo": false
+    },
+    {
+     "nombre": "Nazaret Troya Cala",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 38004,
+     "electo": false
+    },
+    {
+     "nombre": "Tibor Rius Gerecz",
+     "candidatura": "VOX",
+     "votos": 29158,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Pizarro Fernández",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 28866,
+     "electo": false
+    },
+    {
+     "nombre": "Antònia García Bascuñana",
+     "candidatura": "SUMAR-EN COMÚ PODEM",
+     "votos": 28687,
+     "electo": false
+    },
+    {
+     "nombre": "Isabel María Lorenzo Medina",
+     "candidatura": "VOX",
+     "votos": 28121,
+     "electo": false
+    },
+    {
+     "nombre": "David Gracia Martínez",
+     "candidatura": "VOX",
+     "votos": 26859,
+     "electo": false
+    },
+    {
+     "nombre": "Iñigo Manrique Romero",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 7470,
+     "electo": false
+    },
+    {
+     "nombre": "Debora Sebastian Marquez",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 6355,
+     "electo": false
+    },
+    {
+     "nombre": "Xavier Lopez Roure",
+     "candidatura": "PARTIT ANIMALISTA AMB EL MEDI AMBIENT",
+     "votos": 4729,
+     "electo": false
+    },
+    {
+     "nombre": "Josepa Loos Maynou",
+     "candidatura": "PARTIT DEMÒCRATA EUROPEU CATALÀ-ESPAI CIU",
+     "votos": 4051,
+     "electo": false
+    },
+    {
+     "nombre": "Albert Sabate Altisent",
+     "candidatura": "PARTIT COMUNISTA DELS TREBALLADORS DE CATALUNYA",
+     "votos": 2253,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Francisco Martínez Ten",
+     "candidatura": "RECORTES CERO",
+     "votos": 1011,
+     "electo": false
+    },
+    {
+     "nombre": "Valentín Rodríguez Bonillo",
+     "candidatura": "ENTRE VEÏNS CATALUNYA",
+     "votos": 800,
+     "electo": false
+    },
+    {
+     "nombre": "Esperanza Torrijos González",
+     "candidatura": "ENTRE VEÏNS CATALUNYA",
+     "votos": 572,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio Raya Ruiz",
+     "candidatura": "ENTRE VEÏNS CATALUNYA",
+     "votos": 377,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Teruel",
+   "provincia": "teruel",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Emma Buj Sánchez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 27056,
+     "electo": true
+    },
+    {
+     "nombre": "Carmen Pobo Sánchez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 25719,
+     "electo": true
+    },
+    {
+     "nombre": "Carlos Boné Amela",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 25359,
+     "electo": true
+    },
+    {
+     "nombre": "María José Villalba Chavarría",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 21524,
+     "electo": true
+    },
+    {
+     "nombre": "Antonio Tomás Vivas",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 20280,
+     "electo": false
+    },
+    {
+     "nombre": "Vanesa Pellicena Pellicena",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 19601,
+     "electo": false
+    },
+    {
+     "nombre": "Beatriz Martín Larred",
+     "candidatura": "TERUEL EXISTE - COALICIÓN EXISTE",
+     "votos": 13991,
+     "electo": false
+    },
+    {
+     "nombre": "Joaquín Egea Serrano",
+     "candidatura": "TERUEL EXISTE - COALICIÓN EXISTE",
+     "votos": 12311,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Blasco Aznar",
+     "candidatura": "TERUEL EXISTE - COALICIÓN EXISTE",
+     "votos": 11467,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Vicente Férriz Hernández",
+     "candidatura": "VOX",
+     "votos": 8358,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Lozano Polo",
+     "candidatura": "VOX",
+     "votos": 7469,
+     "electo": false
+    },
+    {
+     "nombre": "Bárbara Alastuey Rivas",
+     "candidatura": "VOX",
+     "votos": 7060,
+     "electo": false
+    },
+    {
+     "nombre": "Sandra González Albalad",
+     "candidatura": "SUMAR",
+     "votos": 4772,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Carlos Blasco Nuño",
+     "candidatura": "SUMAR",
+     "votos": 3496,
+     "electo": false
+    },
+    {
+     "nombre": "Sheyla Luna Marín",
+     "candidatura": "SUMAR",
+     "votos": 3229,
+     "electo": false
+    },
+    {
+     "nombre": "Ramón José Fuertes Ortiz",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 1020,
+     "electo": false
+    },
+    {
+     "nombre": "Pilar Romero Villalba",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 788,
+     "electo": false
+    },
+    {
+     "nombre": "Alfonso Palmero Quintanilla",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 633,
+     "electo": false
+    },
+    {
+     "nombre": "Tasio Peña Jiménez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 412,
+     "electo": false
+    },
+    {
+     "nombre": "María Carmen Martínez Torres",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 328,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio José Mateo Aguarón",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 242,
+     "electo": false
+    },
+    {
+     "nombre": "Milagros Nadal Mas",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 228,
+     "electo": false
+    },
+    {
+     "nombre": "Guillermo Castellá Aguilar",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 200,
+     "electo": false
+    },
+    {
+     "nombre": "María del Mar Pérez Torralva",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 112,
+     "electo": false
+    },
+    {
+     "nombre": "Enrique Altemir Guijarro",
+     "candidatura": "RECORTES CERO",
+     "votos": 87,
+     "electo": false
+    },
+    {
+     "nombre": "Pedro Luis Martín Bielsa",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 45,
+     "electo": false
+    },
+    {
+     "nombre": "Mercedes Ibáñez Marín",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 28,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Benjamín Ruiz Sebastián",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 20,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Toledo",
+   "provincia": "toledo",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Vicente Tirado Ochoa",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 152356,
+     "electo": true
+    },
+    {
+     "nombre": "Israel Roberto Pérez Jiménez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 148728,
+     "electo": true
+    },
+    {
+     "nombre": "Carmen Riolobos Regadera",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 147509,
+     "electo": true
+    },
+    {
+     "nombre": "José Manuel Tofiño Pérez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 130046,
+     "electo": true
+    },
+    {
+     "nombre": "María Montserrat Muro Martín",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 126618,
+     "electo": false
+    },
+    {
+     "nombre": "María Luisa Rodríguez García",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 122920,
+     "electo": false
+    },
+    {
+     "nombre": "Josefina Blázquez Sánchez",
+     "candidatura": "VOX",
+     "votos": 64103,
+     "electo": false
+    },
+    {
+     "nombre": "Raúl Corvera Córdoba",
+     "candidatura": "VOX",
+     "votos": 61112,
+     "electo": false
+    },
+    {
+     "nombre": "Laura Félix Sánchez-Vallejo",
+     "candidatura": "VOX",
+     "votos": 59208,
+     "electo": false
+    },
+    {
+     "nombre": "Irene Arcalá Tarriño",
+     "candidatura": "SUMAR",
+     "votos": 31583,
+     "electo": false
+    },
+    {
+     "nombre": "Verónica Mora Laguna",
+     "candidatura": "SUMAR",
+     "votos": 26447,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Antonio Muñoz Gutiérrez",
+     "candidatura": "SUMAR",
+     "votos": 24215,
+     "electo": false
+    },
+    {
+     "nombre": "Alicia Aguilera Campos",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 3994,
+     "electo": false
+    },
+    {
+     "nombre": "José Javier Alonso Gómez",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2467,
+     "electo": false
+    },
+    {
+     "nombre": "Ana María García Marcos",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2293,
+     "electo": false
+    },
+    {
+     "nombre": "Nacol Rosario Antigua",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1172,
+     "electo": false
+    },
+    {
+     "nombre": "José Alejandro García Sancho",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 1029,
+     "electo": false
+    },
+    {
+     "nombre": "Florián Muñoz del Moral",
+     "candidatura": "RECORTES CERO",
+     "votos": 860,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Valencia/València",
+   "provincia": "valencia",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Estela del Carmen Darocas Marin",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 503009,
+     "electo": true
+    },
+    {
+     "nombre": "Juan Antonio Sagredo Marco",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 496571,
+     "electo": true
+    },
+    {
+     "nombre": "Luis Javier Santamaría Ruiz",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 485817,
+     "electo": true
+    },
+    {
+     "nombre": "Cristina Moreno Fernández",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 482194,
+     "electo": true
+    },
+    {
+     "nombre": "Rubén Moreno Palanques",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 474967,
+     "electo": false
+    },
+    {
+     "nombre": "Mario Sánchez González",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 441179,
+     "electo": false
+    },
+    {
+     "nombre": "Ignacio Blanco Giner",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 225400,
+     "electo": false
+    },
+    {
+     "nombre": "Mariam Varea Grau",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 202188,
+     "electo": false
+    },
+    {
+     "nombre": "Marina Dabán Alonso",
+     "candidatura": "VOX",
+     "votos": 186277,
+     "electo": false
+    },
+    {
+     "nombre": "Lola Seres García",
+     "candidatura": "COMPROMÍS-SUMAR: SUMEM PER GUANYAR",
+     "votos": 181533,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Valero Fauli",
+     "candidatura": "VOX",
+     "votos": 172669,
+     "electo": false
+    },
+    {
+     "nombre": "Eduardo Rafael Tellez Ruiz",
+     "candidatura": "VOX",
+     "votos": 167867,
+     "electo": false
+    },
+    {
+     "nombre": "María Elena García Pelló",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 21849,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Cruz Rodenas",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 11984,
+     "electo": false
+    },
+    {
+     "nombre": "Sarita Jaramillo Duque",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 11052,
+     "electo": false
+    },
+    {
+     "nombre": "Luis María de Mazarredo Aznar",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 4566,
+     "electo": false
+    },
+    {
+     "nombre": "Ximo Cunyà i Alcover",
+     "candidatura": "ESTAT VALENCIÀ DEL BENESTAR",
+     "votos": 4034,
+     "electo": false
+    },
+    {
+     "nombre": "Ricardo Puchades Pérez",
+     "candidatura": "RECORTES CERO",
+     "votos": 3273,
+     "electo": false
+    },
+    {
+     "nombre": "Eva Yolanda del Amo Davó",
+     "candidatura": "RECORTES CERO",
+     "votos": 2117,
+     "electo": false
+    },
+    {
+     "nombre": "José Portales Talavera",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 1765,
+     "electo": false
+    },
+    {
+     "nombre": "Jorge Molina Salazar",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 1670,
+     "electo": false
+    },
+    {
+     "nombre": "José Francisco Crespo Albiach",
+     "candidatura": "RECORTES CERO",
+     "votos": 1328,
+     "electo": false
+    },
+    {
+     "nombre": "María Desamparados Escriba Blasco",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 1188,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Jordán Cervera",
+     "candidatura": "CAMINANDO JUNTOS",
+     "votos": 762,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Valladolid",
+   "provincia": "valladolid",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Jesús Julio Carnero García",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 130827,
+     "electo": true
+    },
+    {
+     "nombre": "José Ángel Alonso Pérez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 129357,
+     "electo": true
+    },
+    {
+     "nombre": "María Arenales Serrano Argüello",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 127564,
+     "electo": true
+    },
+    {
+     "nombre": "José Javier Izquierdo Roncero",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 105958,
+     "electo": true
+    },
+    {
+     "nombre": "Sara María Galván Lobato",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 103988,
+     "electo": false
+    },
+    {
+     "nombre": "Marcial Barba González",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 97156,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Alberto Matarranz Herreras",
+     "candidatura": "VOX",
+     "votos": 40996,
+     "electo": false
+    },
+    {
+     "nombre": "Víctor Miguel Menéndez Quintana",
+     "candidatura": "VOX",
+     "votos": 37526,
+     "electo": false
+    },
+    {
+     "nombre": "Marina Fernández Salvador",
+     "candidatura": "VOX",
+     "votos": 36647,
+     "electo": false
+    },
+    {
+     "nombre": "Marina Echebarria Sáenz",
+     "candidatura": "SUMAR",
+     "votos": 28650,
+     "electo": false
+    },
+    {
+     "nombre": "José Ángel García de la Parte",
+     "candidatura": "SUMAR",
+     "votos": 21916,
+     "electo": false
+    },
+    {
+     "nombre": "Rosana de Castro Blanco",
+     "candidatura": "SUMAR",
+     "votos": 21204,
+     "electo": false
+    },
+    {
+     "nombre": "María José Vían del Pozo",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 3426,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Carlos Viña Muñoz",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 2109,
+     "electo": false
+    },
+    {
+     "nombre": "David San José Lobato",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 1963,
+     "electo": false
+    },
+    {
+     "nombre": "María Aránzazu López Escudero",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1777,
+     "electo": false
+    },
+    {
+     "nombre": "Arturo González Sanz",
+     "candidatura": "ESPAÑA VACIADA",
+     "votos": 1576,
+     "electo": false
+    },
+    {
+     "nombre": "Leticia Fernández Fernández",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 1414,
+     "electo": false
+    },
+    {
+     "nombre": "Lorena Moratinos Delgado",
+     "candidatura": "UNIDAD CASTELLANA",
+     "votos": 1193,
+     "electo": false
+    },
+    {
+     "nombre": "José María Viña Muñoz",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 1177,
+     "electo": false
+    },
+    {
+     "nombre": "José Merida de la Fuente",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 931,
+     "electo": false
+    },
+    {
+     "nombre": "David Núñez Muñoz",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 922,
+     "electo": false
+    },
+    {
+     "nombre": "José Ignacio Miguel Pampliega",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 882,
+     "electo": false
+    },
+    {
+     "nombre": "Eva Molledo Gaite",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 836,
+     "electo": false
+    },
+    {
+     "nombre": "Óscar Sánchez Rico",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 659,
+     "electo": false
+    },
+    {
+     "nombre": "Jovino Noval Ordoñez",
+     "candidatura": "UNIDAD CASTELLANA",
+     "votos": 612,
+     "electo": false
+    },
+    {
+     "nombre": "Isaías Frías Cousillas",
+     "candidatura": "RECORTES CERO",
+     "votos": 427,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Zamora",
+   "provincia": "zamora",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "José María Barrios Tejero",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 45476,
+     "electo": true
+    },
+    {
+     "nombre": "Natalia Ucero Pérez",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 44350,
+     "electo": true
+    },
+    {
+     "nombre": "Fernando Martínez-Maíllo Toribio",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 44167,
+     "electo": true
+    },
+    {
+     "nombre": "José Fernández Blanco",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 33553,
+     "electo": true
+    },
+    {
+     "nombre": "María Ángeles Martínez Blanco",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 32555,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Calleja Gómez",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 31077,
+     "electo": false
+    },
+    {
+     "nombre": "Andrea Flores Ferrero",
+     "candidatura": "VOX",
+     "votos": 11527,
+     "electo": false
+    },
+    {
+     "nombre": "Francisco Javier Gutiérrez Rodríguez",
+     "candidatura": "VOX",
+     "votos": 10392,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel López Torrero",
+     "candidatura": "VOX",
+     "votos": 9706,
+     "electo": false
+    },
+    {
+     "nombre": "Fernando Díaz Carrasco",
+     "candidatura": "SUMAR",
+     "votos": 5903,
+     "electo": false
+    },
+    {
+     "nombre": "María Dolores Carreras Luis",
+     "candidatura": "SUMAR",
+     "votos": 4824,
+     "electo": false
+    },
+    {
+     "nombre": "Ainhoa Santander Gutiérrez",
+     "candidatura": "SUMAR",
+     "votos": 4166,
+     "electo": false
+    },
+    {
+     "nombre": "Rocío Ferrero Prieto",
+     "candidatura": "ZAMORA SÍ",
+     "votos": 3439,
+     "electo": false
+    },
+    {
+     "nombre": "José María Ramos Pérez",
+     "candidatura": "ZAMORA SÍ",
+     "votos": 2243,
+     "electo": false
+    },
+    {
+     "nombre": "Verónica Calvo Carro",
+     "candidatura": "ZAMORA SÍ",
+     "votos": 1978,
+     "electo": false
+    },
+    {
+     "nombre": "Daniel de Mena Bartolomé",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 1246,
+     "electo": false
+    },
+    {
+     "nombre": "María José González Pablos",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 800,
+     "electo": false
+    },
+    {
+     "nombre": "María del Carmen Serrano López",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 776,
+     "electo": false
+    },
+    {
+     "nombre": "Ángel Casaseca Martín",
+     "candidatura": "UNIÓN DEL PUEBLO LEONÉS",
+     "votos": 653,
+     "electo": false
+    },
+    {
+     "nombre": "Teresita Loreto Álvarez Pérez",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 540,
+     "electo": false
+    },
+    {
+     "nombre": "Pablo Prieto Redondo",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 281,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Ángel López Valle",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 272,
+     "electo": false
+    },
+    {
+     "nombre": "Santiago Aguado de la Obra",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 246,
+     "electo": false
+    },
+    {
+     "nombre": "José Miguel Trufero Barrios",
+     "candidatura": "PARTIDO REGIONALISTA DEL PAÍS LEONÉS",
+     "votos": 223,
+     "electo": false
+    },
+    {
+     "nombre": "Rosa María Navarrete Sehnert",
+     "candidatura": "RECORTES CERO",
+     "votos": 169,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Zaragoza",
+   "provincia": "zaragoza",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Luisa Fernanda Rudi Úbeda",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 191671,
+     "electo": true
+    },
+    {
+     "nombre": "María del Rocío Divar Conde",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 184753,
+     "electo": true
+    },
+    {
+     "nombre": "José Manuel Aranda Lassa",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 181503,
+     "electo": true
+    },
+    {
+     "nombre": "Miguel Carmelo Dalmau Blanco",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 165978,
+     "electo": true
+    },
+    {
+     "nombre": "María José Navarro Lafita",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 161351,
+     "electo": false
+    },
+    {
+     "nombre": "Álvaro Blasco Martín",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 148638,
+     "electo": false
+    },
+    {
+     "nombre": "María Pilar Real Díaz",
+     "candidatura": "VOX",
+     "votos": 69121,
+     "electo": false
+    },
+    {
+     "nombre": "José Miguel Martínez Tomey",
+     "candidatura": "SUMAR ARAGÓN",
+     "votos": 66988,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Gómez Ulecia",
+     "candidatura": "VOX",
+     "votos": 63800,
+     "electo": false
+    },
+    {
+     "nombre": "Luis Javier Lorén Torres",
+     "candidatura": "VOX",
+     "votos": 60289,
+     "electo": false
+    },
+    {
+     "nombre": "María Longás Beamud",
+     "candidatura": "SUMAR ARAGÓN",
+     "votos": 59976,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Ortega Casas",
+     "candidatura": "SUMAR ARAGÓN",
+     "votos": 50376,
+     "electo": false
+    },
+    {
+     "nombre": "José Manuel Cazorla Pérez",
+     "candidatura": "ARAGÓN EXISTE-COALICIÓN EXISTE",
+     "votos": 13211,
+     "electo": false
+    },
+    {
+     "nombre": "Mireya Zueco Izquierdo",
+     "candidatura": "ARAGÓN EXISTE-COALICIÓN EXISTE",
+     "votos": 10213,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Abadía Garralda",
+     "candidatura": "ARAGÓN EXISTE-COALICIÓN EXISTE",
+     "votos": 8046,
+     "electo": false
+    },
+    {
+     "nombre": "María del Mar Buisán Letosa",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 5997,
+     "electo": false
+    },
+    {
+     "nombre": "Clemente Sánchez Garnica Gómez",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 5785,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Ansotegui Pardo",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 4051,
+     "electo": false
+    },
+    {
+     "nombre": "María Lina Hernando Peinado",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 3951,
+     "electo": false
+    },
+    {
+     "nombre": "Sara Artigas Manero",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 3617,
+     "electo": false
+    },
+    {
+     "nombre": "Ramón Posada Uliaque",
+     "candidatura": "ESCAÑOS EN BLANCO PARA DEJAR ESCAÑOS VACÍOS",
+     "votos": 3006,
+     "electo": false
+    },
+    {
+     "nombre": "Jesús Martín Pérez",
+     "candidatura": "PARTIDO ARAGONÉS",
+     "votos": 2789,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Tello Bernad",
+     "candidatura": "PARTIDO COMUNISTA DE LOS TRABAJADORES DE ESPAÑA",
+     "votos": 1632,
+     "electo": false
+    },
+    {
+     "nombre": "Guillermo González Balmaseda",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 1240,
+     "electo": false
+    },
+    {
+     "nombre": "José María Palleja Piñol",
+     "candidatura": "RECORTES CERO",
+     "votos": 1159,
+     "electo": false
+    },
+    {
+     "nombre": "Manuel Hidalgo Jiménez",
+     "candidatura": "FALANGE ESPAÑOLA DE LAS JONS",
+     "votos": 998,
+     "electo": false
+    },
+    {
+     "nombre": "José María Abad Torres",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 753,
+     "electo": false
+    },
+    {
+     "nombre": "Lara Buendía Sau",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 448,
+     "electo": false
+    },
+    {
+     "nombre": "Florencio Hidalgo García",
+     "candidatura": "FEDERACIÓN DE LOS INDEPENDIENTES DE ARAGÓN",
+     "votos": 340,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 4
+  },
+  {
+   "nombre": "Ceuta",
+   "provincia": "ceuta",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Cristina Díaz Moreno",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 12219,
+     "electo": true
+    },
+    {
+     "nombre": "Abdelhakim Abdeselam Al Lal",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 11715,
+     "electo": true
+    },
+    {
+     "nombre": "María Blanca Gómez Serra",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 10704,
+     "electo": false
+    },
+    {
+     "nombre": "Miguel Señor Alonso",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 10235,
+     "electo": false
+    },
+    {
+     "nombre": "Yolanda Merelo Palomares",
+     "candidatura": "VOX",
+     "votos": 7941,
+     "electo": false
+    },
+    {
+     "nombre": "Carlos Francisco Verdejo Ferrer",
+     "candidatura": "VOX",
+     "votos": 7534,
+     "electo": false
+    },
+    {
+     "nombre": "Miriam Ahmed Sánchez",
+     "candidatura": "SUMAR",
+     "votos": 1031,
+     "electo": false
+    },
+    {
+     "nombre": "Ismael Abdeselam Martín",
+     "candidatura": "SUMAR",
+     "votos": 773,
+     "electo": false
+    },
+    {
+     "nombre": "Octavio Alejandro Arce García",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 87,
+     "electo": false
+    },
+    {
+     "nombre": "Damián Vallejo Rominguera",
+     "candidatura": "LIBRES",
+     "votos": 75,
+     "electo": false
+    },
+    {
+     "nombre": "Antonio José Corts Piris",
+     "candidatura": "RECORTES CERO",
+     "votos": 38,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 2
+  },
+  {
+   "nombre": "Melilla",
+   "provincia": "melilla",
+   "isla": false,
+   "candidatos": [
+    {
+     "nombre": "Fernando Adolfo Gutiérrez Díaz de Otazu",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 13501,
+     "electo": true
+    },
+    {
+     "nombre": "Isabel María Moreno Mohamed",
+     "candidatura": "PARTIDO POPULAR",
+     "votos": 12961,
+     "electo": true
+    },
+    {
+     "nombre": "Concepción López Carrillo",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 6065,
+     "electo": false
+    },
+    {
+     "nombre": "Riduan Moh Abdelkader",
+     "candidatura": "PARTIDO SOCIALISTA OBRERO ESPAÑOL",
+     "votos": 6051,
+     "electo": false
+    },
+    {
+     "nombre": "Sendy Nanwani Ramchand Ghanshandas",
+     "candidatura": "VOX",
+     "votos": 4041,
+     "electo": false
+    },
+    {
+     "nombre": "Rafael Ginel Pascual",
+     "candidatura": "VOX",
+     "votos": 4009,
+     "electo": false
+    },
+    {
+     "nombre": "Rachid Bussian Mohamed",
+     "candidatura": "COALICIÓN POR MELILLA",
+     "votos": 1418,
+     "electo": false
+    },
+    {
+     "nombre": "María Cecilia González Casas",
+     "candidatura": "COALICIÓN POR MELILLA",
+     "votos": 1253,
+     "electo": false
+    },
+    {
+     "nombre": "María Josefa Ruiz Hodar",
+     "candidatura": "SUMAR",
+     "votos": 788,
+     "electo": false
+    },
+    {
+     "nombre": "Juan Manuel Quiñoy Salvador",
+     "candidatura": "SUMAR",
+     "votos": 766,
+     "electo": false
+    },
+    {
+     "nombre": "Natalia Sáez Aguilar",
+     "candidatura": "PARTIDO ANIMALISTA CON EL MEDIO AMBIENTE",
+     "votos": 291,
+     "electo": false
+    },
+    {
+     "nombre": "Amador María Villar Riu",
+     "candidatura": "POR UN MUNDO MÁS JUSTO",
+     "votos": 68,
+     "electo": false
+    },
+    {
+     "nombre": "Sixto Miguel Casino",
+     "candidatura": "RECORTES CERO",
+     "votos": 40,
+     "electo": false
+    }
+   ],
+   "escanos_2023": 2
+  }
+ ]
+}

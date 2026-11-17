@@ -1,0 +1,63 @@
+---
+import Base from '../../layouts/Base.astro';
+import Fuentes from '../../components/Fuentes.astro';
+import { formatDate, url } from '../../lib/news';
+import { BASE_ROUTE, candidacyCount, getElection } from '../../lib/elecciones';
+
+const e = getElection();
+const pending = e.parties.filter((p) => !p.programa).length;
+---
+
+<Base title="Elecciones generales 2026" description="Programas, historial y viabilidad de los partidos que concurren a las elecciones generales del 29 de noviembre de 2026, con fuentes oficiales.">
+  <p class="eyebrow">29 de noviembre de 2026</p>
+  <h1>Elecciones generales 2026</h1>
+  <p class="lede">
+    Qué proponen los partidos, qué han hecho antes y qué haría falta para cumplirlo. Cada dato enlaza al
+    documento del que sale: el BOE, el Congreso o el propio programa del partido.
+  </p>
+
+  <p>{e.convocatoria.texto} <Fuentes fuentes={e.convocatoria.fuentes} /></p>
+
+  <nav class="section-nav" aria-label="Sección electoral">
+    <a href={url(`${BASE_ROUTE}/tu-provincia/`)}>¿Cuánto vale tu voto en tu provincia?</a>
+    <a href={url(`${BASE_ROUTE}/pactos/`)}>Pactos: quién apoyó a quién</a>
+    <a href={url(`${BASE_ROUTE}/afinidad/`)}>¿Con qué partido coincides?</a>
+    <a href={url(`${BASE_ROUTE}/metodologia/`)}>Cómo se ha hecho</a>
+  </nav>
+
+  <h2>Partidos</h2>
+  <p>{e.criterio.texto} <Fuentes fuentes={e.criterio.fuentes} /></p>
+  <p class="meta">Por orden alfabético.</p>
+  <ul class="party-cards">
+    {e.parties.map((p) => (
+      <li>
+        <h3><a href={url(`${BASE_ROUTE}/${p.id}/`)}>{p.nombre}</a></h3>
+        <p>{p.candidato.texto} <Fuentes fuentes={p.candidato.fuentes} /></p>
+        <p class="sub">
+          Candidatura al Congreso en {candidacyCount(p, e.provinces.length)}.
+          {p.programa ? ' Programa 2026 incorporado.' : ' Programa 2026: pendiente de incorporar.'}
+        </p>
+      </li>
+    ))}
+  </ul>
+  {pending > 0 && (
+    <p class="meta">
+      Las propuestas de cada partido se incorporan a medida que se leen sus programas oficiales; una ficha sin
+      propuestas no significa que el partido no las tenga.
+    </p>
+  )}
+
+  {e.otros.length > 0 && (
+    <>
+      <h3>Otras candidaturas presentes en muchas circunscripciones</h3>
+      <ul>
+        {e.otros.map((o) => <li>{o.texto} <Fuentes fuentes={o.fuentes} /></li>)}
+      </ul>
+    </>
+  )}
+
+  <p class="meta">
+    Esta sección no se actualiza el {e.congelado.map((d) => formatDate(d)).join(' ni el ')} (jornada de reflexión y
+    día de la votación). No se publican encuestas.
+  </p>
+</Base>

@@ -1,0 +1,95 @@
+---
+// Affinity quiz: the reader answers statements taken from the 2026 programmes and the page counts,
+// for each party, the questions where its programme says the same. Runs in the browser only; the
+// answers are not stored or sent anywhere.
+import Base from '../../layouts/Base.astro';
+import { url } from '../../lib/news';
+import { BASE_ROUTE, getElection, getQuiz } from '../../lib/elecciones';
+
+const e = getElection();
+const quiz = getQuiz();
+const withProgramme = e.parties.filter((p) => p.programa);
+const without = e.parties.filter((p) => !p.programa);
+const data = {
+  preguntas: quiz,
+  partidos: Object.fromEntries(withProgramme.map((p) => [p.id, { nombre: p.nombre, url: url(`${BASE_ROUTE}/${p.id}/`) }])),
+};
+---
+
+<Base title="¿Con qué partido coincides? · Elecciones generales 2026" description="Responde a afirmaciones sacadas de los programas de 2026 y mira con qué partidos coincides, con enlace a cada propuesta.">
+  <p class="eyebrow"><a href={url(`${BASE_ROUTE}/`)}>Elecciones generales 2026</a></p>
+  <h1>¿Con qué partido coincides?</h1>
+  <p class="lede">
+    Cada afirmación sale de los programas de 2026. Al terminar verás, para cada partido, en cuántas de las preguntas
+    en las que su programa se pronuncia coincides con él, y la propuesta concreta de la que sale cada posición.
+  </p>
+  <p class="meta">
+    Si el programa de un partido no dice nada sobre una pregunta, esa pregunta no cuenta para ese partido: no se
+    interpreta el silencio como acuerdo ni como desacuerdo. Tus respuestas no se guardan ni se envían: todo se
+    calcula en tu navegador.
+    {without.length > 0 && <> Sin programa incorporado todavía: {without.map((p) => p.nombre).join(', ')}.</>}
+  </p>
+
+  <form id="afinidad" class="quiz">
+    {quiz.map((q, i) => (
+      <fieldset>
+        <legend><span class="num">{i + 1}.</span> {q.pregunta}</legend>
+        <label><input type="radio" name={q.id} value="1" /> De acuerdo</label>
+        <label><input type="radio" name={q.id} value="-1" /> En desacuerdo</label>
+        <label><input type="radio" name={q.id} value="0" checked /> Sin opinión</label>
+      </fieldset>
+    ))}
+    <button type="submit">Ver resultado</button>
+  </form>
+
+  <div id="resultado" aria-live="polite"></div>
+  <noscript><p>El cálculo necesita JavaScript. Las propuestas de cada partido están en su ficha.</p></noscript>
+
+  <p class="meta">
+    <a href={url(`${BASE_ROUTE}/metodologia/`)}>Cómo se ha hecho</a> · No es una recomendación de voto: solo compara
+    tus respuestas con lo que dicen los programas.
+  </p>
+
+  <script type="application/json" id="datos-afinidad" set:html={JSON.stringify(data)} />
+  <script>
+    type Pos = { party: string; valor: 1 | -1; propuesta: string; texto: string };
+    type Q = { id: string; pregunta: string; posiciones: Pos[] };
+    const { preguntas, partidos } = JSON.parse(document.getElementById('datos-afinidad')!.textContent!) as
+      { preguntas: Q[]; partidos: Record<string, { nombre: string; url: string }> };
+    const form = document.getElementById('afinidad') as HTMLFormElement;
+    const out = document.getElementById('resultado')!;
+    const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      const answers = new Map(preguntas.map((q) => [q.id, Number(new FormData(form).get(q.id) ?? 0)]));
+      const rows = Object.entries(partidos).map(([id, p]) => {
+        const items = preguntas.flatMap((q) => {
+          const pos = q.posiciones.find((x) => x.party === id);
+          const a = answers.get(q.id) ?? 0;
+          return pos && a !== 0 ? [{ q, pos, match: pos.valor === a }] : [];
+        });
+        return { id, p, items, matches: items.filter((x) => x.match).length };
+      });
+      const answered = [...answers.values()].filter((a) => a !== 0).length;
+      if (!answered) {
+        out.innerHTML = '<p>Responde al menos a una pregunta.</p>';
+        return;
+      }
+      rows.sort((a, b) => (b.items.length ? b.matches / b.items.length : -1) - (a.items.length ? a.matches / a.items.length : -1)
+        || b.items.length - a.items.length);
+      out.innerHTML = `<h2>Resultado</h2>
+        <p class="meta">Has respondido ${answered} de ${preguntas.length} preguntas.</p>
+        <ul class="afinidad-res">${rows.map(({ id, p, items, matches }) => `<li>
+          <p><a href="${p.url}"><strong>${esc(p.nombre)}</strong></a>: ${items.length
+            ? `coincides en ${matches} de ${items.length} ${items.length === 1 ? 'pregunta' : 'preguntas'} en las que su programa se pronuncia.`
+            : 'su programa no se pronuncia sobre ninguna de las preguntas que has respondido.'}</p>
+          ${items.length ? `<details><summary>Ver por qué</summary><ul>${items.map(({ q, pos, match }) => `<li>
+            <span class="tag">${match ? 'Coincide' : 'No coincide'}</span> ${esc(q.pregunta)}
+            <br /><span class="sub">${pos.valor === 1 ? 'Su programa propone' : 'Su programa propone lo contrario'}:
+            <a href="${p.url}#${pos.propuesta}">${esc(pos.texto)}</a></span></li>`).join('')}</ul></details>` : ''}
+        </li>`).join('')}</ul>`;
+      out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  </script>
+</Base>

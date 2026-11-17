@@ -1,0 +1,123 @@
+---
+import Base from '../../layouts/Base.astro';
+import Fuentes from '../../components/Fuentes.astro';
+import PageList from '../../components/PageList.astro';
+import { formatDate, getNews, url } from '../../lib/news';
+import { BASE_ROUTE, candidacyCount, getElection, type Party } from '../../lib/elecciones';
+
+export function getStaticPaths() {
+  return getElection().parties.map((party) => ({ params: { partido: party.id }, props: { party } }));
+}
+
+const { party } = Astro.props as { party: Party };
+const e = getElection();
+const temas = Object.entries(e.temas)
+  .map(([id, titulo]) => ({ id, titulo, propuestas: party.propuestas.filter((p) => p.tema === id) }))
+  .filter((t) => t.propuestas.length);
+const related = getNews()
+  .articles.filter((a) => (a.meta.entities ?? []).some((x: string) => party.entidades.includes(x)))
+  .slice(0, 8);
+---
+
+<Base title={`${party.nombre} · Elecciones generales 2026`} description={`${party.nombre}: programa para el 29 de noviembre de 2026, antecedentes y viabilidad de sus propuestas, con fuentes oficiales.`}>
+  <p class="eyebrow"><a href={url(`${BASE_ROUTE}/`)}>Elecciones generales 2026</a></p>
+  <h1>{party.nombre}</h1>
+
+  <dl class="facts">
+    <dt>Cabeza de lista</dt>
+    <dd>{party.candidato.texto} <Fuentes fuentes={party.candidato.fuentes} /></dd>
+    <dt>Candidaturas</dt>
+    <dd>
+      Presenta candidatura al Congreso en {candidacyCount(party, e.provinces.length)}.{" "}
+      {party.candidaturas.texto} <Fuentes fuentes={party.candidaturas.fuentes} />
+      <details>
+        <summary>Nombre oficial de la candidatura en cada circunscripción</summary>
+        <ul class="compact">
+          {party.candidaturas.lista.map((c) => <li>{c.provincia}: {c.nombre}</li>)}
+        </ul>
+      </details>
+    </dd>
+    {party.composicion && (
+      <>
+        <dt>Partidos que la forman</dt>
+        <dd>{party.composicion.texto} <Fuentes fuentes={party.composicion.fuentes} /></dd>
+      </>
+    )}
+    <dt>Resultados anteriores</dt>
+    <dd>{party.inclusion.texto} <Fuentes fuentes={party.inclusion.fuentes} /></dd>
+    {party.web && (
+      <>
+        <dt>Web</dt>
+        <dd><a href={party.web} rel="noopener">{party.web.replace(/^https?:\/\/(www\.)?/, '').replace(/\/$/, '')}</a></dd>
+      </>
+    )}
+  </dl>
+
+  <h2>Programa 2026</h2>
+  {party.programa ? (
+    <p>
+      Propuestas tomadas del programa oficial: <a href={party.programa.url} rel="noopener">{party.programa.titulo}</a>
+      {party.programa.fecha && ` (${formatDate(party.programa.fecha)})`}. Es una selección de las medidas más concretas
+      de cada tema; cada una indica qué haría falta para llevarla a cabo.
+      {party.propuestas.some((p) => p.antecedentes.length)
+        ? ' Debajo, los antecedentes: lo que el partido ha hecho antes sobre el mismo asunto.'
+        : ' Los antecedentes (lo que el partido ha hecho antes sobre cada asunto) se están incorporando.'}
+    </p>
+  ) : (
+    <p class="pending">
+      Todavía no se ha incorporado el programa de {party.nombre} para estas elecciones. Solo se publican propuestas
+      leídas en el documento oficial del partido.
+    </p>
+  )}
+
+  {temas.map((t) => (
+    <section class="tema">
+      <h3>{t.titulo}</h3>
+      {t.propuestas.map((p) => (
+        <div class="propuesta" id={p.id}>
+          <p>
+            {p.referencia && <span class="ref">{p.referencia}. </span>}
+            {p.texto} <Fuentes fuentes={p.fuentes} />
+          </p>
+          <p class="req">
+            Qué haría falta:{' '}
+            {p.requisitos.map((r, i) => (
+              <>
+                {i > 0 && ' · '}
+                <a href={e.requisitos[r]?.url ?? '#'} rel="noopener" title={e.requisitos[r]?.texto}>{e.requisitos[r]?.titulo ?? r}</a>
+              </>
+            ))}
+            {p.viabilidad && (
+              <>
+                {'. '}
+                {p.viabilidad.texto} <Fuentes fuentes={p.viabilidad.fuentes} />
+              </>
+            )}
+          </p>
+          {p.antecedentes.length > 0 && (
+            <ul class="antecedentes">
+              {p.antecedentes.map((a) => (
+                <li class={a.tipo}>
+                  <span class="tag">{a.tipo === 'a-favor' ? 'Lo respalda' : 'Lo pone en duda'}</span>{' '}
+                  <strong>{formatDate(a.fecha)}</strong>: {a.texto} <Fuentes fuentes={a.fuentes} />
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ))}
+    </section>
+  ))}
+
+  {related.length > 0 && (
+    <section class="related">
+      <h2>En el resumen diario</h2>
+      <PageList pages={related} show="article" />
+    </section>
+  )}
+
+  <p class="meta">
+    <a href={url(`${BASE_ROUTE}/metodologia/`)}>Cómo se elabora esta ficha</a> · Si ves un error, se corrige y queda
+    registrado en <a href={url('/paginas/correcciones/')}>Correcciones</a>.
+  </p>
+</Base>

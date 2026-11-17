@@ -1,0 +1,32 @@
+# Ficha de partido. Schema and rules: CLAUDE.md, section "Elecciones generales 2026".
+# Every statement has `fuentes` (ids from eleccion.yaml `documentos`, ids from this file's
+# `documentos`, or inline {titulo, url, fecha}). Proposals stay empty until the party's own 2026
+# programme has been read.
+
+id: salf
+siglas: "SALF"
+nombre: "Se Acabó La Fiesta"
+web: null
+
+# Entities (as written in articulos/ frontmatter) whose daily articles are listed on the page.
+entidades: ["Se Acabó La Fiesta", "SALF", "Alvise Pérez"]
+
+candidato:
+  texto: "Luis Alvise Pérez Fernández encabeza la lista de Se Acabó La Fiesta al Congreso por Madrid."
+  fuentes: [boe-2026-23103]
+
+# Official candidacy names in BOE-A-2026-23103 that belong to this party (regex, case-insensitive);
+# the site counts and lists the matching constituencies.
+candidaturas_2026:
+  patron: "\\(SALF\\)|SE ACAB"
+  fuentes: [boe-2026-23103]
+
+inclusion:
+  texto: "4,58 % de los votos válidos en las europeas de 2024 (803.545 votos), como agrupación de electores «Se Acabó La Fiesta»."
+  fuentes: [boe-2024-13092]
+
+documentos: {}
+
+programa: null
+
+propuestas: []
