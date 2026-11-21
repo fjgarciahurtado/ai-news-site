@@ -278,13 +278,22 @@ export function getSenate(): { fuente: Doc | null; circunscripciones: SenateCons
   return { fuente: docMap(data.fuentes).resultados_2023 ?? null, circunscripciones: asList(data.circunscripciones) };
 }
 
+export interface QuizOption {
+  id: string;
+  texto: string;
+  /** Parties whose programme gives this answer, with the proposal it comes from. */
+  partidos: { party: string; propuesta: string; texto: string }[];
+}
+
 export interface QuizQuestion {
   id: string;
   pregunta: string;
-  posiciones: { party: string; valor: 1 | -1; propuesta: string; texto: string }[];
+  /** The answers lie on one line, in order: the neighbouring answer scores half a point. */
+  escala: boolean;
+  opciones: QuizOption[];
 }
 
-/** The affinity quiz (afinidad.yaml); each position carries the text of the proposal it comes from. */
+/** The affinity quiz (afinidad.yaml); each party in an answer carries the text of its proposal. */
 export function getQuiz(): QuizQuestion[] {
   const file = `${ELECTION_DIR}/afinidad.yaml`;
   if (!fs.existsSync(path.join(ROOT, file))) return [];
@@ -292,14 +301,19 @@ export function getQuiz(): QuizQuestion[] {
   return asList(readYaml(file).preguntas).map((q: any) => ({
     id: str(q.id),
     pregunta: str(q.pregunta),
-    posiciones: Object.entries(q.posiciones ?? {}).flatMap(([party, pos]: [string, any]) => {
-      const prop = parties.get(party)?.propuestas.find((p) => p.id === str(pos?.propuesta));
-      if (!prop) {
-        warn(`${file}: ${q.id}: ${party} has no propuesta '${pos?.propuesta}'`);
-        return [];
-      }
-      return [{ party, valor: pos.valor === -1 ? -1 : 1, propuesta: prop.id, texto: prop.texto } as const];
-    }),
+    escala: q.escala === true,
+    opciones: asList(q.opciones).map((o: any) => ({
+      id: str(o.id),
+      texto: str(o.texto),
+      partidos: Object.entries(o.partidos ?? {}).flatMap(([party, id]) => {
+        const prop = parties.get(party)?.propuestas.find((p) => p.id === str(id));
+        if (!prop) {
+          warn(`${file}: ${q.id}: ${party} has no propuesta '${id}'`);
+          return [];
+        }
+        return [{ party, propuesta: prop.id, texto: prop.texto }];
+      }),
+    })),
   }));
 }
 

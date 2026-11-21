@@ -1,106 +1,365 @@
-# Cuestionario de afinidad (/eleccionesgenerales2026/afinidad/). Each question is a statement taken
-# from the parties' 2026 programmes. A party has a position only when one of its `propuestas` says it
-# (valor: 1) or proposes the opposite (valor: -1); `propuesta` is that proposal's id in
-# partidos/<partido>.yaml, so the page links the reader to it and to its sources. A party whose
-# programme says nothing on a question has no position: silence is never read as agreement or
-# disagreement. The page runs in the reader's browser and sends nothing anywhere.
+# Cuestionario de afinidad (/eleccionesgenerales2026/afinidad/). Each question offers several answers,
+# each one summarising a proposal of the parties' 2026 programmes with its nuances, without naming the
+# party. `partidos` maps a party id to the id of that proposal in partidos/<partido>.yaml, so the page
+# links the reader to it and to its sources. A party appears in at most one answer per question; a
+# party whose programme says nothing on a question has no answer there: silence is never read as
+# agreement or disagreement. An answer with no party (usually "dejarlo como está") lets the reader say
+# so, but gives no point to anyone; it describes no current law, so it needs no source.
+#
+# `escala: true` only when the answers lie on one obvious line (a figure, more or less of the same
+# measure), ordered from one end to the other; then the answer next to the reader's scores half a
+# point. Without `escala`, only the same answer scores. The reader can mark a question as important
+# and it counts double. The page runs in the reader's browser and sends nothing anywhere.
 
 preguntas:
-  - id: vivienda-derecho
-    pregunta: "La vivienda debería ser un derecho fundamental en la Constitución, que se pueda exigir ante los tribunales."
-    posiciones:
-      psoe: {valor: 1, propuesta: vivienda-derecho-fundamental}
-      frente-amplio: {valor: 1, propuesta: vivienda-derecho-fundamental}
+  - id: alquiler
+    pregunta: "¿Qué debería hacer la ley con el precio del alquiler?"
+    escala: true
+    opciones:
+      - id: derogar
+        texto: "Derogar la Ley de Vivienda y suprimir las zonas tensionadas y el índice de precios del alquiler."
+        partidos: {pp: derogar-ley-vivienda, vox: derogar-ley-vivienda}
+      - id: como-esta
+        texto: "Dejar la regulación como está."
+      - id: congelar
+        texto: "Contratos de alquiler más largos y congelar temporalmente, en las zonas tensionadas, las rentas que superen el índice de referencia."
+        partidos: {psoe: alquiler-zonas-tensionadas}
+      - id: tope
+        texto: "Un tope legal en las zonas tensionadas (el 25 % de la renta media por hogar de la zona o el índice estatal, lo que sea menor), con una rebaja adicional del 30 % en las grandes ciudades y las zonas turísticas, y zonas tensionadas declaradas de forma automática."
+        partidos: {frente-amplio: tope-alquiler}
 
-  - id: limitar-alquiler
-    pregunta: "La ley debería limitar el precio del alquiler en las zonas donde la vivienda está más tensionada."
-    posiciones:
-      psoe: {valor: 1, propuesta: alquiler-zonas-tensionadas}
-      frente-amplio: {valor: 1, propuesta: tope-alquiler}
-      pp: {valor: -1, propuesta: derogar-ley-vivienda}
-      vox: {valor: -1, propuesta: derogar-ley-vivienda}
+  - id: mas-vivienda
+    pregunta: "¿Cuál debería ser la vía principal para que haya más vivienda asequible?"
+    opciones:
+      - id: impuestos-compra
+        texto: "Quitar impuestos a la compra: IVA del 0 % en la primera vivienda nueva, sin Impuesto de Transmisiones en la de segunda mano y deducción por compra en el IRPF."
+        partidos: {vox: primera-vivienda-sin-impuestos}
+      - id: suelo-y-licencias
+        texto: "Facilitar que se construya: una nueva Ley del Suelo, licencias de obra en tres meses con silencio positivo y convertir oficinas y locales en vivienda, hasta un millón de viviendas."
+        partidos: {pp: un-millon-de-viviendas}
+      - id: inversion-publica
+        texto: "Movilizar cada año el 1 % del PIB con todas las administraciones y ampliar el parque público y protegido hasta la media europea, con al menos una cuarta parte de la vivienda nueva pública o protegida."
+        partidos: {psoe: vivienda-1-por-ciento-pib}
+      - id: parque-publico
+        texto: "Un gran parque público de alquiler: 1,5 millones de viviendas públicas en 12 años, también comprando, movilizando vacías y expropiando, con alquileres de 600 euros como máximo."
+        partidos: {frente-amplio: parque-publico-vivienda}
+
+  - id: vivienda-derecho
+    pregunta: "¿Debería la vivienda ser un derecho que se pueda exigir ante los tribunales?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "No: dejar la Constitución como está."
+      - id: constitucion
+        texto: "Sí: reformar la Constitución para que sea un derecho fundamental."
+        partidos: {psoe: vivienda-derecho-fundamental}
+      - id: constitucion-y-ley
+        texto: "Sí: reformar la Constitución y, mientras tanto, reconocer por ley un derecho exigible, empezando por las personas sin hogar, las familias con menores y las víctimas de violencia machista."
+        partidos: {frente-amplio: vivienda-derecho-fundamental}
+
+  - id: ocupacion
+    pregunta: "¿Cómo debería actuar la ley ante la ocupación de viviendas?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejar los procedimientos como están."
+      - id: 48-horas
+        texto: "Recuperar la vivienda en 48 horas por orden judicial, que las comunidades de propietarios puedan pedir el desalojo y que el empadronamiento del ocupante sea nulo."
+        partidos: {pp: desalojo-48-horas}
+      - id: 24-horas
+        texto: "Desalojar en menos de 24 horas, endurecer el Código Penal, tipificar la «inquiocupación» como estafa y exigir residencia legal para alquilar."
+        partidos: {vox: desalojo-24-horas}
+
+  - id: pisos-turisticos
+    pregunta: "¿Qué hacer con los pisos turísticos?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: inspeccion
+        texto: "Más inspección de los pisos turísticos ilegales."
+        partidos: {vox: derogar-ley-vivienda}
+      - id: impuesto
+        texto: "Un impuesto progresivo sobre las viviendas de grandes propietarios y fondos que sean turísticas, estén vacías o se alquilen a precio abusivo."
+        partidos: {psoe: impuesto-grandes-tenedores}
+      - id: extinguir
+        texto: "Extinguir en tres años las licencias turísticas en edificios residenciales de las zonas tensionadas, aplicarles el IVA del 21 % y considerar turístico todo alquiler de 30 días o menos."
+        partidos: {frente-amplio: pisos-turisticos}
 
   - id: jornada
-    pregunta: "La ley debería reducir la jornada laboral máxima por debajo de las 40 horas semanales."
-    posiciones:
-      psoe: {valor: 1, propuesta: jornada-37-5-horas}
-      frente-amplio: {valor: 1, propuesta: jornada-32-horas}
+    pregunta: "¿Qué jornada laboral máxima debería fijar la ley?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarla como está."
+      - id: 37-5
+        texto: "37,5 horas semanales sin pérdida de salario, con un calendario acordado con sindicatos y empresarios y transición para las pymes; que los convenios avancen hacia las 35."
+        partidos: {psoe: jornada-37-5-horas}
+      - id: 32-horas
+        texto: "37,5 horas de inmediato (35 en el sector público) y después, poco a poco, 32 horas sin reducción de salario."
+        partidos: {frente-amplio: jornada-32-horas}
 
   - id: smi
-    pregunta: "La ley debería garantizar que el salario mínimo sea al menos el 60 % del salario medio."
-    posiciones:
-      psoe: {valor: 1, propuesta: smi-60-por-ciento}
-      frente-amplio: {valor: 1, propuesta: smi-60-por-ciento}
+    pregunta: "¿Debería la ley fijar un mínimo para el salario mínimo?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "No: dejarlo como está."
+      - id: 60-por-ciento
+        texto: "Sí: que nunca baje del 60 % del salario medio y que las subidas no se compensen quitando complementos o pluses."
+        partidos: {psoe: smi-60-por-ciento, frente-amplio: smi-60-por-ciento}
 
-  - id: impuestos-altos
-    pregunta: "Hay que subir los impuestos a las rentas del capital y a los patrimonios más altos."
-    posiciones:
-      psoe: {valor: 1, propuesta: rentas-del-capital}
-      frente-amplio: {valor: 1, propuesta: grandes-patrimonios}
+  - id: irpf
+    pregunta: "¿Qué hacer con el IRPF?"
+    escala: true
+    opciones:
+      - id: bajar-a-todos
+        texto: "Bajarlo y simplificarlo, con un tipo menor según el número de hijos, y compensarlo recortando gasto."
+        partidos: {vox: rebaja-impuestos}
+      - id: rentas-medias
+        texto: "Bajarlo a rentas medias y bajas y a familias subiendo los mínimos personales y familiares, que no pague quien cobre el salario mínimo y ajustar la tarifa a la inflación."
+        partidos: {pp: irpf-rentas-medias-y-bajas}
+      - id: progresivo
+        texto: "Que no pague quien cobre el salario mínimo, con rebajas hasta 27.000 euros, y subirlo a las rentas altas, con un tipo del 52 % desde 300.000 euros."
+        partidos: {frente-amplio: irpf-salarios-bajos-y-altas-rentas}
+
+  - id: capital-y-patrimonio
+    pregunta: "¿Qué hacer con los impuestos a las rentas del capital y a los grandes patrimonios?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarlos como están."
+      - id: rentas-capital
+        texto: "Subir los impuestos a las rentas del capital de más de 50.000 euros, hasta un 35 % por encima de 300.000."
+        partidos: {psoe: rentas-del-capital}
+      - id: patrimonios
+        texto: "Que todo patrimonio de más de un millón pague al menos el 2 %, un 3 % anual para los de más de 50 millones y un impuesto estatal a las herencias de más de un millón por heredero."
+        partidos: {frente-amplio: grandes-patrimonios}
 
   - id: sociedades
-    pregunta: "Hay que bajar el Impuesto sobre Sociedades."
-    posiciones:
-      vox: {valor: 1, propuesta: rebaja-impuestos}
-      frente-amplio: {valor: -1, propuesta: sociedades-tipo-minimo}
+    pregunta: "¿Qué hacer con el Impuesto sobre Sociedades?"
+    escala: true
+    opciones:
+      - id: bajar
+        texto: "Bajarlo."
+        partidos: {vox: rebaja-impuestos}
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: tipo-minimo
+        texto: "Un tipo mínimo efectivo del 20 % para las grandes empresas, sin subirlo a las pymes, y un gravamen permanente a las grandes energéticas."
+        partidos: {frente-amplio: sociedades-tipo-minimo}
 
-  - id: irpf-rentas-medias
-    pregunta: "Hay que bajar el IRPF a las rentas medias y bajas."
-    posiciones:
-      pp: {valor: 1, propuesta: irpf-rentas-medias-y-bajas}
-      vox: {valor: 1, propuesta: rebaja-impuestos}
-      frente-amplio: {valor: 1, propuesta: irpf-salarios-bajos-y-altas-rentas}
+  - id: iva
+    pregunta: "¿Qué hacer con el IVA?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: alimentos
+        texto: "IVA del 0 % para los alimentos básicos, incluidos carne, pescado y conservas, mientras dure la crisis de inflación."
+        partidos: {pp: iva-cero-alimentos}
+      - id: bajar
+        texto: "Bajar el IVA reducido y el general, empezando por los productos de primera necesidad."
+        partidos: {vox: rebaja-impuestos}
 
-  - id: pensiones-constitucion
-    pregunta: "La revalorización de las pensiones con el IPC debería estar garantizada en la Constitución."
-    posiciones:
-      psoe: {valor: 1, propuesta: pensiones-en-la-constitucion}
-      frente-amplio: {valor: 1, propuesta: pensiones-en-la-constitucion}
+  - id: pensiones
+    pregunta: "¿Cómo garantizar que las pensiones suban con los precios?"
+    escala: true
+    opciones:
+      - id: ley
+        texto: "Revalorizarlas cada año con el IPC, reconstruir el Pacto de Toledo e incentivar con el IRPF que se siga trabajando tras jubilarse."
+        partidos: {pp: pensiones-ipc}
+      - id: constitucion
+        texto: "Blindar en la Constitución el sistema público de pensiones y su revalorización con el IPC."
+        partidos: {psoe: pensiones-en-la-constitucion}
+      - id: constitucion-y-minimo
+        texto: "Blindar en la Constitución la pensión pública y su revalorización con el IPC, que ninguna sea inferior al salario mínimo y que su gestión no se privatice."
+        partidos: {frente-amplio: pensiones-en-la-constitucion}
 
-  - id: prestacion-crianza
-    pregunta: "El Estado debería pagar una prestación por cada hijo menor de edad a todas las familias."
-    posiciones:
-      psoe: {valor: 1, propuesta: prestacion-crianza}
-      frente-amplio: {valor: 1, propuesta: prestacion-crianza}
+  - id: jubilacion
+    pregunta: "¿Qué hacer con la edad de jubilación?"
+    opciones:
+      - id: como-esta
+        texto: "Dejarla como está."
+      - id: 65-anos
+        texto: "Volver a los 65 años, jubilación a los 60 en oficios muy penosos y sin recortes en la anticipada involuntaria con más de 40 años cotizados."
+        partidos: {frente-amplio: jubilacion-65}
+
+  - id: familias
+    pregunta: "¿Cómo debería ayudar el Estado a las familias con hijos?"
+    opciones:
+      - id: tipo-por-hijos
+        texto: "Con un IRPF más bajo cuantos más hijos."
+        partidos: {vox: rebaja-impuestos}
+      - id: minimos
+        texto: "Con un IRPF más bajo para las familias, subiendo los mínimos personales y familiares."
+        partidos: {pp: irpf-rentas-medias-y-bajas}
+      - id: prestacion-progresiva
+        texto: "Con una prestación para todos los hogares con menores, mayor para los de renta baja, y una deducción por hijo que se cobre aunque no se pague IRPF."
+        partidos: {psoe: prestacion-crianza}
+      - id: prestacion-universal
+        texto: "Con 200 euros al mes por cada menor de 18 años, la misma cantidad para todos sea cual sea la renta familiar."
+        partidos: {frente-amplio: prestacion-crianza}
+
+  - id: sanidad
+    pregunta: "¿Qué hacer con la financiación y la gestión de la sanidad pública?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: 7-por-ciento
+        texto: "Unos recursos en torno al 7 % del PIB, la gestión directa como forma preferente y el dentista básico para adultos en la sanidad pública."
+        partidos: {psoe: sanidad-7-por-ciento}
+      - id: 8-por-ciento
+        texto: "El 8 % del PIB, derogar la Ley 15/1997 para que la gestión directa sea la regla y la indirecta una excepción justificada, recuperar los servicios privatizados e integrar MUFACE, MUGEJU e ISFAS en la sanidad pública."
+        partidos: {frente-amplio: sanidad-gestion-publica}
 
   - id: nucleares
-    pregunta: "Las centrales nucleares deberían seguir funcionando más allá del calendario de cierre actual."
-    posiciones:
-      pp: {valor: 1, propuesta: nucleares}
-      vox: {valor: 1, propuesta: nucleares}
-      psoe: {valor: -1, propuesta: cierre-nuclear}
-      frente-amplio: {valor: -1, propuesta: luz-gratis-y-nucleares}
+    pregunta: "¿Qué hacer con las centrales nucleares?"
+    escala: true
+    opciones:
+      - id: cerrar
+        texto: "Cumplir el calendario de cierre, que termina en 2035."
+        partidos: {psoe: cierre-nuclear, frente-amplio: luz-gratis-y-nucleares}
+      - id: alargar
+        texto: "Eliminar el calendario de cierre y alargar la vida de las centrales actuales con el visto bueno del Consejo de Seguridad Nuclear."
+        partidos: {pp: nucleares}
+      - id: nuevas
+        texto: "Eliminar el calendario de cierre y estudiar con urgencia construir nuevas centrales junto a las actuales."
+        partidos: {vox: nucleares}
 
-  - id: regularizaciones
-    pregunta: "Hay que prohibir las regularizaciones extraordinarias de inmigrantes en situación irregular."
-    posiciones:
-      pp: {valor: 1, propuesta: regularizaciones-y-arraigo}
-      vox: {valor: 1, propuesta: regularizaciones-y-arraigo}
-      frente-amplio: {valor: -1, propuesta: regularizacion-estable}
+  - id: factura-luz
+    pregunta: "¿Qué medida prefieres para la factura de la luz?"
+    opciones:
+      - id: impuestos
+        texto: "Bajar los impuestos de la electricidad."
+        partidos: {vox: nucleares}
+      - id: impuesto-produccion
+        texto: "Suprimir el impuesto del 7 % a la producción eléctrica y una única tarifa social para los hogares vulnerables."
+        partidos: {pp: impuesto-produccion-electrica}
+      - id: horas-gratis
+        texto: "Tres horas de luz gratis al día para todos los hogares en las horas de más sol, con una comercializadora pública, y una tarifa social reconocida de oficio."
+        partidos: {frente-amplio: luz-gratis-y-nucleares}
+
+  - id: inmigracion
+    pregunta: "¿Qué política de inmigración se acerca más a lo que piensas?"
+    escala: true
+    opciones:
+      - id: regularizacion-estable
+        texto: "Una vía estable y permanente de regularización, eliminar el rechazo en frontera y cerrar los centros de internamiento de extranjeros."
+        partidos: {frente-amplio: regularizacion-estable}
+      - id: vias-legales
+        texto: "Más vías legales y seguras de protección internacional y un plan de integración con 500 millones de euros."
+        partidos: {psoe: plan-integracion}
+      - id: arraigo-excepcional
+        texto: "Prohibir las regularizaciones masivas, que el arraigo sea una vía individual y excepcional y que el empadronamiento no baste para recibir ayudas no urgentes."
+        partidos: {pp: regularizaciones-y-arraigo}
+      - id: nunca
+        texto: "Prohibir las regularizaciones, que quien entre de forma ilegal no pueda regularizarse nunca y suprimir el arraigo."
+        partidos: {vox: regularizaciones-y-arraigo}
 
   - id: prioridad-nacional
-    pregunta: "Los españoles deberían tener preferencia sobre los extranjeros en el acceso a la vivienda pública y a las ayudas sociales."
-    posiciones:
-      vox: {valor: 1, propuesta: prioridad-nacional}
+    pregunta: "¿Deberían los españoles tener preferencia sobre los extranjeros en la vivienda pública y las ayudas sociales?"
+    opciones:
+      - id: sin-preferencia
+        texto: "No."
+      - id: preferencia
+        texto: "Sí: preferencia en la vivienda pública, las ayudas al alquiler, las guarderías, las becas y los servicios sociales, y el Ingreso Mínimo Vital solo para españoles."
+        partidos: {vox: prioridad-nacional}
+
+  - id: nacionalidad
+    pregunta: "¿Qué hacer con los requisitos para obtener la nacionalidad española?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarlos como están."
+      - id: mas-requisitos
+        texto: "Más requisitos (español, historia e instituciones, sin antecedentes, al corriente con Hacienda), trato preferente para los países de la Hispanidad y pérdida por delitos graves para quien no sea español de origen."
+        partidos: {pp: ley-de-nacionalidad}
+      - id: revisar
+        texto: "Endurecer los requisitos, revisar concesiones pasadas, suprimir las vías rápidas y pérdida por delitos graves o reiterados para quien no sea español de origen."
+        partidos: {vox: nacionalidad}
 
   - id: cgpj
-    pregunta: "Los jueces deberían elegir a los doce vocales judiciales del Consejo General del Poder Judicial."
-    posiciones:
-      pp: {valor: 1, propuesta: jueces-eligen-cgpj}
-      vox: {valor: 1, propuesta: jueces-eligen-cgpj}
+    pregunta: "¿Quién debería elegir a los doce vocales jueces del Consejo General del Poder Judicial?"
+    opciones:
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: jueces
+        texto: "Los propios jueces y magistrados."
+        partidos: {pp: jueces-eligen-cgpj, vox: jueces-eligen-cgpj}
 
-  - id: castellano
-    pregunta: "Hay que garantizar la enseñanza en castellano en todo el territorio."
-    posiciones:
-      pp: {valor: 1, propuesta: ensenanza-en-castellano}
-      vox: {valor: 1, propuesta: educacion-lomloe}
+  - id: voto-16
+    pregunta: "¿Debería poder votarse desde los 16 años?"
+    opciones:
+      - id: 18-anos
+        texto: "No."
+      - id: 16-anos
+        texto: "Sí, y suprimir el aforamiento de los cargos públicos para delitos ajenos a su cargo."
+        partidos: {psoe: voto-16-y-aforamientos}
+
+  - id: jefatura-estado
+    pregunta: "¿Qué forma de Estado prefieres?"
+    opciones:
+      - id: como-esta
+        texto: "Dejarla como está."
+      - id: republica
+        texto: "Avanzar hacia una república federal y plurinacional en la que se elija la Jefatura del Estado, con un referéndum regulado para la cuestión territorial."
+        partidos: {frente-amplio: republica-federal}
+
+  - id: financiacion
+    pregunta: "¿Cómo debería financiarse a las comunidades autónomas?"
+    escala: true
+    opciones:
+      - id: mismas-reglas
+        texto: "Que ninguna comunidad del régimen común salga de él ni tenga un acuerdo singular, y reestructurar la deuda autonómica con las mismas reglas para todas."
+        partidos: {pp: financiacion-regimen-comun}
+      - id: sistema-gobierno
+        texto: "Aplicar el sistema propuesto por el Gobierno, con 21.000 millones adicionales, y que el Estado asuma 83.000 millones de deuda autonómica."
+        partidos: {psoe: financiacion-autonomica}
+      - id: mas-recursos
+        texto: "Partir del sistema propuesto por el Gobierno y añadir al menos el 2,3 % del PIB al año, con más capacidad tributaria para las comunidades."
+        partidos: {frente-amplio: financiacion-autonomica}
+
+  - id: lengua-escuela
+    pregunta: "¿Qué hacer con la lengua en la escuela?"
+    escala: true
+    opciones:
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: derecho-castellano
+        texto: "Garantizar el derecho a estudiar en castellano en todas las etapas y en toda España, respetando las lenguas cooficiales y cumpliendo las sentencias."
+        partidos: {pp: ensenanza-en-castellano}
+      - id: espanol-y-curriculo-unico
+        texto: "Derogar la LOMLOE, garantizar la educación en español en todo el territorio y un currículo, unas evaluaciones y una EVAU únicos en toda España."
+        partidos: {vox: educacion-lomloe}
+
+  - id: menores-delitos
+    pregunta: "¿Qué hacer con las penas a los menores y la prisión permanente revisable?"
+    opciones:
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: endurecer
+        texto: "Rebajar la edad de responsabilidad penal, plantear que los menores sean imputables en delitos violentos como homicidios y agresiones sexuales y ampliar la prisión permanente revisable."
+        partidos: {vox: menores-y-prision-permanente}
+
+  - id: violencia-genero
+    pregunta: "¿Qué hacer con las leyes contra la violencia de género?"
+    opciones:
+      - id: como-esta
+        texto: "Mantenerlas."
+      - id: derogar
+        texto: "Derogarlas y sustituirlas por normas que protejan a las víctimas de violencia."
+        partidos: {vox: leyes-genero-y-memoria}
 
   - id: gasto-militar
-    pregunta: "España no debería comprometerse a destinar el 5 % del PIB a gasto militar."
-    posiciones:
-      frente-amplio: {valor: 1, propuesta: gasto-militar}
-
-  - id: republica
-    pregunta: "España debería avanzar hacia una república en la que se elija la Jefatura del Estado."
-    posiciones:
-      frente-amplio: {valor: 1, propuesta: republica-federal}
+    pregunta: "¿Cuánto debería gastar España en defensa?"
+    escala: true
+    opciones:
+      - id: 5-por-ciento
+        texto: "Asumir el compromiso del 5 % del PIB en el marco de la OTAN."
+      - id: como-esta
+        texto: "Dejarlo como está."
+      - id: reducir
+        texto: "Rechazar el 5 % y reducir el gasto militar en favor de protección civil, sanidad y educación."
+        partidos: {frente-amplio: gasto-militar}

@@ -548,6 +548,31 @@ img {
   font-size: 0.95rem;
 }
 
+.quiz label.opcion {
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-start;
+  margin: 0 0 0.45rem;
+}
+
+.quiz label.opcion input {
+  margin-top: 0.25rem;
+  flex: none;
+}
+
+.quiz label.importa {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.quiz fieldset > .sub {
+  margin: 0 0 0.4rem;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+}
+
 .quiz button {
   font: inherit;
   font-family: var(--sans);

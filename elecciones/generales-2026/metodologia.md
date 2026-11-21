@@ -53,11 +53,19 @@ ningún momento.
 
 ## ¿Con qué partido coincides?
 
-Cada pregunta del cuestionario es una afirmación sacada de los programas de 2026. Un partido tiene
-posición en una pregunta solo si una de sus propuestas la defiende o defiende lo contrario, y el
-resultado enlaza a esa propuesta. Si el programa no dice nada, la pregunta no cuenta para ese partido.
-Solo entran los partidos cuyo programa ya se ha incorporado. Las respuestas se calculan en el navegador
-y no se guardan ni se envían.
+Dos partidos pueden defender lo mismo en titular y diferir en los detalles (cuántas horas, para quién,
+con qué límites). Por eso cada pregunta ofrece varias respuestas, que resumen las propuestas concretas
+de los programas de 2026 sin decir de qué partido son, y el resultado enlaza a cada propuesta. Algunas
+preguntas añaden una respuesta que no defiende ningún programa («dejarlo como está») para que también
+se pueda elegir; esa respuesta no suma puntos a ningún partido.
+
+Elegir la misma respuesta que un partido suma un punto con él. Cuando las respuestas de un tema van de
+un extremo a otro de una misma línea (una cifra, más o menos de la misma medida), se presentan en orden
+y la respuesta de al lado suma medio punto; en los demás temas solo cuenta la misma respuesta. Los temas
+marcados como importantes cuentan el doble. El porcentaje de cada partido se calcula solo con los temas
+en los que su programa se pronuncia: si no dice nada, el tema no cuenta para ese partido. Solo entran los
+partidos cuyo programa ya se ha incorporado. Las respuestas se calculan en el navegador y no se guardan
+ni se envían.
 
 ## Pactos
 

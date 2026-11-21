@@ -1,7 +1,9 @@
 ---
-// Affinity quiz: the reader answers statements taken from the 2026 programmes and the page counts,
-// for each party, the questions where its programme says the same. Runs in the browser only; the
-// answers are not stored or sent anywhere.
+// Affinity quiz: each question offers the answers the 2026 programmes give, with their nuances and
+// without party names. The reader picks the closest one and may mark the question as important
+// (it counts double). A party scores 1 when it gives the same answer and, on questions whose answers
+// lie on one line (`escala`), 0.5 for the neighbouring answer. Runs in the browser only; the answers
+// are not stored or sent anywhere.
 import Base from '../../layouts/Base.astro';
 import { url } from '../../lib/news';
 import { BASE_ROUTE, getElection, getQuiz } from '../../lib/elecciones';
@@ -16,17 +18,19 @@ const data = {
 };
 ---
 
-<Base title="¿Con qué partido coincides? · Elecciones generales 2026" description="Responde a afirmaciones sacadas de los programas de 2026 y mira con qué partidos coincides, con enlace a cada propuesta.">
+<Base title="¿Con qué partido coincides? · Elecciones generales 2026" description="Elige, en cada tema, la propuesta de los programas de 2026 que más se acerca a lo que piensas y mira con qué partidos coincides.">
   <p class="eyebrow"><a href={url(`${BASE_ROUTE}/`)}>Elecciones generales 2026</a></p>
   <h1>¿Con qué partido coincides?</h1>
   <p class="lede">
-    Cada afirmación sale de los programas de 2026. Al terminar verás, para cada partido, en cuántas de las preguntas
-    en las que su programa se pronuncia coincides con él, y la propuesta concreta de la que sale cada posición.
+    En cada tema, las respuestas resumen lo que proponen los programas de 2026, con sus matices y sin decir de qué
+    partido es cada una. Elige la que más se acerque a lo que piensas y marca los temas que más te importan: cuentan
+    el doble.
   </p>
   <p class="meta">
-    Si el programa de un partido no dice nada sobre una pregunta, esa pregunta no cuenta para ese partido: no se
-    interpreta el silencio como acuerdo ni como desacuerdo. Tus respuestas no se guardan ni se envían: todo se
-    calcula en tu navegador.
+    Si eliges la misma respuesta que un partido, sumas un punto con él. En los temas cuyas respuestas van de un
+    extremo a otro (están ordenadas), la respuesta de al lado suma medio punto. Si el programa de un partido no dice
+    nada sobre un tema, ese tema no cuenta para ese partido: no se interpreta el silencio como acuerdo ni como
+    desacuerdo. Tus respuestas no se guardan ni se envían: todo se calcula en tu navegador.
     {without.length > 0 && <> Sin programa incorporado todavía: {without.map((p) => p.nombre).join(', ')}.</>}
   </p>
 
@@ -34,9 +38,12 @@ const data = {
     {quiz.map((q, i) => (
       <fieldset>
         <legend><span class="num">{i + 1}.</span> {q.pregunta}</legend>
-        <label><input type="radio" name={q.id} value="1" /> De acuerdo</label>
-        <label><input type="radio" name={q.id} value="-1" /> En desacuerdo</label>
-        <label><input type="radio" name={q.id} value="0" checked /> Sin opinión</label>
+        {q.escala && <p class="sub">Respuestas ordenadas de un extremo a otro.</p>}
+        {q.opciones.map((o) => (
+          <label class="opcion"><input type="radio" name={q.id} value={o.id} /> {o.texto}</label>
+        ))}
+        <label class="opcion"><input type="radio" name={q.id} value="" checked /> Sin opinión / ninguna de estas</label>
+        <label class="importa"><input type="checkbox" name={`${q.id}--importa`} /> Este tema me importa mucho</label>
       </fieldset>
     ))}
     <button type="submit">Ver resultado</button>
@@ -52,42 +59,54 @@ const data = {
 
   <script type="application/json" id="datos-afinidad" set:html={JSON.stringify(data)} />
   <script>
-    type Pos = { party: string; valor: 1 | -1; propuesta: string; texto: string };
-    type Q = { id: string; pregunta: string; posiciones: Pos[] };
+    type Opt = { id: string; texto: string; partidos: { party: string; propuesta: string; texto: string }[] };
+    type Q = { id: string; pregunta: string; escala: boolean; opciones: Opt[] };
     const { preguntas, partidos } = JSON.parse(document.getElementById('datos-afinidad')!.textContent!) as
       { preguntas: Q[]; partidos: Record<string, { nombre: string; url: string }> };
     const form = document.getElementById('afinidad') as HTMLFormElement;
     const out = document.getElementById('resultado')!;
     const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const pct = (x: number) => `${Math.round(x * 100)} %`;
+    const TAGS: Record<string, string> = { '1': 'Coincide', '0.5': 'Cercana', '0': 'Distinta' };
 
     form.addEventListener('submit', (ev) => {
       ev.preventDefault();
-      const answers = new Map(preguntas.map((q) => [q.id, Number(new FormData(form).get(q.id) ?? 0)]));
-      const rows = Object.entries(partidos).map(([id, p]) => {
-        const items = preguntas.flatMap((q) => {
-          const pos = q.posiciones.find((x) => x.party === id);
-          const a = answers.get(q.id) ?? 0;
-          return pos && a !== 0 ? [{ q, pos, match: pos.valor === a }] : [];
-        });
-        return { id, p, items, matches: items.filter((x) => x.match).length };
+      const fd = new FormData(form);
+      const answers = preguntas.flatMap((q) => {
+        const mine = q.opciones.findIndex((o) => o.id === fd.get(q.id));
+        return mine < 0 ? [] : [{ q, mine, peso: fd.get(`${q.id}--importa`) ? 2 : 1 }];
       });
-      const answered = [...answers.values()].filter((a) => a !== 0).length;
-      if (!answered) {
+      if (!answers.length) {
         out.innerHTML = '<p>Responde al menos a una pregunta.</p>';
         return;
       }
-      rows.sort((a, b) => (b.items.length ? b.matches / b.items.length : -1) - (a.items.length ? a.matches / a.items.length : -1)
-        || b.items.length - a.items.length);
+      const rows = Object.entries(partidos).map(([id, p]) => {
+        const items = answers.flatMap(({ q, mine, peso }) => {
+          const theirs = q.opciones.findIndex((o) => o.partidos.some((x) => x.party === id));
+          if (theirs < 0) return [];
+          const dist = Math.abs(theirs - mine);
+          const puntos = dist === 0 ? 1 : q.escala && dist === 1 ? 0.5 : 0;
+          const prop = q.opciones[theirs].partidos.find((x) => x.party === id)!;
+          return [{ q, mine: q.opciones[mine], theirs: q.opciones[theirs], prop, peso, puntos }];
+        });
+        const total = items.reduce((s, x) => s + x.peso, 0);
+        const score = total ? items.reduce((s, x) => s + x.peso * x.puntos, 0) / total : -1;
+        return { id, p, items, score };
+      });
+      rows.sort((a, b) => b.score - a.score || b.items.length - a.items.length);
       out.innerHTML = `<h2>Resultado</h2>
-        <p class="meta">Has respondido ${answered} de ${preguntas.length} preguntas.</p>
-        <ul class="afinidad-res">${rows.map(({ id, p, items, matches }) => `<li>
+        <p class="meta">Has respondido ${answers.length} de ${preguntas.length} preguntas. El porcentaje compara tus
+        respuestas con las de cada partido solo en los temas en los que su programa se pronuncia.</p>
+        <ul class="afinidad-res">${rows.map(({ p, items, score }) => `<li>
           <p><a href="${p.url}"><strong>${esc(p.nombre)}</strong></a>: ${items.length
-            ? `coincides en ${matches} de ${items.length} ${items.length === 1 ? 'pregunta' : 'preguntas'} en las que su programa se pronuncia.`
-            : 'su programa no se pronuncia sobre ninguna de las preguntas que has respondido.'}</p>
-          ${items.length ? `<details><summary>Ver por qué</summary><ul>${items.map(({ q, pos, match }) => `<li>
-            <span class="tag">${match ? 'Coincide' : 'No coincide'}</span> ${esc(q.pregunta)}
-            <br /><span class="sub">${pos.valor === 1 ? 'Su programa propone' : 'Su programa propone lo contrario'}:
-            <a href="${p.url}#${pos.propuesta}">${esc(pos.texto)}</a></span></li>`).join('')}</ul></details>` : ''}
+            ? `<strong>${pct(score)}</strong> de afinidad en ${items.length} ${items.length === 1 ? 'tema' : 'temas'} en los que su programa se pronuncia.`
+            : 'su programa no se pronuncia sobre ninguno de los temas que has respondido.'}</p>
+          ${items.length ? `<details><summary>Ver tema por tema</summary><ul>${items.map((x) => `<li>
+            <span class="tag">${TAGS[String(x.puntos)]}</span>${x.peso > 1 ? ' <span class="tag">Te importa mucho</span>' : ''}
+            ${esc(x.q.pregunta)}
+            <br /><span class="sub">Tu respuesta: ${esc(x.mine.texto)}</span>
+            ${x.puntos === 1 ? '' : `<br /><span class="sub">La de su programa: ${esc(x.theirs.texto)}</span>`}
+            <br /><span class="sub">Propuesta: <a href="${p.url}#${x.prop.propuesta}">${esc(x.prop.texto)}</a></span></li>`).join('')}</ul></details>` : ''}
         </li>`).join('')}</ul>`;
       out.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
