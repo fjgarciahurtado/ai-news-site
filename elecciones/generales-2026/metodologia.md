@@ -60,12 +60,13 @@ preguntas añaden una respuesta que no defiende ningún programa («dejarlo como
 se pueda elegir; esa respuesta no suma puntos a ningún partido.
 
 Elegir la misma respuesta que un partido suma un punto con él. Cuando las respuestas de un tema van de
-un extremo a otro de una misma línea (una cifra, más o menos de la misma medida), se presentan en orden
-y la respuesta de al lado suma medio punto; en los demás temas solo cuenta la misma respuesta. Los temas
+un extremo a otro de una misma línea (una cifra, más o menos de la misma medida), la respuesta de al lado
+en esa línea suma medio punto; en los demás temas solo cuenta la misma respuesta. En pantalla las
+respuestas aparecen siempre en orden aleatorio, para que su posición no sugiera cuál es la más moderada. Los temas
 marcados como importantes cuentan el doble. El porcentaje de cada partido se calcula solo con los temas
 en los que su programa se pronuncia: si no dice nada, el tema no cuenta para ese partido. Solo entran los
 partidos cuyo programa ya se ha incorporado. Las respuestas se calculan en el navegador y no se guardan
-ni se envían.
+ni se envían; el resultado se puede descargar en PDF, que también se genera en el navegador.
 
 ## Pactos
 

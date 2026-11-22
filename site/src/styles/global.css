@@ -573,7 +573,8 @@ img {
   font-size: 0.8rem;
 }
 
-.quiz button {
+.quiz button,
+.boton {
   font: inherit;
   font-family: var(--sans);
   margin: 1rem 0;
@@ -583,6 +584,11 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.boton:disabled {
+  opacity: 0.6;
+  cursor: wait;
 }
 
 .afinidad-res {

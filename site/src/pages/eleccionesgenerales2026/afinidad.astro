@@ -2,14 +2,37 @@
 // Affinity quiz: each question offers the answers the 2026 programmes give, with their nuances and
 // without party names. The reader picks the closest one and may mark the question as important
 // (it counts double). A party scores 1 when it gives the same answer and, on questions whose answers
-// lie on one line (`escala`), 0.5 for the neighbouring answer. Runs in the browser only; the answers
-// are not stored or sent anywhere.
+// lie on one line (`escala`), 0.5 for the neighbouring answer. Answers are never shown in that order:
+// they are shuffled at build time (seeded, so the HTML is stable) and again in the browser, so their
+// position does not hint at a left-right line. Scores use the canonical order in `afinidad.yaml`.
+// The result can be downloaded as a PDF (jsPDF, loaded on demand). Runs in the browser only; the
+// answers are not stored or sent anywhere.
 import Base from '../../layouts/Base.astro';
 import { url } from '../../lib/news';
 import { BASE_ROUTE, getElection, getQuiz } from '../../lib/elecciones';
 
 const e = getElection();
 const quiz = getQuiz();
+// Deterministic shuffle (mulberry32 seeded by the question id): the build output does not change between
+// runs, and the first paint is already out of order before the browser reshuffles.
+function seeded(seed: string) {
+  let a = [...seed].reduce((h, c) => Math.imul(h ^ c.charCodeAt(0), 2654435761) >>> 0, 0x9e3779b9);
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+function shuffled<T>(xs: T[], seed: string): T[] {
+  const out = [...xs];
+  const rnd = seeded(seed);
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(rnd() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
 const withProgramme = e.parties.filter((p) => p.programa);
 const without = e.parties.filter((p) => !p.programa);
 const data = {
@@ -27,10 +50,11 @@ const data = {
     el doble.
   </p>
   <p class="meta">
-    Si eliges la misma respuesta que un partido, sumas un punto con él. En los temas cuyas respuestas van de un
-    extremo a otro (están ordenadas), la respuesta de al lado suma medio punto. Si el programa de un partido no dice
+    Si eliges la misma respuesta que un partido, sumas un punto con él. En los temas cuyas respuestas son grados
+    de una misma medida (más o menos horas, una cifra mayor o menor), la respuesta más próxima a la tuya suma medio
+    punto. Las respuestas aparecen en orden aleatorio, para que su posición no sugiera nada. Si el programa de un partido no dice
     nada sobre un tema, ese tema no cuenta para ese partido: no se interpreta el silencio como acuerdo ni como
-    desacuerdo. Tus respuestas no se guardan ni se envían: todo se calcula en tu navegador.
+    desacuerdo. Tus respuestas no se guardan ni se envían: todo se calcula en tu navegador, también el PDF del resultado.
     {without.length > 0 && <> Sin programa incorporado todavía: {without.map((p) => p.nombre).join(', ')}.</>}
   </p>
 
@@ -38,10 +62,11 @@ const data = {
     {quiz.map((q, i) => (
       <fieldset>
         <legend><span class="num">{i + 1}.</span> {q.pregunta}</legend>
-        {q.escala && <p class="sub">Respuestas ordenadas de un extremo a otro.</p>}
-        {q.opciones.map((o) => (
-          <label class="opcion"><input type="radio" name={q.id} value={o.id} /> {o.texto}</label>
-        ))}
+        <div class="opciones">
+          {shuffled(q.opciones, q.id).map((o) => (
+            <label class="opcion"><input type="radio" name={q.id} value={o.id} /> {o.texto}</label>
+          ))}
+        </div>
         <label class="opcion"><input type="radio" name={q.id} value="" checked /> Sin opinión / ninguna de estas</label>
         <label class="importa"><input type="checkbox" name={`${q.id}--importa`} /> Este tema me importa mucho</label>
       </fieldset>
@@ -61,6 +86,9 @@ const data = {
   <script>
     type Opt = { id: string; texto: string; partidos: { party: string; propuesta: string; texto: string }[] };
     type Q = { id: string; pregunta: string; escala: boolean; opciones: Opt[] };
+    type Item = { q: Q; mine: Opt; theirs: Opt; prop: Opt['partidos'][number]; peso: number; puntos: number };
+    type Row = { id: string; p: { nombre: string; url: string }; items: Item[]; score: number };
+    type Result = { rows: Row[]; answers: { q: Q; mine: number; peso: number }[]; fecha: Date };
     const { preguntas, partidos } = JSON.parse(document.getElementById('datos-afinidad')!.textContent!) as
       { preguntas: Q[]; partidos: Record<string, { nombre: string; url: string }> };
     const form = document.getElementById('afinidad') as HTMLFormElement;
@@ -68,20 +96,28 @@ const data = {
     const esc = (s: string) => s.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
     const pct = (x: number) => `${Math.round(x * 100)} %`;
     const TAGS: Record<string, string> = { '1': 'Coincide', '0.5': 'Cercana', '0': 'Distinta' };
+    let last: Result | null = null;
 
-    form.addEventListener('submit', (ev) => {
-      ev.preventDefault();
+    // Reshuffle each question's answers on every visit, so no fixed position favours any answer.
+    form.querySelectorAll('.opciones').forEach((box) => {
+      const labels = [...box.children];
+      for (let i = labels.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [labels[i], labels[j]] = [labels[j], labels[i]];
+      }
+      box.append(...labels);
+    });
+
+    function compute(): Result | null {
       const fd = new FormData(form);
       const answers = preguntas.flatMap((q) => {
         const mine = q.opciones.findIndex((o) => o.id === fd.get(q.id));
         return mine < 0 ? [] : [{ q, mine, peso: fd.get(`${q.id}--importa`) ? 2 : 1 }];
       });
-      if (!answers.length) {
-        out.innerHTML = '<p>Responde al menos a una pregunta.</p>';
-        return;
-      }
+      if (!answers.length) return null;
       const rows = Object.entries(partidos).map(([id, p]) => {
         const items = answers.flatMap(({ q, mine, peso }) => {
+          // Distances use the canonical order of the answers, not the shuffled order on screen.
           const theirs = q.opciones.findIndex((o) => o.partidos.some((x) => x.party === id));
           if (theirs < 0) return [];
           const dist = Math.abs(theirs - mine);
@@ -94,9 +130,21 @@ const data = {
         return { id, p, items, score };
       });
       rows.sort((a, b) => b.score - a.score || b.items.length - a.items.length);
+      return { rows, answers, fecha: new Date() };
+    }
+
+    form.addEventListener('submit', (ev) => {
+      ev.preventDefault();
+      last = compute();
+      if (!last) {
+        out.innerHTML = '<p>Responde al menos a una pregunta.</p>';
+        return;
+      }
+      const { rows, answers } = last;
       out.innerHTML = `<h2>Resultado</h2>
         <p class="meta">Has respondido ${answers.length} de ${preguntas.length} preguntas. El porcentaje compara tus
         respuestas con las de cada partido solo en los temas en los que su programa se pronuncia.</p>
+        <p><button type="button" id="afinidad-pdf" class="boton">Descargar resultado en PDF</button></p>
         <ul class="afinidad-res">${rows.map(({ p, items, score }) => `<li>
           <p><a href="${p.url}"><strong>${esc(p.nombre)}</strong></a>: ${items.length
             ? `<strong>${pct(score)}</strong> de afinidad en ${items.length} ${items.length === 1 ? 'tema' : 'temas'} en los que su programa se pronuncia.`
@@ -110,5 +158,118 @@ const data = {
         </li>`).join('')}</ul>`;
       out.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+
+    out.addEventListener('click', async (ev) => {
+      const btn = (ev.target as HTMLElement).closest('#afinidad-pdf') as HTMLButtonElement | null;
+      if (!btn || !last) return;
+      btn.disabled = true;
+      btn.textContent = 'Preparando el PDF…';
+      try {
+        await downloadPdf(last);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Descargar resultado en PDF';
+      }
+    });
+
+    // Builds the PDF in the browser: summary table with every party's percentage, then, party by party,
+    // each question with its tag (coincide / cercana / distinta), the reader's answer, the party's answer
+    // and the proposal it comes from. The standard PDF fonts cover Spanish (WinAnsi); other characters
+    // are replaced.
+    async function downloadPdf({ rows, answers, fecha }: Result) {
+      const { jsPDF } = await import('jspdf');
+      const doc = new jsPDF({ unit: 'mm', format: 'a4' });
+      const W = doc.internal.pageSize.getWidth();
+      const H = doc.internal.pageSize.getHeight();
+      const M = 18;
+      const TW = W - 2 * M;
+      let y = M;
+      const clean = (s: string) =>
+        s.replace(/[‐-―]/g, '-').replace(/[‘’]/g, "'").replace(/[“”]/g, '"').replace(/…/g, '...')
+          .replace(/[^\x20-\x7e\xa0-\xff€«»]/g, '');
+      const ensure = (h: number) => {
+        if (y + h > H - M) {
+          doc.addPage();
+          y = M;
+        }
+      };
+      const write = (s: string, o: { size?: number; bold?: boolean; color?: number; indent?: number; gap?: number } = {}) => {
+        const size = o.size ?? 10;
+        const indent = o.indent ?? 0;
+        doc.setFont('helvetica', o.bold ? 'bold' : 'normal');
+        doc.setFontSize(size);
+        doc.setTextColor(o.color ?? 20);
+        const lh = size * 0.42;
+        for (const line of doc.splitTextToSize(clean(s), TW - indent) as string[]) {
+          ensure(lh);
+          doc.text(line, M + indent, y + lh * 0.8);
+          y += lh;
+        }
+        y += o.gap ?? 1.5;
+      };
+      const rule = () => {
+        ensure(4);
+        doc.setDrawColor(200);
+        doc.line(M, y + 1, W - M, y + 1);
+        y += 4;
+      };
+      const fechaTxt = fecha.toLocaleDateString('es-ES', { day: 'numeric', month: 'long', year: 'numeric' });
+
+      write('¿Con qué partido coincides? Elecciones generales 2026', { size: 16, bold: true, gap: 2 });
+      write(`Resultado del test de afinidad, ${fechaTxt}. Has respondido ${answers.length} de ${preguntas.length} preguntas.`, { color: 80 });
+      write('El porcentaje compara tus respuestas con las propuestas de cada programa de 2026, solo en los temas en los que ese programa se pronuncia. Misma respuesta: 1 punto; respuesta próxima en temas graduados: 0,5; los temas que marcaste como importantes cuentan el doble. No es una recomendación de voto.', { size: 9, color: 80, gap: 4 });
+
+      write('Resumen', { size: 13, bold: true, gap: 2 });
+      const barX = M + 70;
+      const barW = TW - 70 - 30;
+      for (const { p, items, score } of rows) {
+        ensure(7);
+        doc.setFont('helvetica', 'bold');
+        doc.setFontSize(10);
+        doc.setTextColor(20);
+        doc.text(clean(p.nombre), M, y + 4, { maxWidth: 68 });
+        doc.setFillColor(230);
+        doc.rect(barX, y + 1, barW, 4, 'F');
+        if (items.length) {
+          doc.setFillColor(40);
+          doc.rect(barX, y + 1, barW * score, 4, 'F');
+        }
+        doc.setFont('helvetica', 'normal');
+        doc.text(items.length ? `${pct(score)} (${items.length} ${items.length === 1 ? 'tema' : 'temas'})` : 'sin datos',
+          W - M, y + 4, { align: 'right' });
+        y += 7;
+      }
+      y += 3;
+
+      for (const { p, items, score } of rows) {
+        ensure(20);
+        rule();
+        write(`${p.nombre}: ${items.length ? pct(score) : 'sin datos'}`, { size: 13, bold: true, gap: 1 });
+        if (!items.length) {
+          write('Su programa no se pronuncia sobre ninguno de los temas que has respondido.', { color: 80 });
+          continue;
+        }
+        const n = (k: number) => items.filter((x) => x.puntos === k).length;
+        write(`Coincide en ${n(1)}, cercana en ${n(0.5)}, distinta en ${n(0)} de ${items.length} temas.`, { size: 9, color: 80, gap: 3 });
+        items.forEach((x, i) => {
+          ensure(16);
+          write(`${i + 1}. [${TAGS[String(x.puntos)]}]${x.peso > 1 ? ' [Te importa mucho]' : ''} ${x.q.pregunta}`, { bold: true, gap: 0.8 });
+          write(`Tu respuesta: ${x.mine.texto}`, { size: 9, indent: 4, gap: 0.8 });
+          if (x.puntos !== 1) write(`La de su programa: ${x.theirs.texto}`, { size: 9, indent: 4, gap: 0.8 });
+          write(`Propuesta: ${x.prop.texto}`, { size: 9, indent: 4, color: 80, gap: 3 });
+        });
+      }
+
+      const pages = doc.getNumberOfPages();
+      for (let i = 1; i <= pages; i++) {
+        doc.setPage(i);
+        doc.setFont('helvetica', 'normal');
+        doc.setFontSize(8);
+        doc.setTextColor(120);
+        doc.text(clean(location.href.split('#')[0]), M, H - 8);
+        doc.text(`${i} / ${pages}`, W - M, H - 8, { align: 'right' });
+      }
+      doc.save(`afinidad-elecciones-2026-${fecha.toISOString().slice(0, 10)}.pdf`);
+    }
   </script>
 </Base>
