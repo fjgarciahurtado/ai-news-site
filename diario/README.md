@@ -2,6 +2,7 @@
 
 # Resúmenes diarios
 
+- [27 de noviembre de 2026](2026/11/2026-11-27.md): 16 noticias
 - [26 de noviembre de 2026](2026/11/2026-11-26.md): 16 noticias
 - [25 de noviembre de 2026](2026/11/2026-11-25.md): 16 noticias
 - [24 de noviembre de 2026](2026/11/2026-11-24.md): 15 noticias
